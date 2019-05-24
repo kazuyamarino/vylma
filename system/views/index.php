@@ -629,7 +629,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 
 		<div class="columns button-group content">
 			<div class="column is-5">
-				<h5>Try one of these buttons.</h5>
+				<h5>Try one of these buttons.</h5><hr>
 				<div class="content">
 					<a class="button is-white">White</a>
 					<a class="button is-light">Light</a>
@@ -678,7 +678,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 
 		<div class="columns content">
 			<div class="column is-12">
-				<h5>Here is DataTables Examples!</h5>
+				<h5>Here is DataTables Examples!</h5><hr>
 				<table id="example" class="table display" cellspacing="0" width="100%">
 					<thead>
 						<tr>
