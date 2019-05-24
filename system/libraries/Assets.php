@@ -47,17 +47,44 @@ Class Assets extends NSY_AssetManager
 		// Favicon
 		add::link('favicon.png', 'shortcut icon', null);
 
+		// Font Awesome CSS
+		add::custom('<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">');
+
+		// Bulma CSS
+		add::link('bulma/css/bulma.min.css', 'stylesheet', 'text/css');
+		add::link('bulma/css/bulma-tooltip.min.css', 'stylesheet', 'text/css');
+		add::link('bulma/css/modal-fx.min.css', 'stylesheet', 'text/css');
+
+		// Datatable CSS
+		add::link('bulma/css/dataTables.bulma.min.css', 'stylesheet', 'text/css');
+
 		// Main Style
 		add::link('main.css', 'stylesheet', 'text/css');
 	}
 
 	public static function footer_assets()
 	{
+		// Jquery JS
+		add::script('vendor/jquery-3.3.1.min.js', 'text/javascript', 'UTF-8', null);
+
+		// Datatables JS
+		add::script('vendor/jquery.dataTables.min.js', 'text/javascript', 'UTF-8', null);
+		add::script('bulma/dataTables.bulma.min.js', 'text/javascript', 'UTF-8', null);
+
+
+		add::script('bulma/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
+
 		// System JS
 		add::script('system.js', 'text/javascript', 'UTF-8', null);
 
 		// Main JS
 		add::script('main.js', 'text/javascript', 'UTF-8', null);
+	}
+
+	public static function datatables_init()
+	{
+		// Datatables init
+		add::script('datatables/init.js', 'text/javascript', 'UTF-8', null);
 	}
 
 }

@@ -8,7 +8,7 @@ function base_url(url) {
 	var host = window.location.hostname;
 
 	// change according to the name of your project folder
-	var dirname = "nsy"; // defined
+	var dirname = "vylma"; // defined
 	// var dirname = ""; // undefined
 
 	// if dirname not empty or defined
@@ -30,3 +30,36 @@ function base_url(url) {
 		}
 	}
 }
+
+// Avoid `console` errors in browsers that lack a console.
+(function() {
+	var method;
+	var noop = function () {};
+	var methods = [
+		'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+		'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+		'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+		'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
+	];
+	var length = methods.length;
+	var console = (window.console = window.console || {});
+
+	while (length--) {
+		method = methods[length];
+
+		// Only stub undefined methods.
+		if (!console[method]) {
+			console[method] = noop;
+		}
+	}
+}());
+
+/*
+Bulma Notification JS
+ */
+$(document).ready(function() {
+	$(".notification > button.delete").click(function() {
+		$(this).parent().addClass('is-hidden');
+		return false;
+	});
+});

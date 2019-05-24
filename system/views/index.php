@@ -1,56 +1,696 @@
 <?php
 defined('ROOT') OR exit('No direct script access allowed');
 ?>
-<div class="wrap">
-	<div style="text-align:center">
-		<h3>Hi, iam NSY!&nbsp;|&nbsp;<a href="<?php echo base_url('hmvc'); ?>">Go To HMVC Page</a></h3>
-		<h1><?php echo $mvc_page; ?></h1>
-		<p>NSY is a simple PHP Framework that works well on MVC or HMVC mode.</p>
-		<div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#nsy-folder-structure">NSY Folder Structure</a><br />See the structure.</p>
-			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#how-to-dating-with-nsy">How to dating with NSY?</a><br />The setup.</p>
-			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#crud-example">NSY CRUD Example</a><br />The CRUD example build by NSY.</p>
-			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md">NSY User Guide</a><br />The guide before starting to use NSY.</p>
-			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md">NSY System Guide</a><br />The guide for starting to use NSY System.</p>
+<div class="columns wrap">
+	<div class="column is-full">
+		<hr>
+		<div class="columns content">
+			<div class="column is-full">
+				<h4>Hi, iam NSY!&nbsp;|&nbsp;<a href="<?php echo base_url('hmvc'); ?>">Go To HMVC Page</a></h4>
+
+				<div class="notification is-info">
+					<button class="delete"></button>
+					<p>NSY is a simple PHP Framework that works well on MVC or HMVC mode, its made with <a target="_blank" href="https://html5boilerplate.com/">HTML5 Boilerplate</a> and <a target="_blank" href="http://foundation.zurb.com/">Foundation CSS Framework</a>. NSY also provides <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a> and several optimizations for <a target="_blank" href="https://www.datatables.net/">Datatables</a> plugin.</p>
+				</div>
+
+				<div class="tile is-ancestor">
+					<div class="tile is-6 is-vertical is-parent">
+						<div class="tile is-child box">
+							<h3>NSY Guide & Example</h3><hr>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-foundation/blob/master/README.md#how-to-dating-with-nsy">How to dating with NSY?</a><br />The setup.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-foundation/blob/master/README.md#nsy-foundation-contain-package-">NSY contain package</a><br />The package inside NSY.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#crud-example">NSY CRUD Example</a><br />The CRUD example build by NSY.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md">NSY User Guide</a><br />The guide before starting to use NSY.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md">NSY System Guide</a><br />The guide for starting to use NSY System.</p>
+							</div>
+						</div>
+						<div class="tile is-child box">
+							<h3>HTML5 Boilerplate! </h3><hr>
+							<p>HTML5 Boilerplate helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.</p>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/h5bp/html5-boilerplate/blob/5.2.0/dist/doc/TOC.md">HTML5 Boilerplate Documentation</a><br />See documentation.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/h5bp/html5-boilerplate">HTML5 Boilerplate Source Code</a><br />The source code of the projects.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://h5bp.github.io/">Other Projects</a><br />See another projects.</p>
+							</div>
+						</div>
+					</div>
+					<div class="tile is-parent">
+						<div class="tile is-child box">
+							<h3>NSY Features</h3><hr>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#nsy-feature-">NSY Features</a><br />The features of NSY.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#mvc--hmvc">MVC & HMVC</a><br />The design pattern.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#introducting-to-nsy-assets-manager">NSY Assets Manager</a><br />Introducting to NSY Assets Manager.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#psr-4-autoloading">PSR-4 Autoloading</a><br />See explanation.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#composer-on-nsy-framework">Composer on NSY</a><br />NSY support Composer for install/update libraries.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#nsy-cli-command-line">NSY CLI</a><br />A commands to facilitate users in operating NSY.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#routes">Routing</a><br />Simple routing system.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#helpers">NSY Helper</a><br />Creating custom methods with ease.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#framework-configuration">Framework Configuration</a><br />Simple config.</p>
+							</div>
+							<div class="notification is-success">
+								<button class="delete"></button>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+								consectetur adipiscing elit
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<hr>
+		<div class="columns content">
+			<div class="column is-full">
+				<h5>The awesome Modal!</h5><hr>
 
-		<div>
-			<h3><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#nsy-feature-">NSY Feature</a></h3>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#mvc--hmvc">MVC & HMVC</a><br />The design pattern.</p>
+				<div class="buttons">
+					<span class="button is-primary is-medium modal-button" data-target="modal-normal">normal</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-fadeInScale">fadeInScale</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-slideRight">slideRight</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-slideLeft">slideLeft</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-slideTop">slideTop</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-slideBottom">slideBottom</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-fall">fall</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-slideFall">slideFall</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-newsPaper">newsPaper</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-3dFlipVertical">3dFlipVertical</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-3dFlipHorizontal">3dFlipHorizontal</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-3dSign">3dSign</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-3dSignDown">3dSignDown</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-superScaled">superScaled</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-3dSlit">3dSlit</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-3dRotateFromBottom">3dRotateFromBottom</span>
+					<span class="button is-primary is-medium modal-button" data-target="modal-3dRotateFromLeft">3dRotateFromLeft</span>
+				</div>
+
+				<!-- normal -->
+				<div id="modal-normal" class="modal">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- fadeInScale -->
+				<div id="modal-fadeInScale" class="modal modal-fx-fadeInScale">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- slideRight -->
+				<div id="modal-slideRight" class="modal modal-fx-slideRight">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- slideLeft -->
+				<div id="modal-slideLeft" class="modal modal-fx-slideLeft">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- slideTop -->
+				<div id="modal-slideTop" class="modal modal-fx-slideTop">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- slideBottom -->
+				<div id="modal-slideBottom" class="modal modal-fx-slideBottom">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- fall -->
+				<div id="modal-fall" class="modal modal-fx-fall">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- slideFall -->
+				<div id="modal-slideFall" class="modal modal-fx-slideFall">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- newsPaper -->
+				<div id="modal-newsPaper" class="modal modal-fx-newsPaper">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dFlipVertical -->
+				<div id="modal-3dFlipVertical" class="modal modal-fx-3dFlipVertical">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dFlipHorizontal -->
+				<div id="modal-3dFlipHorizontal" class="modal modal-fx-3dFlipHorizontal">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dSign -->
+				<div id="modal-3dSign" class="modal modal-fx-3dSign">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dSignDown -->
+				<div id="modal-3dSignDown" class="modal modal-fx-3dSignDown">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- superScaled -->
+				<div id="modal-superScaled" class="modal modal-fx-superScaled">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dSlit -->
+				<div id="modal-3dSlit" class="modal modal-fx-3dSlit">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dRotateFromBottom -->
+				<div id="modal-3dRotateFromBottom" class="modal modal-fx-3dRotateFromBottom">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dRotateFromLeft -->
+				<div id="modal-3dRotateFromLeft" class="modal modal-fx-3dRotateFromLeft">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- Image modal -->
+				<div id="modal-image" class="modal modal-fx-superScaled">
+					<div class="modal-background"></div>
+					<div class="modal-content is-image">
+						<!-- content -->
+						<img src="img/moon.jpg" alt="Moon">
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- Image modal -->
+				<div id="modal-image2" class="modal modal-fx-superScaled">
+					<div class="modal-background"></div>
+					<div class="modal-content is-huge is-image">
+						<!-- content -->
+						<img src="img/moon.jpg" alt="Moon">
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- Image modal -->
+				<div id="modal-image3" class="modal modal-fx-superScaled">
+					<div class="modal-background"></div>
+					<div class="modal-content is-huge is-image">
+						<!-- content -->
+						<img src="img/tower.jpg" alt="Tower">
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- modal-fadeInScale-fs top -->
+				<div id="modal-fadeInScale-fs" class="modal modal-full-screen modal-fx-fadeInScale">
+					<div class="modal-content modal-card">
+						<header class="modal-card-head">
+							<p class="modal-card-title">Modal title</p>
+							<button class="modal-button-close delete" aria-label="close"></button>
+						</header>
+						<section class="modal-card-body">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat. Molestiae
+							maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio mollitia
+							facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet cupiditate accusantium
+							vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</section>
+						<footer class="modal-card-foot">
+							<button class="modal-button-close button is-success">Save changes</button>
+							<button class="modal-button-close button">Cancel</button>
+						</footer>
+					</div>
+				</div>
+
+				<!-- 3dSign top -->
+				<div id="modal-3dSign-top" class="modal modal-pos-top modal-fx-3dSign">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dSign bottom -->
+				<div id="modal-3dSign-bottom" class="modal modal-pos-bottom modal-fx-3dSignDown">
+					<div class="modal-background"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero! Nisi hic vel aspernatur doloremque enim ut blanditiis perferendis, repudiandae
+							assumenda quibusdam delectus quam eum non maxime ullam quod qui ab in dolorem dolores vero amet! Perferendis
+							incidunt unde blanditiis harum vel velit, accusantium praesentium autem ut voluptas, voluptatibus fugiat.
+							Molestiae maiores aspernatur expedita, magnam commodi suscipit explicabo labore temporibus tenetur distinctio
+							mollitia facere eum ad officia? Sit eaque culpa ea saepe facilis. Consequatur, architecto. Optio eveniet
+							cupiditate accusantium vero consectetur, maiores eum culpa assumenda reprehenderit sequi aut nihil!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dFlipVertical -->
+				<div id="modal-3dFlipVertical-tiny" class="modal modal-fx-3dFlipVertical">
+					<div class="modal-background"></div>
+					<div class="modal-content is-tiny">
+						<!-- content -->
+						<div class="box">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum enim quisquam ducimus, facilis, esse nesciunt porro,
+							officiis totam veniam libero!
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<!-- 3dFlipVertical card tiny -->
+				<div id="modal-card" class="modal modal-fx-3dSlit">
+					<div class="modal-background"></div>
+					<div class="modal-content is-tiny">
+						<!-- content -->
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-4by3">
+									<img src="img/card.jpg" alt="Placeholder image">
+								</figure>
+							</div>
+							<div class="card-content">
+								<div class="media">
+									<div class="media-left">
+										<figure class="image is-48x48">
+											<img src="img/avatar.jpg" alt="Placeholder image">
+										</figure>
+									</div>
+									<div class="media-content">
+										<p class="title is-4">John Doe</p>
+										<p class="subtitle is-6">@johndoe</p>
+									</div>
+								</div>
+
+								<div class="content">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+									<a>@bulmaio</a>.
+									<a href="#">#css</a>
+									<a href="#">#responsive</a>
+									<br>
+									<time datetime="2018-1-1">12:30 PM - 16 Mar 2018</time>
+								</div>
+							</div>
+						</div>
+						<!-- end content -->
+					</div>
+					<button class="modal-close is-large" aria-label="close"></button>
+				</div>
+
+				<div id="modal-bgImage" class="modal modal-fx-3dSignDown">
+					<div class="modal-background" style="background-image:url(img/moon.jpg)"></div>
+					<div class="modal-content">
+						<!-- content -->
+						<pre><code class="html">&lt;div id="modal-id" class="modal <em>modal-fx-fadeInScale</em>"&gt;
+							&lt;div class="modal-background" style="background-image:url(img/moon.jpg)"&gt;&lt;/div&gt;
+							&lt;div class="modal-content"&gt;
+							&lt;!-- Any other Bulma elements you want --&gt;
+							&lt;/div&gt;
+							&lt;button class="modal-close is-large" aria-label="close"&gt;&lt;/button&gt;
+							&lt;/div&gt;
+						</code></pre>
+						<!-- end content -->
+
+					</div>
+					<div class="column is-9">
+						<h5>The grids!</h5><hr>
+						<div class="columns">
+							<div class="column is-primary">
+								<div class="notification is-primary">
+									First column
+								</div>
+							</div>
+							<div class="column">
+								<div class="notification is-warning">
+									Second column
+								</div>
+							</div>
+							<div class="column">
+								<div class="notification is-info">
+									Third column
+								</div>
+							</div>
+							<div class="column">
+								<div class="notification is-success">
+									Fourth column
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#introducting-to-nsy-assets-manager">NSY Assets Manager</a><br />Introducting to NSY Assets Manager.</p>
+		</div>
+
+		<div class="columns button-group content">
+			<div class="column is-5">
+				<h5>Try one of these buttons.</h5>
+				<div class="content">
+					<a class="button is-white">White</a>
+					<a class="button is-light">Light</a>
+					<a class="button is-dark">Dark</a>
+					<a class="button is-black">Black</a>
+					<a class="button is-text">Text</a>
+				</div>
+				<div class="content">
+					<a class="button is-primary">Primary</a>
+					<a class="button is-link">Link</a>
+					<a class="button is-info">Info</a>
+					<a class="button is-success">Success</a>
+					<a class="button is-warning">Warning</a>
+					<a class="button is-danger">Danger</a>
+				</div>
 			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#psr-4-autoloading">PSR-4 Autoloading</a><br />See explanation.</p>
+			<div class="column is-7">
+				<h5>You'll like this tooltip!</h5><hr>
+				<div class="columns">
+					<div class="column">
+						<button class="button is-primary tooltip" data-tooltip="Tooltip Text">top tooltip</button>
+					</div>
+					<div class="column">
+						<button class="button is-primary tooltip is-tooltip-right" data-tooltip="Tooltip Text">right tooltip</button>
+					</div>
+					<div class="column">
+						<button class="button is-primary tooltip is-tooltip-bottom" data-tooltip="Tooltip Text">bottom tooltip</button>
+					</div>
+					<div class="column">
+						<button class="button is-primary tooltip is-tooltip-left" data-tooltip="Tooltip Text">left tooltip</button>
+					</div>
+				</div>
+				<div class="columns">
+					<div class="column">
+						<button class="button is-primary tooltip is-tooltip-top is-tooltip-bottom-desktop" data-tooltip="Hi! I'm on top and bottom.">Top and Bottom</button>
+					</div>
+					<div class="column">
+						<button class="button is-primary tooltip is-tooltip-left is-tooltip-right-desktop" data-tooltip="Hi! I'm on left and right.">Left and Right</button>
+					</div>
+					<div class="column">
+						<button class="button is-primary tooltip is-tooltip-multiline" data-tooltip="Tooltip with a long Text. So we use is-tooltip-multiline modifier to force multiline display.">Multiline Tooltip</button>
+					</div>
+				</div>
 			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#composer-on-nsy-framework">Composer on NSY</a><br />NSY support Composer for install/update libraries.</p>
-			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#nsy-cli-command-line">NSY CLI</a><br />A commands to facilitate users in operating NSY.</p>
-			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#routes">Routing</a><br />Simple routing system.</p>
-			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#helpers">NSY Helper</a><br />Creating custom methods with ease.</p>
-			</div>
-			<div>
-				<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#framework-configuration">Framework Configuration</a><br />Simple config.</p>
+		</div>
+
+		<div class="columns content">
+			<div class="column is-12">
+				<h5>Here is DataTables Examples!</h5>
+				<table id="example" class="table display" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Position</th>
+							<th>Office</th>
+							<th>Age</th>
+							<th>Start date</th>
+							<th>Salary</th>
+						</tr>
+					</thead>
+				</table>
 			</div>
 		</div>
 	</div>
