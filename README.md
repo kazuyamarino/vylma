@@ -15,14 +15,11 @@ Here it is [NSY CRUD Example](https://github.com/kazuyamarino/crud)
 
 ## Vylma contain package :
 * [Datatables jQuery Javascript Library](https://www.datatables.net/) with Responsive Plugin
-* [Bulma CSS Framework](https://foundation.zurb.com/)
+* [Bulma CSS Framework](https://bulma.io/)
 * [JQuery](https://jquery.com/)
 * [Modernizr](https://modernizr.com/)
 * [WhatInputJs](https://github.com/ten1seven/what-input)
 * [Font Awesome CDN](https://fontawesome.com/)
-
-## Browser support test
-NSY is made with Bulma CSS Framework [Bulma](https://bulma.io/).
 
 ## User Guide.
 See [USERGUIDE.md](https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md).
