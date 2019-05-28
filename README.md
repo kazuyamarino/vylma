@@ -1,4 +1,4 @@
-#Vylma
+## Vylma
 NSY PHP Framework Example with HTML5 Boilerplate and Foundation CSS Framework. This also provides Font-Awesome and several optimizations for Datatables plugin.
 
 Site example :
@@ -22,7 +22,7 @@ Here it is [NSY CRUD Example](https://github.com/kazuyamarino/crud)
 * [Font Awesome CDN](https://fontawesome.com/)
 
 ## Browser support test
-NSY is made with Bulma CSS Framework. This information is based on [Bulma](https://bulma.io/).
+NSY is made with Bulma CSS Framework [Bulma](https://bulma.io/).
 
 ## User Guide.
 See [USERGUIDE.md](https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md).
@@ -31,4 +31,4 @@ See [USERGUIDE.md](https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUID
 See [SYSGUIDE.md](https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md).
 
 ## License
-The code is available under the [MIT license](LICENSE.txt)..
+The code is available under the [MIT license](LICENSE.txt).

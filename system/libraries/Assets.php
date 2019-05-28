@@ -60,6 +60,9 @@ Class Assets extends NSY_AssetManager
 
 		// Main Style
 		add::link('main.css', 'stylesheet', 'text/css');
+
+		// Modernizr JS
+		add::script('vendor/modernizr-3.7.1.min.js', 'text/javascript', 'UTF-8', null);
 	}
 
 	public static function footer_assets()
@@ -67,11 +70,14 @@ Class Assets extends NSY_AssetManager
 		// Jquery JS
 		add::script('vendor/jquery-3.3.1.min.js', 'text/javascript', 'UTF-8', null);
 
+		// WhatInput JS
+		add::script('vendor/what-input.min.js', 'text/javascript', 'UTF-8', '');
+
 		// Datatables JS
 		add::script('vendor/jquery.dataTables.min.js', 'text/javascript', 'UTF-8', null);
 		add::script('bulma/dataTables.bulma.min.js', 'text/javascript', 'UTF-8', null);
 
-
+		// Bulma modal-fx JS
 		add::script('bulma/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
 
 		// System JS

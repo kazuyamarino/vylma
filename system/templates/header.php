@@ -26,7 +26,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 					<p>A very simple PHP Framework that works well on MVC or HMVC mode.</p>
 				</div>
 				<div class="column is-2">
-					<a target="_blank" href="https://github.com/kazuyamarino/nsy"><i class="fab fa-github fa-5x"></i>
+					<a target="_blank" href="https://github.com/kazuyamarino/vylma"><i class="fab fa-github fa-5x"></i>
 						<p>View On Github</p>
 					</a>
 				</div>
