@@ -63,3 +63,8 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+/*
+Norma JS Initialize
+ */
+$(document).norma();

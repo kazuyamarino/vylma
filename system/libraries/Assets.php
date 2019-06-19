@@ -52,11 +52,13 @@ Class Assets extends NSY_AssetManager
 
 		// Bulma CSS
 		add::link('bulma/css/bulma.min.css', 'stylesheet', 'text/css');
-		add::link('bulma/css/bulma-tooltip.min.css', 'stylesheet', 'text/css');
 		add::link('bulma/css/modal-fx.min.css', 'stylesheet', 'text/css');
 
 		// Datatable CSS
 		add::link('bulma/css/dataTables.bulma.min.css', 'stylesheet', 'text/css');
+
+		// Tooltip CSS
+		add::link('vendor/simptip.min.css', 'stylesheet', 'text/css');
 
 		// Main Style
 		add::link('main.css', 'stylesheet', 'text/css');
@@ -70,8 +72,11 @@ Class Assets extends NSY_AssetManager
 		// Jquery JS
 		add::script('vendor/jquery-3.3.1.min.js', 'text/javascript', 'UTF-8', null);
 
+		// Norma JS
+		add::script('bulma/norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
+
 		// WhatInput JS
-		add::script('vendor/what-input.min.js', 'text/javascript', 'UTF-8', '');
+		add::script('vendor/what-input.min.js', 'text/javascript', 'UTF-8', null);
 
 		// Datatables JS
 		add::script('vendor/jquery.dataTables.min.js', 'text/javascript', 'UTF-8', null);
