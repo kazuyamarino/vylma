@@ -16,7 +16,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 				<div class="tile is-ancestor">
 					<div class="tile is-6 is-vertical is-parent">
 						<div class="tile is-child box">
-							<h3>NSY Guide & Example</h3><hr>
+							<h3>NSY Guide & Example</h3>
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-foundation/blob/master/README.md#how-to-dating-with-nsy">How to dating with NSY?</a><br />The setup.</p>
 							</div>
@@ -34,7 +34,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 							</div>
 						</div>
 						<div class="tile is-child box">
-							<h3>HTML5 Boilerplate! </h3><hr>
+							<h3>HTML5 Boilerplate! </h3>
 							<p>HTML5 Boilerplate helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.</p>
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/h5bp/html5-boilerplate/blob/5.2.0/dist/doc/TOC.md">HTML5 Boilerplate Documentation</a><br />See documentation.</p>
@@ -49,7 +49,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 					</div>
 					<div class="tile is-parent">
 						<div class="tile is-child box">
-							<h3>NSY Features</h3><hr>
+							<h3>NSY Features</h3>
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#nsy-feature-">NSY Features</a><br />The features of NSY.</p>
 							</div>
@@ -90,8 +90,284 @@ defined('ROOT') OR exit('No direct script access allowed');
 		</div>
 
 		<div class="columns content">
-			<div class="column is-full">
-				<h5>The awesome Modal!</h5><hr>
+			<div class="column is-6">
+				<form data-abide novalidate>
+					<p class="title is-5">Need form with validation example? Check it out bro!</p>
+					<p class="is-6 subtitle">Here's how you use this input field!</p>
+
+					<div data-abide-error class="is-error notification alert">
+						<p>There are some errors in your form.</p>
+					</div>
+
+					<div class="field">
+						<label class="label">Number <small>(required)</small>
+							<input type="text" class="input" placeholder="1234" required pattern="^[-+]?\d*(?:[\.\,]\d+)?$">
+							<span class="help is-error is-danger">Yo, you had better fill this out, it's required.</span>
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label">Nothing Required!
+							<input type="text" class="input" placeholder="Use me, or don't" aria-describedby="exampleHelpText" required data-abide-ignore>
+							<span class="help">This input is ignored by Abide using `data-abide-ignore`</span>
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label">URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
+							<input type="text" class="input" placeholder="https://nsy.kazuyamarino.com/vylma" pattern="url">
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label">Password <small>(required)</small>
+							<input type="password" id="password" class="input" required pattern="[a-zA-Z]+">
+							<span class="help is-error is-danger">Your password must match the requirements</span>
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label">Confirm Password <small>(required)</small>
+							<input type="password" class="input" required pattern="[a-zA-Z]+" data-equalto="password">
+							<span class="help is-error is-danger">The password did not match</span>
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label">Indonesian Food and Beverages, Choose One, it can't be the blank option.<br>
+							<div class="select">
+								<select required>
+									<option value="">-- Choosen One --</option>
+									<option value="rendang">Rendang</option>
+									<option value="semur&nbsp;jengkol">Semur Jengkol</option>
+									<option value="bir&nbsp;pletok">Bir Pletok</option>
+									<option value="mie&nbsp;ayam">Mie Ayam</option>
+								</select>
+							</div>
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label">Message <small>(required)</small>
+							<textarea class="textarea" placeholder="Textarea" required></textarea>
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label" for="cutecharCheckbox">What is your favorite chars?</label>
+						<div id="cutecharCheckbox" class="checkbox-group" data-validator-min="2" required>
+							<div class="control">
+								<label class="checkbox">
+									<input type="checkbox" name="cutechar" value="Petruk">&nbsp;Petruk
+								</label>
+							</div>
+							<div class="control">
+								<label class="checkbox">
+									<input type="checkbox" name="cutechar" value="Cepot">&nbsp;Cepot
+								</label>
+							</div>
+							<div class="control">
+								<label class="checkbox">
+									<input type="checkbox" name="cutechar" value="Buta Hejo">&nbsp;Buta Hejo
+								</label>
+							</div>
+							<div class="control">
+								<label class="checkbox">
+									<input type="checkbox" name="cutechar" value="Semar Mesem">&nbsp;Semar Mesem
+								</label>
+							</div>
+							<small class="has-text-info">(Pick at least two favs)</small>
+						</div>
+					</div>
+
+					<div class="field">
+						<label class="label" for="cutecharRadio">What is Cepot's skin color?</label>
+						<div id="cutecharRadio" class="radio-group">
+							<div class="control">
+								<label class="radio" for="pokemonRed">
+						        	<input type="radio" name="pokemon" value="Red" id="pokemonRed" required>&nbsp;Red
+								</label>
+								<label class="radio" for="pokemonBlue">
+						        	<input type="radio" name="pokemon" value="Blue" id="pokemonBlue">&nbsp;Blue
+								</label>
+								<label class="radio" for="pokemonYellow">
+						        	<input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">&nbsp;Yellow
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="field is-grouped">
+						<div class="control">
+							<button class="button is-link" type="submit">Submit</button>
+						</div>
+						<div class="control">
+							<button class="button is-text" type="reset">Reset</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="column is-6">
+				<h5>Try one of these buttons!</h5>
+				<div class="content">
+					<a class="button is-white">White</a>
+					<a class="button is-light">Light</a>
+					<a class="button is-dark">Dark</a>
+					<a class="button is-black">Black</a>
+					<a class="button is-text">Text</a>
+				</div>
+				<div class="content">
+					<a class="button is-loading">Loading</a>
+					<a class="button is-primary is-loading">Loading</a>
+					<a class="button is-link is-loading">Loading</a>
+					<a class="button is-info is-loading">Loading</a>
+					<a class="button is-success is-loading">Loading</a>
+					<a class="button is-warning is-loading">Loading</a>
+					<a class="button is-danger is-loading">Loading</a>
+				</div>
+				<div class="content">
+					<p class="buttons">
+						<a class="button">
+							<span class="icon is-small">
+								<i class="fas fa-bold"></i>
+							</span>
+						</a>
+						<a class="button">
+							<span class="icon is-small">
+								<i class="fas fa-italic"></i>
+							</span>
+						</a>
+						<a class="button">
+							<span class="icon is-small">
+								<i class="fas fa-underline"></i>
+							</span>
+						</a>
+					</p>
+					<p class="buttons">
+						<a class="button">
+							<span class="icon">
+								<i class="fab fa-github"></i>
+							</span>
+							<span>GitHub</span>
+						</a>
+						<a class="button is-primary">
+							<span class="icon">
+								<i class="fab fa-twitter"></i>
+							</span>
+							<span>Twitter</span>
+						</a>
+						<a class="button is-success">
+							<span class="icon is-small">
+								<i class="fas fa-check"></i>
+							</span>
+							<span>Save</span>
+						</a>
+						<a class="button is-danger is-outlined">
+							<span>Delete</span>
+							<span class="icon is-small">
+								<i class="fas fa-times"></i>
+							</span>
+						</a>
+					</p>
+					<p class="buttons">
+						<a class="button is-small">
+							<span class="icon is-small">
+								<i class="fab fa-github"></i>
+							</span>
+							<span>GitHub</span>
+						</a>
+						<a class="button">
+							<span class="icon">
+								<i class="fab fa-github"></i>
+							</span>
+							<span>GitHub</span>
+						</a>
+						<a class="button is-medium">
+							<span class="icon">
+								<i class="fab fa-github"></i>
+							</span>
+							<span>GitHub</span>
+						</a>
+						<a class="button is-large">
+							<span class="icon is-medium">
+								<i class="fab fa-github"></i>
+							</span>
+							<span>GitHub</span>
+						</a>
+					</p>
+				</div>
+				<div class="content">
+					<a class="button" title="Disabled button" disabled>Disabled</a>
+					<a class="button is-primary" title="Disabled button" disabled>Disabled</a>
+					<a class="button is-link" title="Disabled button" disabled>Disabled</a>
+					<a class="button is-info" title="Disabled button" disabled>Disabled</a>
+					<a class="button is-success" title="Disabled button" disabled>Disabled</a>
+					<a class="button is-warning" title="Disabled button" disabled>Disabled</a>
+					<a class="button is-danger" title="Disabled button" disabled>Disabled</a>
+				</div>
+				<div class="content">
+					<a class="button is-rounded">Rounded</a>
+					<a class="button is-primary is-rounded">Rounded</a>
+					<a class="button is-link is-rounded">Rounded</a>
+					<a class="button is-info is-rounded">Rounded</a>
+					<a class="button is-success is-rounded">Rounded</a>
+					<a class="button is-danger is-rounded">Rounded</a>
+				</div>
+				<div class="content">
+					<a class="button is-primary">Primary</a>
+					<a class="button is-link">Link</a>
+					<a class="button is-info">Info</a>
+					<a class="button is-success">Success</a>
+					<a class="button is-warning">Warning</a>
+					<a class="button is-danger">Danger</a>
+				</div>
+				<hr>
+				<h5>You'll like this tooltip!</h5>
+				<div class="columns has-text-centered">
+					<div class="column">
+						<span class="tag is-secondary simptip-position-top" data-tooltip="Tooltip Text">top tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-secondary simptip-position-right" data-tooltip="Tooltip Text">right tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-secondary simptip-position-bottom" data-tooltip="Tooltip Text">bottom tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-secondary simptip-position-left" data-tooltip="Tooltip Text">left tooltip</span>
+					</div>
+				</div>
+				<div class="columns has-text-centered">
+					<div class="column">
+						<span class="tag is-secondary simptip-position-top simptip-multiline" data-tooltip="Tooltip with a long Text. So we use is-tooltip-multiline modifier to force multiline display.">Multiline Tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-secondary simptip-position-top simptip-movable" data-tooltip="Tooltip Text">Movable Tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-secondary simptip-position-top simptip-position-top simptip-fade" data-tooltip="Tooltip Text">Fade Tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-secondary simptip-position-top half-arrow" data-tooltip="Tooltip Text">Half Arrow Tooltip</span>
+					</div>
+				</div>
+				<div class="columns has-text-centered">
+					<div class="column">
+						<span class="tag is-success simptip-position-top simptip-success" data-tooltip="Tooltip Text">Success Tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-info simptip-position-top simptip-info" data-tooltip="Tooltip Text">Info Tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-warning simptip-position-top simptip-warning" data-tooltip="Tooltip Text">Warning Tooltip</span>
+					</div>
+					<div class="column">
+						<span class="tag is-danger simptip-position-top simptip-danger" data-tooltip="Tooltip Text">Danger Tooltip</span>
+					</div>
+				</div>
+				<hr>
+				<h5>The awesome Modal!</h5>
 				<div class="buttons">
 					<span class="button is-primary is-medium modal-button" data-target="modal-normal">normal</span>
 					<span class="button is-primary is-medium modal-button" data-target="modal-fadeInScale">fadeInScale</span>
@@ -625,292 +901,10 @@ defined('ROOT') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>
-
-		<div class="columns content">
-			<div class="column is-6">
-				<form data-abide novalidate>
-					<div class="has-text-centered">
-						<h5>Need form with validation example? Check it out bro!</h5>
-					</div>
-					<p class="is-size-5-desktop">Here's how you use this input field!</p>
-
-					<div data-abide-error class="is-error notification alert">
-						<p>There are some errors in your form.</p>
-					</div>
-
-					<div class="field">
-						<label class="label">Number <small>(required)</small>
-							<input type="text" class="input" placeholder="1234" required pattern="^[-+]?\d*(?:[\.\,]\d+)?$">
-							<span class="help is-error is-danger">Yo, you had better fill this out, it's required.</span>
-						</label>
-					</div>
-
-					<div class="field">
-						<label class="label">Nothing Required!
-							<input type="text" class="input" placeholder="Use me, or don't" aria-describedby="exampleHelpText" required data-abide-ignore>
-							<span class="help">This input is ignored by Abide using `data-abide-ignore`</span>
-						</label>
-					</div>
-
-					<div class="field">
-						<label class="label">URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
-							<input type="text" class="input" placeholder="https://nsy.kazuyamarino.com/vylma" pattern="url">
-						</label>
-					</div>
-
-					<div class="field">
-						<label class="label">Password <small>(required)</small>
-							<input type="password" id="password" class="input" required pattern="[a-zA-Z]+">
-							<span class="help is-error is-danger">Your password must match the requirements</span>
-						</label>
-					</div>
-
-					<div class="field">
-						<label class="label">Confirm Password <small>(required)</small>
-							<input type="password" class="input" required pattern="[a-zA-Z]+" data-equalto="password">
-							<span class="help is-error is-danger">The password did not match</span>
-						</label>
-					</div>
-
-					<div class="field">
-						<label class="label">Indonesian Food and Beverages, Choose One, it can't be the blank option.<br>
-							<div class="select">
-								<select required>
-									<option value="">-- Choosen One --</option>
-									<option value="rendang">Rendang</option>
-									<option value="semur&nbsp;jengkol">Semur Jengkol</option>
-									<option value="bir&nbsp;pletok">Bir Pletok</option>
-									<option value="mie&nbsp;ayam">Mie Ayam</option>
-								</select>
-							</div>
-						</label>
-					</div>
-
-					<div class="field">
-						<label class="label">Message <small>(required)</small>
-							<textarea class="textarea" placeholder="Textarea" required></textarea>
-						</label>
-					</div>
-
-					<div class="field">
-						<label class="label" for="cutecharCheckbox">What is your favorite chars?</label>
-						<div id="cutecharCheckbox" class="checkbox-group" data-validator-min="2" required>
-							<div class="control">
-								<label class="checkbox">
-									<input type="checkbox" name="cutechar" value="Petruk">&nbsp;Petruk
-								</label>
-							</div>
-							<div class="control">
-								<label class="checkbox">
-									<input type="checkbox" name="cutechar" value="Cepot">&nbsp;Cepot
-								</label>
-							</div>
-							<div class="control">
-								<label class="checkbox">
-									<input type="checkbox" name="cutechar" value="Buta Hejo">&nbsp;Buta Hejo
-								</label>
-							</div>
-							<div class="control">
-								<label class="checkbox">
-									<input type="checkbox" name="cutechar" value="Semar Mesem">&nbsp;Semar Mesem
-								</label>
-							</div>
-							<small class="has-text-info">(Pick at least two favs)</small>
-						</div>
-					</div>
-
-					<div class="field">
-						<label class="label" for="cutecharRadio">What is Cepot's skin color?</label>
-						<div id="cutecharRadio" class="radio-group">
-							<div class="control">
-								<label class="radio" for="pokemonRed">
-						        	<input type="radio" name="pokemon" value="Red" id="pokemonRed" required>&nbsp;Red
-								</label>
-								<label class="radio" for="pokemonBlue">
-						        	<input type="radio" name="pokemon" value="Blue" id="pokemonBlue">&nbsp;Blue
-								</label>
-								<label class="radio" for="pokemonYellow">
-						        	<input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">&nbsp;Yellow
-								</label>
-							</div>
-						</div>
-					</div>
-
-					<div class="field is-grouped">
-						<div class="control">
-							<button class="button is-link" type="submit">Submit</button>
-						</div>
-						<div class="control">
-							<button class="button is-text" type="reset">Reset</button>
-						</div>
-					</div>
-				</form>
-			</div>
-
-			<div class="column is-6">
-				<h5>Try one of these buttons.</h5><hr>
-				<div class="content">
-					<a class="button is-white">White</a>
-					<a class="button is-light">Light</a>
-					<a class="button is-dark">Dark</a>
-					<a class="button is-black">Black</a>
-					<a class="button is-text">Text</a>
-				</div>
-				<div class="content">
-					<a class="button is-loading">Loading</a>
-					<a class="button is-primary is-loading">Loading</a>
-					<a class="button is-link is-loading">Loading</a>
-					<a class="button is-info is-loading">Loading</a>
-					<a class="button is-success is-loading">Loading</a>
-					<a class="button is-warning is-loading">Loading</a>
-					<a class="button is-danger is-loading">Loading</a>
-				</div>
-				<div class="content">
-					<p class="buttons">
-						<a class="button">
-							<span class="icon is-small">
-								<i class="fas fa-bold"></i>
-							</span>
-						</a>
-						<a class="button">
-							<span class="icon is-small">
-								<i class="fas fa-italic"></i>
-							</span>
-						</a>
-						<a class="button">
-							<span class="icon is-small">
-								<i class="fas fa-underline"></i>
-							</span>
-						</a>
-					</p>
-					<p class="buttons">
-						<a class="button">
-							<span class="icon">
-								<i class="fab fa-github"></i>
-							</span>
-							<span>GitHub</span>
-						</a>
-						<a class="button is-primary">
-							<span class="icon">
-								<i class="fab fa-twitter"></i>
-							</span>
-							<span>Twitter</span>
-						</a>
-						<a class="button is-success">
-							<span class="icon is-small">
-								<i class="fas fa-check"></i>
-							</span>
-							<span>Save</span>
-						</a>
-						<a class="button is-danger is-outlined">
-							<span>Delete</span>
-							<span class="icon is-small">
-								<i class="fas fa-times"></i>
-							</span>
-						</a>
-					</p>
-					<p class="buttons">
-						<a class="button is-small">
-							<span class="icon is-small">
-								<i class="fab fa-github"></i>
-							</span>
-							<span>GitHub</span>
-						</a>
-						<a class="button">
-							<span class="icon">
-								<i class="fab fa-github"></i>
-							</span>
-							<span>GitHub</span>
-						</a>
-						<a class="button is-medium">
-							<span class="icon">
-								<i class="fab fa-github"></i>
-							</span>
-							<span>GitHub</span>
-						</a>
-						<a class="button is-large">
-							<span class="icon is-medium">
-								<i class="fab fa-github"></i>
-							</span>
-							<span>GitHub</span>
-						</a>
-					</p>
-				</div>
-				<div class="content">
-					<a class="button" title="Disabled button" disabled>Disabled</a>
-					<a class="button is-primary" title="Disabled button" disabled>Disabled</a>
-					<a class="button is-link" title="Disabled button" disabled>Disabled</a>
-					<a class="button is-info" title="Disabled button" disabled>Disabled</a>
-					<a class="button is-success" title="Disabled button" disabled>Disabled</a>
-					<a class="button is-warning" title="Disabled button" disabled>Disabled</a>
-					<a class="button is-danger" title="Disabled button" disabled>Disabled</a>
-				</div>
-				<div class="content">
-					<a class="button is-rounded">Rounded</a>
-					<a class="button is-primary is-rounded">Rounded</a>
-					<a class="button is-link is-rounded">Rounded</a>
-					<a class="button is-info is-rounded">Rounded</a>
-					<a class="button is-success is-rounded">Rounded</a>
-					<a class="button is-danger is-rounded">Rounded</a>
-				</div>
-				<div class="content">
-					<a class="button is-primary">Primary</a>
-					<a class="button is-link">Link</a>
-					<a class="button is-info">Info</a>
-					<a class="button is-success">Success</a>
-					<a class="button is-warning">Warning</a>
-					<a class="button is-danger">Danger</a>
-				</div>
-
-				<h5>You'll like this tooltip!</h5><hr>
-				<div class="columns has-text-centered">
-					<div class="column">
-						<span class="tag is-secondary simptip-position-top" data-tooltip="Tooltip Text">top tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-secondary simptip-position-right" data-tooltip="Tooltip Text">right tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-secondary simptip-position-bottom" data-tooltip="Tooltip Text">bottom tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-secondary simptip-position-left" data-tooltip="Tooltip Text">left tooltip</span>
-					</div>
-				</div>
-				<div class="columns has-text-centered">
-					<div class="column">
-						<span class="tag is-secondary simptip-position-top simptip-multiline" data-tooltip="Tooltip with a long Text. So we use is-tooltip-multiline modifier to force multiline display.">Multiline Tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-secondary simptip-position-top simptip-movable" data-tooltip="Tooltip Text">Movable Tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-secondary simptip-position-top simptip-position-top simptip-fade" data-tooltip="Tooltip Text">Fade Tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-secondary simptip-position-top half-arrow" data-tooltip="Tooltip Text">Half Arrow Tooltip</span>
-					</div>
-				</div>
-				<div class="columns has-text-centered">
-					<div class="column">
-						<span class="tag is-success simptip-position-top simptip-success" data-tooltip="Tooltip Text">Success Tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-info simptip-position-top simptip-info" data-tooltip="Tooltip Text">Info Tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-warning simptip-position-top simptip-warning" data-tooltip="Tooltip Text">Warning Tooltip</span>
-					</div>
-					<div class="column">
-						<span class="tag is-danger simptip-position-top simptip-danger" data-tooltip="Tooltip Text">Danger Tooltip</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
+		<hr>
 		<div class="columns content">
 			<div class="column is-full">
-				<h5>Here is DataTables Examples!</h5><hr>
+				<h5>Here is DataTables Examples!</h5>
 				<table id="example" class="table display" cellspacing="0" width="100%">
 					<thead>
 						<tr>
