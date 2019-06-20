@@ -12,11 +12,11 @@ Site example :
 * And save the date..
 
 ## CRUD Example?
-Here it is [NSY CRUD Example](https://github.com/kazuyamarino/crud)
+Here it is [NSY CRUD Example](https://github.com/kazuyamarino/crud).
 
 ## Vylma contain package :
 * [Datatables jQuery Javascript Library](https://www.datatables.net/) with Responsive Plugin
-* [Bulma CSS Framework](https://bulma.io/)
+* [Bulma CSS Framework with Plugin](https://bulma.io/) ([Modal FX](https://postare.github.io/bulma-modal-fx/), NormaJS, [SimpTip](http://arashm.net/lab/simptip/))
 * [JQuery](https://jquery.com/)
 * [Modernizr](https://modernizr.com/)
 * [WhatInputJs](https://github.com/ten1seven/what-input)
