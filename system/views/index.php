@@ -137,7 +137,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 						<label class="label">Indonesian Food and Beverages, Choose One, it can't be the blank option.<br>
 							<div class="select">
 								<select required>
-									<option value="">-- Choosen One --</option>
+									<option value="">-- Choose One --</option>
 									<option value="rendang">Rendang</option>
 									<option value="semur&nbsp;jengkol">Semur Jengkol</option>
 									<option value="bir&nbsp;pletok">Bir Pletok</option>
