@@ -12,7 +12,7 @@ Site example :
 * And save the date..
 
 ## CRUD Example?
-Here it is [NSY CRUD Example](https://github.com/kazuyamarino/crud).
+Here it is [NSY CRUD Example](https://github.com/kazuyamarino/vylma-crud).
 
 ## Vylma contain package :
 * [Datatables jQuery Javascript Library](https://www.datatables.net/) with Responsive Plugin
