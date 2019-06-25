@@ -1,5 +1,5 @@
 ## Vylma
-NSY PHP Framework Example with HTML5 Boilerplate and Foundation CSS Framework. This also provides Font-Awesome and several optimizations for Datatables plugin.
+NSY PHP Framework Example with HTML5 Boilerplate and Bulma CSS Framework. This also provides Font-Awesome and several optimizations for Datatables plugin.
 
 Site example :
 [https://nsy.kazuyamarino.com/vylma/](https://nsy.kazuyamarino.com/vylma/)
