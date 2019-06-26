@@ -22,8 +22,8 @@ defined('ROOT') OR exit('No direct script access allowed');
 				</div>
 				<div class="column is-8">
 					<h2>Welcome to Project Vylma</h2>
-					<p>NSY PHP Framework + Bulma CSS Framework.</p>
-					<p>A very simple PHP Framework that works well on MVC or HMVC mode.</p>
+					<h5>NSY PHP Framework + Bulma CSS Framework.</h5>
+					<h5>Vylma was created when love created the PHP Framework</h5>
 				</div>
 				<div class="column is-2">
 					<a target="_blank" href="https://github.com/kazuyamarino/vylma"><i class="fab fa-github fa-5x"></i>
