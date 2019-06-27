@@ -2,7 +2,7 @@
 NSY PHP Framework Example with HTML5 Boilerplate and Bulma CSS Framework. This also provides Font-Awesome and several optimizations for Datatables plugin.
 
 Site example :
-[https://nsy.kazuyamarino.com/vylma/](https://nsy.kazuyamarino.com/vylma/)
+[https://vylma.kazuyamarino.com](https://vylma.kazuyamarino.com)
 
 ## How to dating with NSY?
 * Simply rename the folder that has been downloaded to `vylma` & copy it to your `html` or `htdocs` folder or anythings folder.
@@ -12,7 +12,7 @@ Site example :
 * And save the date..
 
 ## CRUD Example?
-Here it is [NSY CRUD Example](https://github.com/kazuyamarino/vylma-crud).
+Here it is [Vylma CRUD Example](https://github.com/kazuyamarino/vylma-crud).
 
 ## Vylma contain package :
 * [Datatables jQuery Javascript Library](https://www.datatables.net/) with Responsive Plugin

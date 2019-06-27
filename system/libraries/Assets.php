@@ -86,7 +86,7 @@ Class Assets extends NSY_AssetManager
 		add::script('bulma/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
 
 		// System JS
-		add::script('system.js', 'text/javascript', 'UTF-8', null);
+		add::script('config/system.js', 'text/javascript', 'UTF-8', null);
 
 		// Main JS
 		add::script('main.js', 'text/javascript', 'UTF-8', null);
