@@ -48,7 +48,7 @@ Class Assets extends NSY_AssetManager
 		add::link('favicon.png', 'shortcut icon', null);
 
 		// Font Awesome CSS
-		add::custom('<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">');
+		add::link('vendor/all.min.css', 'stylesheet', 'text/css');
 
 		// Bulma CSS
 		add::link('bulma/css/bulma.min.css', 'stylesheet', 'text/css');
@@ -64,13 +64,13 @@ Class Assets extends NSY_AssetManager
 		add::link('main.css', 'stylesheet', 'text/css');
 
 		// Modernizr JS
-		add::script('vendor/modernizr-3.7.1.min.js', 'text/javascript', 'UTF-8', null);
+		add::script('vendor/modernizr.min.js', 'text/javascript', 'UTF-8', null);
 	}
 
 	public static function footer_assets()
 	{
 		// Jquery JS
-		add::script('vendor/jquery-3.3.1.min.js', 'text/javascript', 'UTF-8', null);
+		add::script('vendor/jquery.min.js', 'text/javascript', 'UTF-8', null);
 
 		// Norma JS
 		add::script('bulma/norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
