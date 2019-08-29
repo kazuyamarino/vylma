@@ -5,6 +5,9 @@ defined('ROOT') OR exit('No direct script access allowed');
 <html class="no-js" lang="<?php echo LANGUAGE_CODE; ?>">
 <head>
 	<?php
+	// call sweetalert
+	pull::sweetalert_init();
+
 	// call header assets method
 	pull::header_assets();
 	?>
