@@ -49,6 +49,9 @@ class NSY_System {
 		// Aliasing Assets class name
 		class_alias("Assets", "pull");
 
+		// Aliasing Alerts class name
+		class_alias("Alerts", "show");
+
 		// Aliasing NSY_Router class name
 		class_alias("Core\NSY_Router", "route");
 

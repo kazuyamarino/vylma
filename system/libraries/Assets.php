@@ -98,4 +98,10 @@ Class Assets extends NSY_AssetManager
 		add::script('datatables/init.js', 'text/javascript', 'UTF-8', null);
 	}
 
+	public static function sweetalert_init()
+	{
+		add::script('vendor/sweetalert2.all.min.js', 'text/javascript', 'UTF-8', null);
+		add::script('vendor/polyfill.min.js', 'text/javascript', 'UTF-8', null);
+	}
+
 }
