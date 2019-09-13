@@ -89,12 +89,12 @@ class NSY_Model {
 		}
 	}
 
-	protected function query($query = "") {
+	protected function query($query = null) {
 		$this->query = $query;
 		return $this;
 	}
 
-	protected function vars($variables = "") {
+	protected function vars($variables = null) {
 		$this->variables = $variables;
 		return $this;
 	}
@@ -104,12 +104,12 @@ class NSY_Model {
 		return $this;
 	}
 
-	protected function bind($bind = "") {
+	protected function bind($bind = null) {
 		$this->bind = $bind;
 		return $this;
 	}
 
-	protected function type($type = "") {
+	protected function type($type = null) {
 		$this->type = $type;
 		return $this;
 	}
@@ -568,21 +568,5 @@ class NSY_Model {
 	protected function rollback_trans() {
 		$this->connection->rollback();
     }
-
-	/*
-	The PHP superglobals $_GET and $_POST are used to collect form-data.
-	 */
-	protected function post($param) {
-		 $result = isset($_POST[$param]) ? $_POST[$param] : NULL;
-		 return $result;
- 	}
-
-	protected function get($param) {
-		 $result = isset($_GET[$param]) ? $_GET[$param] : NULL;
-		 return $result;
- 	}
-	/*
-	End The PHP superglobals $_GET and $_POST are used to collect form-data.
-	 */
 
 }

@@ -210,6 +210,53 @@ function get_uri_segment($key) {
 	}
 }
 
+/*
+Create Random Number
+ */
+function generate_num($prefix = 'NSY-', $id_length = 6, $num_length = 10) {
+	$zeros = str_pad(null, $id_length, 0, STR_PAD_LEFT);
+	$nines = str_pad(null, $id_length, 9, STR_PAD_LEFT);
+
+	$ids = str_pad(mt_rand($zeros, $nines), $num_length, $prefix, STR_PAD_LEFT);
+	return $ids;
+}
+
+/*
+The PHP $_SESSION are used to create and show session.
+ */
+function add_session($index = null, $value = null) {
+	$_SESSION[$index] = $value;
+	return $_SESSION[$index];
+}
+
+function show_session($index = null) {
+	if(isset($_SESSION[$index])) {
+		return $_SESSION[$index];
+	} else {
+		return null;
+	}
+}
+
+/*
+PHP Shorthand If/Else Using Ternary Operators
+ */
+function ternary($condition = null, $result_one = null, $result_two = null) {
+	$result = ($condition ? $result_one : $result_two);
+	return $result;
+}
+
+/*
+The PHP superglobals $_GET and $_POST are used to collect form-data.
+ */
+function post($param = null) {
+	 $result = isset($_POST[$param]) ? $_POST[$param] : null;
+	 return $result;
+}
+
+function get($param = null) {
+	 $result = isset($_GET[$param]) ? $_GET[$param] : null;
+	 return $result;
+}
 
 // Define base_url() method
 function base_url($url = "") {

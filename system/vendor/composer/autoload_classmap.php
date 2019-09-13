@@ -37,7 +37,6 @@ return array(
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
     'Controllers\\Welcome' => $baseDir . '/system/controllers/Welcome.php',
     'Core\\NSY_AssetManager' => $baseDir . '/system/core/NSY_AssetManager.php',
-    'Core\\NSY_CSRF' => $baseDir . '/system/core/NSY_CSRF.php',
     'Core\\NSY_Controller' => $baseDir . '/system/core/NSY_Controller.php',
     'Core\\NSY_DB' => $baseDir . '/system/core/NSY_DB.php',
     'Core\\NSY_Model' => $baseDir . '/system/core/NSY_Model.php',

@@ -12,7 +12,7 @@ class NSY_Controller {
     /*
     Set The Variables
      */
-    protected function set($d) {
+    protected function set($d = null) {
         $this->vars = array_merge($this->vars, $d);
     }
 
@@ -41,12 +41,12 @@ class NSY_Controller {
 	/*
 	Start method for variables sequence
 	 */
-	protected function vars($variables = "") {
+	protected function vars($variables = null) {
  		$this->variables = $variables;
  		return $this;
  	}
 
-	protected function bind($bind = "") {
+	protected function bind($bind = null) {
 		$this->bind = $bind;
 		return $this;
 	}
@@ -66,22 +66,6 @@ class NSY_Controller {
 	}
 	/*
 	End method for variables sequence
-	 */
-
-	/*
-	The PHP superglobals $_GET and $_POST are used to collect form-data.
-	 */
-	protected function post($param) {
-		 $result = isset($_POST[$param]) ? $_POST[$param] : NULL;
-		 return $result;
- 	}
-
-	protected function get($param) {
-		 $result = isset($_GET[$param]) ? $_GET[$param] : NULL;
-		 return $result;
- 	}
-	/*
-	End The PHP superglobals $_GET and $_POST are used to collect form-data.
 	 */
 
 }
