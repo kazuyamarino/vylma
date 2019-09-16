@@ -120,6 +120,22 @@ class NSY_Model {
 	}
 
 	/*
+	Helper for NSY_Model to create a sequence of the named placeholders
+	 */
+	protected function sequence() {
+		$in = "";
+		foreach ($this->variables as $i => $item)
+		{
+		    $key = "$this->bind".$i;
+		    $in .= "$key,";
+		    $in_params[$key] = $item; // collecting values into key-value array
+		}
+		$in = rtrim($in,","); // :id0,:id1,:id2
+
+		return [$in, $in_params];
+	}
+
+	/*
 	Helper for PDO FetchAll
 	 */
 	protected function fetch_all() {
@@ -508,22 +524,6 @@ class NSY_Model {
     }
 
 	/*
-	Helper for NSY_Model to create a sequence of the named placeholders
-	 */
-	protected function sequence() {
-		$in = "";
-		foreach ($this->variables as $i => $item)
-		{
-		    $key = "$this->bind".$i;
-		    $in .= "$key,";
-		    $in_params[$key] = $item; // collecting values into key-value array
-		}
-		$in = rtrim($in,","); // :id0,:id1,:id2
-
-		return [$in, $in_params];
-	}
-
-	/*
 	Helper for PDO Emulation False
 	 */
 	protected function emulate_prepares_false() {
@@ -568,5 +568,26 @@ class NSY_Model {
 	protected function rollback_trans() {
 		$this->connection->rollback();
     }
+
+	/*
+	Function for basic field validation (present and neither empty nor only white space
+	 */
+	 protected function not_filled($str = '') {
+ 		if (is_array($str)) {
+ 			echo 'This is an array variable, use "not_filled_array()" method instead';
+ 			exit();
+ 		} else {
+ 			return (!isset($str) || trim($str) === '' || empty($str));
+ 		}
+ 	}
+
+ 	protected function not_filled_array($str = '') {
+ 		if (is_array($str)) {
+ 			return (!isset($str) || empty($str));
+ 		} else {
+ 			echo 'This is not an array variable, use "not_filled()" method instead';
+ 			exit();
+ 		}
+ 	}
 
 }
