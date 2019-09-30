@@ -367,7 +367,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 					</div>
 				</div>
 				<hr>
-				<h5>The awesome Modal!</h5>
+				<h5>The awesome Text Modal!</h5>
 				<div class="buttons">
 					<span class="button is-primary is-medium modal-button" data-target="modal-normal">normal</span>
 					<span class="button is-primary is-medium modal-button" data-target="modal-fadeInScale">fadeInScale</span>
@@ -386,6 +386,17 @@ defined('ROOT') OR exit('No direct script access allowed');
 					<span class="button is-primary is-medium modal-button" data-target="modal-3dSlit">3dSlit</span>
 					<span class="button is-primary is-medium modal-button" data-target="modal-3dRotateFromBottom">3dRotateFromBottom</span>
 					<span class="button is-primary is-medium modal-button" data-target="modal-3dRotateFromLeft">3dRotateFromLeft</span>
+				</div>
+				<h5>Image Modal</h5>
+				<div class="buttons">
+					<span class="button is-warning is-medium modal-button" data-target="modal-image">Image modal</span>
+					<span class="button is-warning is-medium modal-button" data-target="modal-image2">Image modal "huge"</span>
+					<span class="button is-warning is-medium modal-button" data-target="modal-image3">Image modal "huge" (very high)</span>
+					<span class="button is-warning is-medium modal-button" data-target="modal-card">Card "tiny"</span>
+					<span class="button is-warning is-medium modal-button" data-target="modal-fadeInScale-fs">Modal Card "full-screen"</span>
+					<span class="button is-warning is-medium modal-button" data-target="modal-3dSign-top">3dSign "top"</span>
+					<span class="button is-warning is-medium modal-button" data-target="modal-3dSign-bottom">3dSignDown "bottom"</span>
+					<span class="button is-warning is-medium modal-button" data-target="modal-bgImage">Background Image</span>
 				</div>
 
 				<!-- normal -->
@@ -716,7 +727,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 					<div class="modal-background"></div>
 					<div class="modal-content is-image">
 						<!-- content -->
-						<img src="img/moon.jpg" alt="Moon">
+						<img src="public/img/moon.jpg" alt="Moon">
 						<!-- end content -->
 					</div>
 					<button class="modal-close is-large" aria-label="close"></button>
@@ -727,7 +738,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 					<div class="modal-background"></div>
 					<div class="modal-content is-huge is-image">
 						<!-- content -->
-						<img src="img/moon.jpg" alt="Moon">
+						<img src="public/img/moon.jpg" alt="Moon">
 						<!-- end content -->
 					</div>
 					<button class="modal-close is-large" aria-label="close"></button>
@@ -738,7 +749,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 					<div class="modal-background"></div>
 					<div class="modal-content is-huge is-image">
 						<!-- content -->
-						<img src="img/tower.jpg" alt="Tower">
+						<img src="public/img/tower.jpg" alt="Tower">
 						<!-- end content -->
 					</div>
 					<button class="modal-close is-large" aria-label="close"></button>
@@ -827,14 +838,14 @@ defined('ROOT') OR exit('No direct script access allowed');
 						<div class="card">
 							<div class="card-image">
 								<figure class="image is-4by3">
-									<img src="img/card.jpg" alt="Placeholder image">
+									<img src="public/img/card.jpg" alt="Placeholder image">
 								</figure>
 							</div>
 							<div class="card-content">
 								<div class="media">
 									<div class="media-left">
 										<figure class="image is-48x48">
-											<img src="img/avatar.jpg" alt="Placeholder image">
+											<img src="public/img/avatar.jpg" alt="Placeholder image">
 										</figure>
 									</div>
 									<div class="media-content">
@@ -859,11 +870,11 @@ defined('ROOT') OR exit('No direct script access allowed');
 				</div>
 
 				<div id="modal-bgImage" class="modal modal-fx-3dSignDown">
-					<div class="modal-background" style="background-image:url(img/moon.jpg)"></div>
+					<div class="modal-background" style="background-image:url(public/img/moon.jpg)"></div>
 					<div class="modal-content">
 						<!-- content -->
 						<pre><code class="html">&lt;div id="modal-id" class="modal <em>modal-fx-fadeInScale</em>"&gt;
-							&lt;div class="modal-background" style="background-image:url(img/moon.jpg)"&gt;&lt;/div&gt;
+							&lt;div class="modal-background" style="background-image:url(public/img/moon.jpg)"&gt;&lt;/div&gt;
 							&lt;div class="modal-content"&gt;
 							&lt;!-- Any other Bulma elements you want --&gt;
 							&lt;/div&gt;
