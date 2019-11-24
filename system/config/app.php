@@ -1,4 +1,6 @@
 <?php
+defined('ROOT') OR exit('No direct script access allowed');
+
 // Application config
 return [
 
@@ -41,6 +43,15 @@ return [
     */
 	'csrf_token' => 'false',
 
+	/*
+    |--------------------------------------------------------------------------
+    | Default Database Transaction Setting
+    |--------------------------------------------------------------------------
+    |
+    | set the default 'on' or 'off'
+    |
+    */
+	'transaction' => 'off',
 
 	/*
     |--------------------------------------------------------------------------

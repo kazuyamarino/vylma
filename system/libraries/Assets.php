@@ -1,4 +1,6 @@
 <?php
+namespace Libraries;
+
 /*
 Hi Welcome to NSY Asset Manager.
 The easiest & best asset manager in history
@@ -26,9 +28,9 @@ pull::footer_assets();
 */
 defined('ROOT') OR exit('No direct script access allowed');
 
-use Core\NSY_AssetManager;
+use Core\NSY_AssetManager as add;
 
-Class Assets extends NSY_AssetManager
+Class Assets extends \Core\NSY_AssetManager
 {
 
 	public static function header_assets()
@@ -96,6 +98,12 @@ Class Assets extends NSY_AssetManager
 	{
 		// Datatables init
 		add::script('datatables/init.js', 'text/javascript', 'UTF-8', null);
+	}
+
+	public static function datatables_crud_init()
+	{
+		// Datatables init
+		add::script('datatables/init_crud.js', 'text/javascript', 'UTF-8', null);
 	}
 
 	public static function sweetalert_init()

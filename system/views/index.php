@@ -6,11 +6,11 @@ defined('ROOT') OR exit('No direct script access allowed');
 		<hr>
 		<div class="columns content">
 			<div class="column is-full">
-				<h4>Hi, iam NSY!&nbsp;|&nbsp;<a href="<?php echo base_url('hmvc'); ?>">Go To HMVC Page</a></h4>
+				<h4>Hi, iam NSY!&nbsp;|&nbsp;<a href="<?php echo base_url('hmvc'); ?>">Go To HMVC Page</a>&nbsp;|&nbsp;<a href="<?php echo base_url('crud'); ?>">Go To CRUD Example</a></h4>
 
 				<div class="notification is-info">
 					<button class="delete"></button>
-					<p>NSY is a simple PHP Framework that works well on MVC or HMVC mode, its made with <a target="_blank" href="https://html5boilerplate.com/">HTML5 Boilerplate</a> and <a target="_blank" href="http://foundation.zurb.com/">Foundation CSS Framework</a>. NSY also provides <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a> and several optimizations for <a target="_blank" href="https://www.datatables.net/">Datatables</a> plugin.</p>
+					<p>NSY is a simple PHP Framework that works well on MVC or HMVC mode, its made with <a target="_blank" href="https://html5boilerplate.com/">HTML5 Boilerplate</a> and <a target="_blank" href="https://bulma.io/">Bulma CSS Framework</a>. NSY also provides <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a> and several optimizations for <a target="_blank" href="https://www.datatables.net/">Datatables</a> plugin.</p>
 				</div>
 
 				<div class="tile is-ancestor">
@@ -18,10 +18,10 @@ defined('ROOT') OR exit('No direct script access allowed');
 						<div class="tile is-child box">
 							<h3>NSY Guide & Example</h3>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-foundation/blob/master/README.md#how-to-dating-with-nsy">How to dating with NSY?</a><br />The setup.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#how-to-dating-with-nsy">How to dating with NSY?</a><br />The setup.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-foundation/blob/master/README.md#nsy-foundation-contain-package-">NSY contain package</a><br />The package inside NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#nsy-contain-package-">NSY contain package</a><br />The package inside NSY.</p>
 							</div>
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#crud-example">NSY CRUD Example</a><br />The CRUD example build by NSY.</p>

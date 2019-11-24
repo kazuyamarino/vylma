@@ -10,30 +10,29 @@
         }
     ],
 	"require": {
-        "nesbot/carbon": "^2.25.3",
-        "vlucas/phpdotenv": "^3.6",
+        "nesbot/carbon": "^2.27.0",
+        "vlucas/phpdotenv": "^3.6.0",
 		"nicolab/php-ftp-client": "^1.5.1"
     },
     "autoload": {
-        "psr-4": {
+		"psr-4": {
+            "Routes\\": "system/routes/",
+            "Libraries\\": "system/libraries/",
             "Core\\": "system/core/",
             "Models\\": "system/models/",
             "Controllers\\": "system/controllers/",
             "Modules\\Models\\": [
-				"system/modules/homepage/models/"
+				"system/modules/homepage/models/",
+				"system/modules/crud/models/"
 			],
 			"Modules\\Controllers\\": [
-				"system/modules/homepage/controllers/"
+				"system/modules/homepage/controllers/",
+				"system/modules/crud/controllers/"
 			]
         },
         "files": [
-			"system/routes/Web.php",
-			"system/routes/Api.php",
-			"system/core/NSY_System.php",
-			"system/core/NSY_CSRF.php",
-			"system/libraries/Assets.php",
-			"system/libraries/Alerts.php",
-			"system/helpers/NSY_Helper.php"
+			"system/helpers/NSY_Helpers.php",
+			"system/helpers/CI_Helpers.php"
 		]
     },
     "config": {

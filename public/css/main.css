@@ -71,3 +71,7 @@ header {
 .button-group .content a {
 	margin-bottom: 0.2em;
 }
+
+.action-icon a:first-child, .action-btn button:first-child {
+	margin-right: 2em;
+}

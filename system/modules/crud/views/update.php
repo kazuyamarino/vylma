@@ -1,0 +1,80 @@
+<?php
+defined('ROOT') OR exit('No direct script access allowed');
+?>
+<div class="wrap">
+	<hr>
+	<div class="columns is-centered content">
+		<div class="column is-5">
+			<div class="field is-grouped">
+				<div class="control">
+					<a class="button is-success" href="<?php echo base_url(); ?>"><i class="fas fa-arrow-left"></i>&nbsp;Back</a>
+				</div>
+			</div>
+
+			<h5>Users Information</h5>
+			<form action="<?php echo base_url('crud/update/'. $data['id']. ''); ?>" method="POST" data-abide novalidate>
+				<div data-abide-error class="is-error notification alert">
+					<p>There are some errors in your form.</p>
+				</div>
+
+				<div class="field">
+					<label class="label">Username&nbsp;<small>(required)</small>
+						<input class="input" type="text" name="username" id="username-help" placeholder="3 - 50 characters" value="<?php echo $data['user_name']; ?>" pattern="^[a-z0-9\._-]{3,50}$" required>
+						<span class="help is-error is-danger">
+							<ul>
+								<li>Username must be lowercase</li>
+								<li>Can only contain dot (&nbsp;.&nbsp;), underscore (&nbsp;_&nbsp;), & minus (&nbsp;-&nbsp;)</li>
+							</ul>
+						</span>
+					</label>
+					<p class="help" id="username-help">Enter your username here.</p>
+				</div>
+
+				<div class="field">
+					<label class="label">Password
+						<input class="input" type="password" name="password" id="password-first" placeholder="5 - 16 characters" pattern="^[a-zA-Z0-9\.]{5,16}$">
+						<span class="help is-error is-danger">
+							<ul>
+								<li>Password is required.</li>
+								<li>Can only contain dot (&nbsp;.&nbsp;)</li>
+							</ul>
+						</span>
+					</label>
+				</div>
+
+				<div class="field">
+					<label class="label">Confirm Password
+						<input class="input" type="password" placeholder="5 - 16 characters" pattern="^[a-zA-Z0-9\.]{5,16}$" data-equalto="password-first">
+						<span class="help is-error is-danger">The password did not match</span>
+					</label>
+					<p class="help" id="password-help">Enter your password here.</p>
+				</div>
+
+				<div class="field">
+					<label class="label" for="radio-stat">Status Active&nbsp;<small>(required)</small></label>
+					<div id="radio-stat" class="radio-group">
+						<div class="control">
+							<label class="radio">
+								<input type="radio" name="status" value="Y" id="act-stat" <?php echo (('Y' == $data['user_status']) ? 'checked' : ""); ?> required>&nbsp;Yes
+							</label>
+							<label class="radio">
+								<input type="radio" name="status" value="N" id="deact-stat" <?php echo (('N' == $data['user_status']) ? 'checked' : ""); ?>>&nbsp;No
+							</label>
+						</div>
+						<span class="help">Must select at least one</span>
+					</div>
+				</div>
+
+				<div class="field is-grouped">
+					<div class="control">
+						<button class="button is-link" type="submit">Submit</button>
+					</div>
+					<div class="control">
+						<button class="button is-text" type="reset">Reset</button>
+					</div>
+				</div>
+			</form>
+			<br>
+		</div>
+	</div>
+</div>

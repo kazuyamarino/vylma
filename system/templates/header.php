@@ -21,7 +21,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 		<div class="column is-full">
 			<div class="columns is-vcentered">
 				<div class="column is-2">
-					<img src="<?php echo IMG_DIR ?>logo.png" width="200"/>
+					<a href="<?php echo base_url(); ?>"><img src="<?php echo IMG_DIR ?>logo.png" width="200"/></a>
 				</div>
 				<div class="column is-8">
 					<h2>Welcome to Project Vylma</h2>

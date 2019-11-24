@@ -1,4 +1,6 @@
 <?php
+defined('ROOT') OR exit('No direct script access allowed');
+
 // Site config
 return [
 
@@ -10,7 +12,7 @@ return [
     | This value is for <title> tag.
 	|
     */
-	'sitetitle' => 'Vylma is NSY PHP Framework + Bulma CSS',
+	'sitetitle' => 'Vylma - NSY PHP Framework + Bulma CSS',
 
 	/*
     |--------------------------------------------------------------------------
