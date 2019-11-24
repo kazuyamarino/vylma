@@ -1,18 +1,21 @@
-## Vylma
+## Vylma Homepage & CRUD Example
 NSY PHP Framework Example with HTML5 Boilerplate and Bulma CSS Framework. This also provides Font-Awesome and several optimizations for Datatables plugin.
+
+This is an example of a `CRUD` program & homepage using the NSY Framework ([Vylma Project](https://github.com/kazuyamarino/vylma)), i hope it can be useful for everyone to start using NSY as the project framework. I made this because I know that everyone loves `CRUD`..so Enjoy it!
 
 Site example :
 [https://vylma.kazuyamarino.com](https://vylma.kazuyamarino.com)
 
-## How to dating with NSY?
+## Lets start!
 * Simply rename the folder that has been downloaded to `vylma` & copy it to your `html` or `htdocs` folder or anythings folder.
 * For apache, please go to the `docs/apache` folder and read the Readme.txt.
 * For nginx, please go to the `docs/nginx` folder.
 * Go to the `docs/env` folder and copy the `.env.example` to root folder, and rename it to `.env`.
+* Import database example. (see below)
 * And save the date..
 
-## CRUD Example?
-Here it is [Vylma CRUD Example](https://github.com/kazuyamarino/vylma-crud).
+## Database Example
+There is an example database (sql file) in the `docs/db_example/` folder.
 
 ## Vylma contain package :
 * [Datatables jQuery Javascript Library](https://www.datatables.net/) with Responsive Plugin
