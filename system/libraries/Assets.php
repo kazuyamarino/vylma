@@ -54,10 +54,10 @@ Class Assets extends \Core\NSY_AssetManager
 
 		// Bulma CSS
 		add::link('bulma/css/bulma.min.css', 'stylesheet', 'text/css');
-		add::link('bulma/css/modal-fx.min.css', 'stylesheet', 'text/css');
+		add::link('vendor/modal-fx.min.css', 'stylesheet', 'text/css');
 
 		// Datatable CSS
-		add::link('bulma/css/dataTables.bulma.min.css', 'stylesheet', 'text/css');
+		add::link('vendor/dataTables.bulma.min.css', 'stylesheet', 'text/css');
 
 		// Tooltip CSS
 		add::link('vendor/simptip.min.css', 'stylesheet', 'text/css');
@@ -73,19 +73,20 @@ Class Assets extends \Core\NSY_AssetManager
 	{
 		// Jquery JS
 		add::script('vendor/jquery.min.js', 'text/javascript', 'UTF-8', null);
+		add::script('vendor/jquery-migrate-3.1.0.min.js', 'text/javascript', 'UTF-8', null);
 
 		// Norma JS
-		add::script('bulma/norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
+		add::script('vendor/norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
 
 		// WhatInput JS
 		add::script('vendor/what-input.min.js', 'text/javascript', 'UTF-8', null);
 
 		// Datatables JS
 		add::script('vendor/jquery.dataTables.min.js', 'text/javascript', 'UTF-8', null);
-		add::script('bulma/dataTables.bulma.min.js', 'text/javascript', 'UTF-8', null);
+		add::script('vendor/dataTables.bulma.min.js', 'text/javascript', 'UTF-8', null);
 
 		// Bulma modal-fx JS
-		add::script('bulma/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
+		add::script('vendor/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
 
 		// System JS
 		add::script('config/system.js', 'text/javascript', 'UTF-8', null);
