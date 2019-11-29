@@ -2,15 +2,13 @@
 defined('ROOT') OR exit('No direct script access allowed');
 ?>
 <!doctype html>
-<html class="no-js" lang="<?php echo LANGUAGE_CODE; ?>">
+<html class="no-js" lang="@( LANGUAGE_CODE )">
 <head>
-	<?php
-	// call sweetalert
-	pull::sweetalert_init();
+	<!-- call sweetalert -->
+	@( pull::sweetalert_init() )
 
-	// call header assets method
-	pull::header_assets();
-	?>
+	<!-- call header assets method -->
+	@( pull::header_assets() )
 </head>
 <body>
 	<!--[if lte IE 9]>
@@ -21,7 +19,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 		<div class="column is-full">
 			<div class="columns is-vcentered">
 				<div class="column is-2">
-					<a href="<?php echo base_url(); ?>"><img src="<?php echo IMG_DIR ?>logo.png" width="200"/></a>
+					<a href="@( base_url() )"><img src="@( IMG_DIR.'logo.png' )" width="200"/></a>
 				</div>
 				<div class="column is-8">
 					<h2>Welcome to Project Vylma</h2>

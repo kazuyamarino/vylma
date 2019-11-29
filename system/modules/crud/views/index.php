@@ -8,9 +8,9 @@ show::pull_alerts($message);
 	<hr>
 	<div class="columns is-centered content">
 		<div class="column is-5">
-			<h5 class="has-text-centered"><a href="<?php echo base_url(); ?>">Back</a></h5>
+			<h5 class="has-text-centered"><a href="@( base_url() )">Back</a></h5>
 			<h5>Users Registration</h5>
-			<form action="<?php echo base_url('crud/insert'); ?>" method="POST" data-abide novalidate>
+			<form action="@( base_url('crud/insert') )" method="POST" data-abide novalidate>
 				<div data-abide-error class="is-error notification alert">
 					<p>There are some errors in your form.</p>
 				</div>
@@ -100,7 +100,7 @@ show::pull_alerts($message);
 
 	<div class="columns content">
 		<div class="column is-full">
-			<form id="multidelete-frm" action="<?php echo base_url('crud/multidelete'); ?>" method="POST" data-abide novalidate>
+			<form id="multidelete-frm" action="@( base_url('crud/multidelete') )" method="POST" data-abide novalidate>
 				<div class="columns">
 					<div class="column is-6">
 						<h5>Users Database</h5>

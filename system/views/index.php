@@ -6,7 +6,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 		<hr>
 		<div class="columns content">
 			<div class="column is-full">
-				<h4>Hi, iam NSY!&nbsp;|&nbsp;<a href="<?php echo base_url('hmvc'); ?>">Go To HMVC Page</a>&nbsp;|&nbsp;<a href="<?php echo base_url('crud'); ?>">Go To CRUD Example</a></h4>
+				<h4>Hi, iam NSY!&nbsp;|&nbsp;<a href="@( base_url('hmvc') )">Go To HMVC Page</a>&nbsp;|&nbsp;<a href="@( base_url('crud') )">Go To CRUD Example</a></h4>
 
 				<div class="notification is-info">
 					<button class="delete"></button>
@@ -850,13 +850,13 @@ defined('ROOT') OR exit('No direct script access allowed');
 									</div>
 									<div class="media-content">
 										<p class="title is-4">John Doe</p>
-										<p class="subtitle is-6">@johndoe</p>
+										<p class="subtitle is-6">&amp;johndoe</p>
 									</div>
 								</div>
 
 								<div class="content">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-									<a>@bulmaio</a>.
+									<a>&amp;bulmaio</a>.
 									<a href="#">#css</a>
 									<a href="#">#responsive</a>
 									<br>

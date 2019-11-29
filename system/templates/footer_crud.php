@@ -1,13 +1,12 @@
 <?php
 defined('ROOT') OR exit('No direct script access allowed');
 ?>
-
 <!-- Footer are 'sticky' -->
 <footer class="columns footer content">
 	<div class="column is-4">
 		<p><i class="fab fa-html5 fa-3x"></i>&nbsp;<i class="fab fa-css3 fa-3x"></i></p>
 		<p>This is a Sticky Footer.</p>
-		<p><a target="_blank" href="mailto:admin@kazuyamarino.com">Vikry Yuansah </a><i class="fas fa-forward"></i> <a href="<?php echo base_url(); ?>">NSY 2015 - <?php echo date("Y"); ?></a></p>
+		<p><a target="_blank" href="@raw( 'mailto:admin@kazuyamarino.com' )">Vikry Yuansah </a><i class="fas fa-forward"></i> <a href="@( base_url() )">NSY 2015 - @( date("Y") )</a></p>
 	</div>
 	<div class="column is-4">
 		<p><strong><a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></strong> is The iconic font and CSS toolkit</p>
@@ -21,7 +20,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 			<i class="fab fa-linkedin fa-2x fa-fw"></i><a class="list-group-item" target="_blank" href="https://id.linkedin.com/in/vikry-yuansyah-1265a4a7">&nbsp; Linkedin</a>
 		</div>
 		<div class="content">
-			<i class="fas fa-envelope fa-2x fa-fw"></i><a class="list-group-item" href="mailto:admin@kazuyamarino.com">&nbsp; Email</a>
+			<i class="fas fa-envelope fa-2x fa-fw"></i><a class="list-group-item" href="@raw( 'mailto:admin@kazuyamarino.com' )">&nbsp; Email</a>
 		</div>
 	</div>
 	<div class="column is-4">
@@ -48,13 +47,10 @@ defined('ROOT') OR exit('No direct script access allowed');
 		</div>
 	</div>
 </footer>
+<!-- call footer assets -->
+@( pull::footer_assets() )
 
-<?php
-// call footer assets
-pull::footer_assets();
-
-// call datatable init asset
-pull::datatables_crud_init();
-?>
+<!-- call datatable init asset -->
+@( pull::datatables_crud_init() )
 </body>
 </html>

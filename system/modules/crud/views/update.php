@@ -7,19 +7,19 @@ defined('ROOT') OR exit('No direct script access allowed');
 		<div class="column is-5">
 			<div class="field is-grouped">
 				<div class="control">
-					<a class="button is-success" href="<?php echo base_url(); ?>"><i class="fas fa-arrow-left"></i>&nbsp;Back</a>
+					<a class="button is-success" href="@( base_url() )"><i class="fas fa-arrow-left"></i>&nbsp;Back</a>
 				</div>
 			</div>
 
 			<h5>Users Information</h5>
-			<form action="<?php echo base_url('crud/update/'. $data['id']. ''); ?>" method="POST" data-abide novalidate>
+			<form action="@( base_url('crud/update/'. $data['id']. '') )" method="POST" data-abide novalidate>
 				<div data-abide-error class="is-error notification alert">
 					<p>There are some errors in your form.</p>
 				</div>
 
 				<div class="field">
 					<label class="label">Username&nbsp;<small>(required)</small>
-						<input class="input" type="text" name="username" id="username-help" placeholder="3 - 50 characters" value="<?php echo $data['user_name']; ?>" pattern="^[a-z0-9\._-]{3,50}$" required>
+						<input class="input" type="text" name="username" id="username-help" placeholder="3 - 50 characters" value="@( $data['user_name'] )" pattern="^[a-z0-9\._-]{3,50}$" required>
 						<span class="help is-error is-danger">
 							<ul>
 								<li>Username must be lowercase</li>
@@ -55,10 +55,10 @@ defined('ROOT') OR exit('No direct script access allowed');
 					<div id="radio-stat" class="radio-group">
 						<div class="control">
 							<label class="radio">
-								<input type="radio" name="status" value="Y" id="act-stat" <?php echo (('Y' == $data['user_status']) ? 'checked' : ""); ?> required>&nbsp;Yes
+								<input type="radio" name="status" value="Y" id="act-stat" @( ternary( ('Y' == $data['user_status']), 'checked', '') ) required>&nbsp;Yes
 							</label>
 							<label class="radio">
-								<input type="radio" name="status" value="N" id="deact-stat" <?php echo (('N' == $data['user_status']) ? 'checked' : ""); ?>>&nbsp;No
+								<input type="radio" name="status" value="N" id="deact-stat" @( ternary( ('N' == $data['user_status']), 'checked', '' ) )>&nbsp;No
 							</label>
 						</div>
 						<span class="help">Must select at least one</span>
