@@ -17,8 +17,8 @@ body, h1, h2, h3, h4, h5 {
 }
 
 /*
-* Styling for Sticky Footer with Flexbox
-*/
+ * Styling for Sticky Footer with Flexbox
+ */
 body {
 	min-height: 100%;
 	display: flex;
@@ -30,7 +30,7 @@ body {
 }
 
 /*
-norma v0.0.5 | MIT License
+ * norma v0.0.5 | MIT License
  */
 .is-error {
 	display: none;
