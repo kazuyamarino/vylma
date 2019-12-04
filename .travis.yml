@@ -1,7 +1,11 @@
 language: php
 
 php:
-  - 7.0
-  - 7.1
+  - 5.6
   - 7.2
   - 7.3
+
+env:
+  - APP_ENV=development
+  - APP_DIR=vylma
+  - DB_CONNECTION=mysql
