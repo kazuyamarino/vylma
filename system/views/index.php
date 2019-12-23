@@ -21,7 +21,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#how-to-dating-with-nsy">How to dating with NSY?</a><br />The setup.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#vylma-contain-package-">NSY contain package</a><br />The package inside NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#vylma-contain-package-">Vylma contain package</a><br />The package inside NSY.</p>
 							</div>
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#crud-example">NSY CRUD Example</a><br />The CRUD example build by NSY.</p>
