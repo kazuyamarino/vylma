@@ -30,7 +30,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md">NSY User Guide</a><br />The guide before starting to use NSY.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md">NSY System Guide</a><br />The guide for starting to use NSY System.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md">NSY System Guide Part 1</a>&nbsp;|&nbsp;<a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md">NSY System Guide Part 2</a><br />The guide for starting to use NSY System.</p>
 							</div>
 						</div>
 						<div class="tile is-child box">
@@ -45,13 +45,25 @@ defined('ROOT') OR exit('No direct script access allowed');
 							<div class="content">
 								<p><a target="_blank" href="https://h5bp.github.io/">Other Projects</a><br />See another projects.</p>
 							</div>
+							<div class="notification is-success">
+								<button class="delete"></button>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+								consectetur adipiscing elit
+							</div>
 						</div>
 					</div>
 					<div class="tile is-parent">
 						<div class="tile is-child box">
 							<h3>NSY Features</h3>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#nsy-feature-">NSY Features</a><br />The features of NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md#primary--secondary-database-connections">Primary and Secondary Database Connection</a><br />Database connection.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md#aurora-file-export">Aurora File Export</a><br />Aurora library.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#routes">NSY Routing System</a><br />The Routes.</p>
 							</div>
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#mvc--hmvc">MVC & HMVC</a><br />The design pattern.</p>
@@ -66,22 +78,31 @@ defined('ROOT') OR exit('No direct script access allowed');
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#composer-on-nsy-framework">Composer on NSY</a><br />NSY support Composer for install/update libraries.</p>
 							</div>
 							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#framework-configuration">Framework Configuration</a><br />Simple config.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md#security-helper">Anti XSS & CSRF Token</a><br />Security helper.</p>
+							</div>
+							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#nsy-cli-command-line">NSY CLI</a><br />A commands to facilitate users in operating NSY.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#routes">Routing</a><br />Simple routing system.</p>
+								<p><a target="_blank" href="https://carbon.nesbot.com/docs/">Carbon DateTime</a><br />Simple PHP API extension for DateTime.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md#nsy-ftp-client-library">FTP Client</a><br />A flexible FTP and SSL-FTP client for PHP.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md#cookie-library">Cookie Library</a><br />PHP library for handling cookies.</p>
 							</div>
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#helpers">NSY Helper</a><br />Creating custom methods with ease.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#framework-configuration">Framework Configuration</a><br />Simple config.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md#razr---the-powerful-php-template-engine">Razr Template Engine</a><br />Razr - The powerful PHP template engine.</p>
 							</div>
-							<div class="notification is-success">
-								<button class="delete"></button>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
-								consectetur adipiscing elit
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md#nsy-migrations">Database Migrations</a><br />Simple database migration.</p>
 							</div>
 						</div>
 					</div>
