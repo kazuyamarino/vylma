@@ -7,7 +7,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 	<div class="column is-4">
 		<p><i class="fab fa-html5 fa-3x"></i>&nbsp;<i class="fab fa-css3 fa-3x"></i></p>
 		<p>This is a Sticky Footer.</p>
-		<p><a target="_blank" href="@raw( 'mailto:admin@kazuyamarino.com' )">Vikry Yuansah </a><i class="fas fa-forward"></i> <a href="@( base_url() )">NSY 2015 - @( date("Y") )</a></p>
+		<p><a target="_blank" href="@raw( 'mailto:admin@kazuyamarino.com' )">Vikry Yuansah </a><i class="fas fa-forward"></i> <a href="@( base_url() )">Vylma</a> @(VERSION), 2018 - @( date("Y") ).</p>
 	</div>
 	<div class="column is-4">
 		<p><strong><a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></strong> is The iconic font and CSS toolkit</p>
