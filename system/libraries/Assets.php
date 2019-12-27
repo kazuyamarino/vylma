@@ -62,6 +62,9 @@ Class Assets extends \Core\NSY_AssetManager
 		// Tooltip CSS
 		add::link('vendor/simptip.min.css', 'stylesheet', 'text/css');
 
+		// Flatpickr CSS
+		add::link('vendor/flatpickr.min.css', 'stylesheet', 'text/css');
+
 		// Main Style
 		add::link('main.css', 'stylesheet', 'text/css');
 
@@ -87,6 +90,9 @@ Class Assets extends \Core\NSY_AssetManager
 
 		// Bulma modal-fx JS
 		add::script('vendor/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
+
+		// Flatpickr JS
+		add::script('vendor/flatpickr.min.js', 'text/javascript', 'UTF-8', null);
 
 		// System JS
 		add::script('config/system.js', 'text/javascript', 'UTF-8', null);

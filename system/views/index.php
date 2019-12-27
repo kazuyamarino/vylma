@@ -128,6 +128,24 @@ defined('ROOT') OR exit('No direct script access allowed');
 					</div>
 
 					<div class="field">
+						<label class="label">Single Date <small>(required)</small>
+							<input type="text" class="input single-date" placeholder="Single Date.." required>
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label">Range Date <small>(required)</small>
+							<input type="text" class="input range-date" placeholder="Range Date.." required>
+						</label>
+					</div>
+
+					<div class="field">
+						<label class="label">Alternative Date <small>(required)</small>
+							<input type="text" class="input alt-date" placeholder="Alternative Date..">
+						</label>
+					</div>
+
+					<div class="field">
 						<label class="label">Nothing Required!
 							<input type="text" class="input" placeholder="Use me, or don't" aria-describedby="exampleHelpText" required data-abide-ignore>
 							<span class="help">This input is ignored by Abide using `data-abide-ignore`</span>

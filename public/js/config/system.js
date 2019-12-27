@@ -1,5 +1,5 @@
-/*
-BASE_URL Config Javascript
+/**
+ * BASE_URL Config Javascript
 */
 // change according to the name of your project folder
 var dirname = "vylma"; // defined
@@ -31,17 +31,17 @@ function base_url(url) {
 	}
 }
 
-/*
-Bulma Notification JS
+/**
+ * Bulma Notification JS
  */
 $(document).ready(function() {
 	$(".notification > button.delete").click(function() {
-		$(this).parent().addClass('is-hidden');
+		$(this).parent().addClass("is-hidden");
 		return false;
 	});
 });
 
-/*
-Norma JS Initialize
+/**
+ * Norma JS Initialize
  */
 $(document).norma();
