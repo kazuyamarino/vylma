@@ -29,7 +29,7 @@ There are 2 ways to setup NSY.
 ```
 // Apache Readme.txt
 1. Copy .htaccess inside 'for_public' folder to 'public' folder
-2. Copy .htaccess inside 'for_root' folder to 'root(shyffon)' folder
+2. Copy .htaccess inside 'for_root' folder to 'root(vylma)' folder
 ```
 * For nginx, please go to the `docs/nginx` folder.
 ```
