@@ -38,29 +38,37 @@ Class Assets extends \System\Core\NSY_AssetManager
 	public static function header_assets()
 	{
 		// Site Title
-		Add::custom('<title>' . SITETITLE . ' | ' . VERSION . '</title>');
-		// Meta Tag
-		Add::meta('charset="utf-8"', null);
-		Add::meta('http-equiv="x-ua-compatible"', 'ie=edge');
-		Add::meta('name="description"', SITEDESCRIPTION);
-		Add::meta('name="keywords"', SITEKEYWORDS);
-		Add::meta('name="author"', SITEAUTHOR);
-		Add::meta('name="viewport"', 'width=device-width, initial-scale=1, shrink-to-fit=no');
+        Add::custom('<title>' . get_title() . ' ' . get_version() . ' | ' . get_codename() . '</title>');
+
+        // Meta Tag
+        Add::meta('charset="utf-8"', null);
+        Add::meta('http-equiv="x-ua-compatible"', 'ie=edge');
+        Add::meta('name="description"', get_desc());
+        Add::meta('name="keywords"', get_keywords());
+        Add::meta('name="author"', get_author());
+        Add::meta('name="viewport"', 'width=device-width, initial-scale=1, shrink-to-fit=no');
+
 		// Favicon
 		Add::link('favicon.png', 'shortcut icon', null);
+
 		// Font Awesome CSS
 		Add::link('vendor/all.min.css', 'stylesheet', 'text/css');
+
 		// Bulma CSS
 		Add::link('bulma/css/bulma.min.css', 'stylesheet', 'text/css');
 		Add::link('vendor/modal-fx.min.css', 'stylesheet', 'text/css');
+
 		// Datatable CSS
 		Add::link('vendor/dataTables.bulma.min.css', 'stylesheet', 'text/css');
+
 		// Tooltip CSS
 		Add::link('vendor/simptip.min.css', 'stylesheet', 'text/css');
 		// Flatpickr CSS
 		Add::link('vendor/flatpickr.min.css', 'stylesheet', 'text/css');
+
 		// Main Style
 		Add::link('main.css', 'stylesheet', 'text/css');
+
 		// Modernizr JS
 		Add::script('vendor/modernizr.min.js', 'text/javascript', 'UTF-8', null);
 	}
