@@ -1,7 +1,6 @@
 <?php
 defined('ROOT') OR exit('No direct script access allowed');
 ?>
-
 <!-- Footer are 'sticky' -->
 <footer class="columns footer content">
 	<div class="column is-4">
@@ -49,9 +48,9 @@ defined('ROOT') OR exit('No direct script access allowed');
 	</div>
 </footer>
 <!-- call footer assets -->
-@( pull::footer_assets() )
+@( Pull::footer_assets() )
 
 <!-- call datatable init asset -->
-@( pull::datatables_init() )
+@( Pull::datatables_init() )
 </body>
 </html>

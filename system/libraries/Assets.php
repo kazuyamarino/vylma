@@ -1,122 +1,103 @@
 <?php
-namespace Libraries;
-
-/*
-Hi Welcome to NSY Asset Manager.
-The easiest & best asset manager in history
-Made with love by Vikry Yuansah
-
-How to use it? Simply follow this format.
-Create <meta> tag :
-add::meta('name', 'content');
-
-Create <link> tag :
-add::link('filename/url_filename', 'attribute_rel', 'attribute_type');
-
-Create <script> tag :
-add::script('filename/url_filename', 'attribute_type', 'attribute_charset', 'async defer');
-
-You can write any html tags with custom method :
-add::custom('anythings');
-
-After that, to use it in View, you only need to call the static method name that you created like this :
-pull::method_name();
-
-For example :
-pull::header_assets();
-pull::footer_assets();
+/**
+ * Attention, don't try to change the structure of the code, delete, or change.
+ * Because there is some code connected to the NSY system. So, be careful.
+ *
+ * Hi Welcome to NSY Assets Manager.
+ * The easiest & best assets manager in history
+ * Made with love by Vikry Yuansah
+ *
+ * How to use it? Simply follow this format.
+ * Create <meta> tag :
+ * Add::meta('name', 'content');
+ *
+ * Create <link> tag :
+ * Add::link('filename/url_filename', 'attribute_rel', 'attribute_type');
+ *
+ * Create <script> tag :
+ * Add::script('filename/url_filename', 'attribute_type', 'attribute_charset', 'async defer');
+ *
+ * You can write any html tags with custom method :
+ * Add::custom('anythings');
+ *
+ * After that, to use it in View, you only need to call the static method name that you created like this :
+ * Pull::method_name();
+ *
+ * For example :
+ * Pull::header_assets();
+ * Pull::footer_assets();
 */
+namespace System\Libraries;
+
 defined('ROOT') OR exit('No direct script access allowed');
 
-use Core\NSY_AssetManager as add;
+use System\Core\NSY_AssetManager as Add;
 
-Class Assets extends \Core\NSY_AssetManager
+Class Assets extends \System\Core\NSY_AssetManager
 {
-
 	public static function header_assets()
 	{
 		// Site Title
-		add::custom('<title>' . SITETITLE . ' | ' . VERSION . '</title>');
-
+		Add::custom('<title>' . SITETITLE . ' | ' . VERSION . '</title>');
 		// Meta Tag
-		add::meta('charset="utf-8"', null);
-		add::meta('http-equiv="x-ua-compatible"', 'ie=edge');
-		add::meta('name="description"', SITEDESCRIPTION);
-		add::meta('name="keywords"', SITEKEYWORDS);
-		add::meta('name="author"', SITEAUTHOR);
-		add::meta('name="viewport"', 'width=device-width, initial-scale=1, shrink-to-fit=no');
-
+		Add::meta('charset="utf-8"', null);
+		Add::meta('http-equiv="x-ua-compatible"', 'ie=edge');
+		Add::meta('name="description"', SITEDESCRIPTION);
+		Add::meta('name="keywords"', SITEKEYWORDS);
+		Add::meta('name="author"', SITEAUTHOR);
+		Add::meta('name="viewport"', 'width=device-width, initial-scale=1, shrink-to-fit=no');
 		// Favicon
-		add::link('favicon.png', 'shortcut icon', null);
-
+		Add::link('favicon.png', 'shortcut icon', null);
 		// Font Awesome CSS
-		add::link('vendor/all.min.css', 'stylesheet', 'text/css');
-
+		Add::link('vendor/all.min.css', 'stylesheet', 'text/css');
 		// Bulma CSS
-		add::link('bulma/css/bulma.min.css', 'stylesheet', 'text/css');
-		add::link('vendor/modal-fx.min.css', 'stylesheet', 'text/css');
-
+		Add::link('bulma/css/bulma.min.css', 'stylesheet', 'text/css');
+		Add::link('vendor/modal-fx.min.css', 'stylesheet', 'text/css');
 		// Datatable CSS
-		add::link('vendor/dataTables.bulma.min.css', 'stylesheet', 'text/css');
-
+		Add::link('vendor/dataTables.bulma.min.css', 'stylesheet', 'text/css');
 		// Tooltip CSS
-		add::link('vendor/simptip.min.css', 'stylesheet', 'text/css');
-
+		Add::link('vendor/simptip.min.css', 'stylesheet', 'text/css');
 		// Flatpickr CSS
-		add::link('vendor/flatpickr.min.css', 'stylesheet', 'text/css');
-
+		Add::link('vendor/flatpickr.min.css', 'stylesheet', 'text/css');
 		// Main Style
-		add::link('main.css', 'stylesheet', 'text/css');
-
+		Add::link('main.css', 'stylesheet', 'text/css');
 		// Modernizr JS
-		add::script('vendor/modernizr.min.js', 'text/javascript', 'UTF-8', null);
+		Add::script('vendor/modernizr.min.js', 'text/javascript', 'UTF-8', null);
 	}
-
 	public static function footer_assets()
 	{
 		// Jquery JS
-		add::script('vendor/jquery.min.js', 'text/javascript', 'UTF-8', null);
-		add::script('vendor/jquery-migrate-3.1.0.min.js', 'text/javascript', 'UTF-8', null);
-
+		Add::script('vendor/jquery.min.js', 'text/javascript', 'UTF-8', null);
+		Add::script('vendor/jquery-migrate-3.1.0.min.js', 'text/javascript', 'UTF-8', null);
 		// Norma JS
-		add::script('vendor/norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
-
+		Add::script('vendor/norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
 		// WhatInput JS
-		add::script('vendor/what-input.min.js', 'text/javascript', 'UTF-8', null);
-
+		Add::script('vendor/what-input.min.js', 'text/javascript', 'UTF-8', null);
 		// Datatables JS
-		add::script('vendor/jquery.dataTables.min.js', 'text/javascript', 'UTF-8', null);
-		add::script('vendor/dataTables.bulma.min.js', 'text/javascript', 'UTF-8', null);
-
+		Add::script('vendor/jquery.dataTables.min.js', 'text/javascript', 'UTF-8', null);
+		Add::script('vendor/dataTables.bulma.min.js', 'text/javascript', 'UTF-8', null);
 		// Bulma modal-fx JS
-		add::script('vendor/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
-
+		Add::script('vendor/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
 		// Flatpickr JS
-		add::script('vendor/flatpickr.min.js', 'text/javascript', 'UTF-8', null);
-
+		Add::script('vendor/flatpickr.min.js', 'text/javascript', 'UTF-8', null);
 		// System JS
-		add::script('config/system.js', 'text/javascript', 'UTF-8', null);
-
+		Add::script('config/system.js', 'text/javascript', 'UTF-8', null);
 		// Main JS
-		add::script('main.js', 'text/javascript', 'UTF-8', null);
+		Add::script('main.js', 'text/javascript', 'UTF-8', null);
 	}
-
 	public static function datatables_init()
 	{
 		// Datatables init
-		add::script('datatables/init.js', 'text/javascript', 'UTF-8', null);
+		Add::script('datatables/init.js', 'text/javascript', 'UTF-8', null);
 	}
-
 	public static function datatables_crud_init()
 	{
 		// Datatables init
-		add::script('datatables/init_crud.js', 'text/javascript', 'UTF-8', null);
+		Add::script('datatables/init_crud.js', 'text/javascript', 'UTF-8', null);
 	}
-
 	public static function sweetalert_init()
 	{
-		add::script('vendor/sweetalert2.all.min.js', 'text/javascript', 'UTF-8', null);
-		add::script('vendor/polyfill.min.js', 'text/javascript', 'UTF-8', null);
+		Add::script('vendor/sweetalert2.all.min.js', 'text/javascript', 'UTF-8', null);
+		Add::script('vendor/polyfill.min.js', 'text/javascript', 'UTF-8', null);
 	}
-
 }

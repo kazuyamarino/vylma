@@ -1,5 +1,5 @@
 <?php
-namespace Libraries;
+namespace System\Libraries;
 
 defined('ROOT') OR exit('No direct script access allowed');
 
@@ -20,10 +20,6 @@ Class Alerts {
 				echo '<script>Swal.fire("Success!", "Data has been updated!", "success");</script>';
 			} elseif ($message == 'must-select') {
 				echo '<script>Swal.fire("Warning!", "Data must be selected!", "warning");</script>';
-			} else {
-				echo '<pre>Message: there is no variable named <strong><i>' . $message . '</i></strong> in the <mark>pull_alerts()</mark> function.</pre>';
-				echo "<pre>Stack trace:\n#0 libraries/Alerts.php:12</pre>";
-				exit();
 			}
 		}
 	}

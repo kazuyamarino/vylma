@@ -1,15 +1,17 @@
 <?php
-namespace Modules\Crud\Controllers;
+namespace System\Modules\Crud\Controllers;
 
-use Core\NSY_Controller;
+use System\Core\NSY_Controller;
+use System\Libraries\Cookie;
+use System\Modules\Crud\Models\m_crud;
+
 use Carbon\Carbon;
-use Libraries\Cookie;
-use Modules\Crud\Models\m_crud;
 
 defined('ROOT') OR exit('No direct script access allowed');
 
 class c_crud extends NSY_Controller
 {
+
 	public function __construct()
 	{
 		// Instantiate Model Crud

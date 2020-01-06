@@ -2,7 +2,7 @@
 defined('ROOT') OR exit('No direct script access allowed');
 ?>
 <!-- call alerts method -->
-@( show::pull_alerts($message) )
+@( Show::pull_alerts($message) )
 <div class="wrap">
 	<hr>
 	<div class="columns is-centered content">

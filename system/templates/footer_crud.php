@@ -48,9 +48,9 @@ defined('ROOT') OR exit('No direct script access allowed');
 	</div>
 </footer>
 <!-- call footer assets -->
-@( pull::footer_assets() )
+@( Pull::footer_assets() )
 
 <!-- call datatable init asset -->
-@( pull::datatables_crud_init() )
+@( Pull::datatables_crud_init() )
 </body>
 </html>
