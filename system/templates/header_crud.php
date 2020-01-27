@@ -1,6 +1,3 @@
-<?php
-defined('ROOT') OR exit('No direct script access allowed');
-?>
 <!doctype html>
 <html class="no-js" lang="@( LANGUAGE_CODE )">
 <head>

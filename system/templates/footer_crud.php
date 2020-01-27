@@ -1,6 +1,3 @@
-<?php
-defined('ROOT') OR exit('No direct script access allowed');
-?>
 <!-- Footer are 'sticky' -->
 <footer class="columns footer content">
 	<div class="column is-4">

@@ -1,6 +1,3 @@
-<?php
-defined('ROOT') OR exit('No direct script access allowed');
-?>
 <div class="columns wrap">
 	<div class="column is-full">
 		<hr>

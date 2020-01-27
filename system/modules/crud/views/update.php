@@ -1,6 +1,3 @@
-<?php
-defined('ROOT') OR exit('No direct script access allowed');
-?>
 <div class="wrap">
 	<hr>
 	<div class="columns is-centered content">

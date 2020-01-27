@@ -10,7 +10,6 @@ class ComposerStaticInityour_suffixed
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '02eacf6e6e088f10f19afd92a74cd1d8' => __DIR__ . '/../../..' . '/system/core/NSY_Helpers.php',
-        'c1c8c3e19ac4ea09b136497636ed8d4c' => __DIR__ . '/../../..' . '/system/helpers/Helpers_CI.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -25,6 +24,10 @@ class ComposerStaticInityour_suffixed
         'P' => 
         array (
             'PhpOption\\' => 10,
+        ),
+        'O' => 
+        array (
+            'Optimus\\Onion\\' => 14,
         ),
         'D' => 
         array (
@@ -61,6 +64,10 @@ class ComposerStaticInityour_suffixed
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'Optimus\\Onion\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/optimus/onion/src',
+        ),
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
@@ -92,6 +99,7 @@ class ComposerStaticInityour_suffixed
         'Carbon\\Exceptions\\BadUnitException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/BadUnitException.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
         'Carbon\\Exceptions\\NotAPeriodException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/NotAPeriodException.php',
+        'Carbon\\Exceptions\\NotLocaleAwareException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/NotLocaleAwareException.php',
         'Carbon\\Exceptions\\ParseErrorException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/ParseErrorException.php',
         'Carbon\\Factory' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Factory.php',
         'Carbon\\FactoryImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/FactoryImmutable.php',
@@ -109,6 +117,7 @@ class ComposerStaticInityour_suffixed
         'Carbon\\Traits\\Mixin' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Mixin.php',
         'Carbon\\Traits\\Modifiers' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Modifiers.php',
         'Carbon\\Traits\\Mutability' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Mutability.php',
+        'Carbon\\Traits\\ObjectInitialisation' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/ObjectInitialisation.php',
         'Carbon\\Traits\\Options' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Options.php',
         'Carbon\\Traits\\Rounding' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Rounding.php',
         'Carbon\\Traits\\Serialization' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Serialization.php',
@@ -144,6 +153,8 @@ class ComposerStaticInityour_suffixed
         'FtpClient\\FtpClient' => __DIR__ . '/..' . '/nicolab/php-ftp-client/src/FtpClient/FtpClient.php',
         'FtpClient\\FtpException' => __DIR__ . '/..' . '/nicolab/php-ftp-client/src/FtpClient/FtpException.php',
         'FtpClient\\FtpWrapper' => __DIR__ . '/..' . '/nicolab/php-ftp-client/src/FtpClient/FtpWrapper.php',
+        'Optimus\\Onion\\LayerInterface' => __DIR__ . '/..' . '/optimus/onion/src/LayerInterface.php',
+        'Optimus\\Onion\\Onion' => __DIR__ . '/..' . '/optimus/onion/src/Onion.php',
         'PhpOption\\LazyOption' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/LazyOption.php',
         'PhpOption\\None' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/None.php',
         'PhpOption\\Option' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Option.php',
@@ -232,6 +243,7 @@ class ComposerStaticInityour_suffixed
         'System\\Core\\NSY_System' => __DIR__ . '/../../..' . '/system/core/NSY_System.php',
         'System\\Core\\NSY_XSS_Filter' => __DIR__ . '/../../..' . '/system/core/NSY_XSS_Filter.php',
         'System\\Libraries\\Alerts' => __DIR__ . '/../../..' . '/system/libraries/Alerts.php',
+        'System\\Libraries\\Aliases' => __DIR__ . '/../../..' . '/system/libraries/Aliases.php',
         'System\\Libraries\\Assets' => __DIR__ . '/../../..' . '/system/libraries/Assets.php',
         'System\\Libraries\\Cookie' => __DIR__ . '/../../..' . '/system/libraries/Cookie.php',
         'System\\Libraries\\Curl' => __DIR__ . '/../../..' . '/system/libraries/Curl.php',
@@ -245,8 +257,12 @@ class ComposerStaticInityour_suffixed
         'System\\Libraries\\LanguageCode' => __DIR__ . '/../../..' . '/system/libraries/LanguageCode.php',
         'System\\Libraries\\LanguageCodeCollection' => __DIR__ . '/../../..' . '/system/libraries/LanguageCodeCollection.php',
         'System\\Libraries\\LoadTime' => __DIR__ . '/../../..' . '/system/libraries/LoadTime.php',
+        'System\\Libraries\\Request' => __DIR__ . '/../../..' . '/system/libraries/Request.php',
         'System\\Libraries\\Session' => __DIR__ . '/../../..' . '/system/libraries/Session.php',
         'System\\Libraries\\Str' => __DIR__ . '/../../..' . '/system/libraries/Str.php',
+        'System\\Libraries\\Validate' => __DIR__ . '/../../..' . '/system/libraries/Validate.php',
+        'System\\Middlewares\\AfterLayer' => __DIR__ . '/../../..' . '/system/middlewares/AfterLayer.php',
+        'System\\Middlewares\\BeforeLayer' => __DIR__ . '/../../..' . '/system/middlewares/BeforeLayer.php',
         'System\\Models\\Model_Welcome' => __DIR__ . '/../../..' . '/system/models/Model_Welcome.php',
         'System\\Modules\\Crud\\Controllers\\c_crud' => __DIR__ . '/../../..' . '/system/modules/crud/controllers/c_crud.php',
         'System\\Modules\\Crud\\Models\\m_crud' => __DIR__ . '/../../..' . '/system/modules/crud/models/m_crud.php',
