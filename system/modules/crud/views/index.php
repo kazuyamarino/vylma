@@ -1,5 +1,5 @@
 <!-- call alerts method -->
-@( Show::pull_alerts($message) )
+@( pull_alerts($message) )
 <div class="wrap">
 	<hr>
 	<div class="columns is-centered content">

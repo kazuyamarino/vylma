@@ -45,9 +45,9 @@
 	</div>
 </footer>
 <!-- call footer assets -->
-@( Pull::footer_assets() )
+@( footer_assets() )
 
 <!-- call datatable init asset -->
-@( Pull::datatables_init() )
+@( datatables_init() )
 </body>
 </html>
