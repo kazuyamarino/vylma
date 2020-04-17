@@ -53,7 +53,7 @@ function footer_assets()
 {
 	// Jquery JS
 	Add::script('vendor/jquery.min.js', 'text/javascript', 'UTF-8', null);
-	Add::script('vendor/jquery-migrate-3.1.0.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('vendor/jquery-migrate.min.js', 'text/javascript', 'UTF-8', null);
 	// Norma JS
 	Add::script('vendor/norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
 	// WhatInput JS
