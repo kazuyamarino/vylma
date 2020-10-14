@@ -15,19 +15,30 @@
 						<div class="tile is-child box">
 							<h3>NSY Guide & Example</h3>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#how-to-dating-with-nsy">How to dating with NSY?</a><br />The setup.</p>
-							</div>
-							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#vylma-contain-package-">Vylma contain package</a><br />The package inside NSY.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/README.md#crud-example">NSY CRUD Example</a><br />The CRUD example build by NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#how-to-dating-with-nsy">How to dating with NSY?</a><br />The setup.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md">NSY User Guide</a><br />The guide before starting to use NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#crud-example">NSY CRUD Example</a><br />The CRUD example build by NSY.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md">NSY System Guide Part 1</a>&nbsp;|&nbsp;<a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md">NSY System Guide Part 2</a><br />The guide for starting to use NSY System.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md">NSY User Guide</a><br />The guide before starting to use NSY.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md">NSY System Guide Part 1</a>&nbsp;|&nbsp;<a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_2.md">NSY System Guide Part 2</a><br />The guide for starting to use NSY System.</p>
+							</div>
+							<h5>Image Modal</h5>
+							<div class="buttons">
+								<span class="button is-warning is-medium modal-button" data-target="modal-image">Image modal</span>
+								<span class="button is-warning is-medium modal-button" data-target="modal-image2">Image modal "huge"</span>
+								<span class="button is-warning is-medium modal-button" data-target="modal-image3">Image modal "huge" (very high)</span>
+								<span class="button is-warning is-medium modal-button" data-target="modal-card">Card "tiny"</span>
+								<span class="button is-warning is-medium modal-button" data-target="modal-fadeInScale-fs">Modal Card "full-screen"</span>
+								<span class="button is-warning is-medium modal-button" data-target="modal-3dSign-top">3dSign "top"</span>
+								<span class="button is-warning is-medium modal-button" data-target="modal-3dSign-bottom">3dSignDown "bottom"</span>
+								<span class="button is-warning is-medium modal-button" data-target="modal-bgImage">Background Image</span>
 							</div>
 						</div>
 						<div class="tile is-child box">
@@ -48,58 +59,74 @@
 								adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
 								consectetur adipiscing elit
 							</div>
+							<div class="notification is-warning">
+								<button class="delete"></button>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+								consectetur adipiscing elit
+							</div>
 						</div>
 					</div>
 					<div class="tile is-parent">
 						<div class="tile is-child box">
 							<h3>NSY Features</h3>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md#primary--secondary-database-connections">Primary and Secondary Database Connection</a><br />Database connection.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md#composer-on-nsy-framework">Composer on NSY</a><br/>NSY support Composer for install/update libraries.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md#aurora-file-export">Aurora File Export</a><br />Aurora library.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md#framework-configuration">Framework Configuration</a><br/>Simple config.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#routes">NSY Routing System</a><br />The Routes.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md#helpers">NSY Helper</a><br/>Creating custom methods with ease.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#mvc--hmvc">MVC & HMVC</a><br />The design pattern.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md#routes">NSY Routing System</a><br/>The Routes.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#introducting-to-nsy-assets-manager">NSY Assets Manager</a><br />Introducting to NSY Assets Manager.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md#mvc--hmvc">MVC & HMVC</a><br/>The design pattern.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#psr-4-autoloading">PSR-4 Autoloading</a><br />See explanation.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md#introducting-to-nsy-assets-manager">NSY Assets Manager</a><br/>Introducting to NSY Assets Manager.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#composer-on-nsy-framework">Composer on NSY</a><br />NSY support Composer for install/update libraries.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md#psr-4-autoloading">PSR-4 Autoloading</a><br/>See explanation.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#framework-configuration">Framework Configuration</a><br />Simple config.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/USERGUIDE.md#nsy-cli-command-line">NSY CLI</a><br/>A commands to facilitate users in operating NSY.</p>
+							</div>
+
+							<hr>
+
+							<h3><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#usefull-method">NSY Useful Library</a></h3>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#security-helper">Anti XSS & CSRF Token</a><br/>A Security helper method.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE.md#security-helper">Anti XSS & CSRF Token</a><br />Security helper.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_2.md#primary--secondary-database-connections">Primary and Secondary Database Connection</a><br/>Database connection.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#nsy-cli-command-line">NSY CLI</a><br />A commands to facilitate users in operating NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#generate-random-number">Generate Number</a><br/>To generate a sequence of random numbers that correspond to the desired number or prefix.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://carbon.nesbot.com/docs/">Carbon DateTime</a><br />Simple PHP API extension for DateTime.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#php-session">Session Library</a><br/>PHP library for handling session.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md#nsy-ftp-client-library">FTP Client</a><br />A flexible FTP and SSL-FTP client for PHP.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#specify-an-empty-variable-or-not">Variable Checking</a><br/>Checking the empty variable or not.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md#cookie-library">Cookie Library</a><br />PHP library for handling cookies.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#aurora-file-export">Aurora File Export</a><br/>Aurora library.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/USERGUIDE.md#helpers">NSY Helper</a><br />Creating custom methods with ease.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#cookie-library">Cookie Library</a><br/>PHP library for handling cookies.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md#razr---the-powerful-php-template-engine">Razr Template Engine</a><br />Razr - The powerful PHP template engine.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#nsy-ftp-client-library">FTP Client</a><br/>A flexible FTP and SSL-FTP client for PHP.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy/blob/master/docs/SYSGUIDE_2.md#nsy-migrations">Database Migrations</a><br />Simple database migration.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/SYSGUIDE_1.md#imageresize-library">ImageResize Library</a><br/>PHP library to resize, scale and crop images.</p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://carbon.nesbot.com/docs/">Carbon DateTime</a><br/>Simple PHP API extension for DateTime.</p>
 							</div>
 						</div>
 					</div>
@@ -422,17 +449,6 @@
 					<span class="button is-primary is-medium modal-button" data-target="modal-3dSlit">3dSlit</span>
 					<span class="button is-primary is-medium modal-button" data-target="modal-3dRotateFromBottom">3dRotateFromBottom</span>
 					<span class="button is-primary is-medium modal-button" data-target="modal-3dRotateFromLeft">3dRotateFromLeft</span>
-				</div>
-				<h5>Image Modal</h5>
-				<div class="buttons">
-					<span class="button is-warning is-medium modal-button" data-target="modal-image">Image modal</span>
-					<span class="button is-warning is-medium modal-button" data-target="modal-image2">Image modal "huge"</span>
-					<span class="button is-warning is-medium modal-button" data-target="modal-image3">Image modal "huge" (very high)</span>
-					<span class="button is-warning is-medium modal-button" data-target="modal-card">Card "tiny"</span>
-					<span class="button is-warning is-medium modal-button" data-target="modal-fadeInScale-fs">Modal Card "full-screen"</span>
-					<span class="button is-warning is-medium modal-button" data-target="modal-3dSign-top">3dSign "top"</span>
-					<span class="button is-warning is-medium modal-button" data-target="modal-3dSign-bottom">3dSignDown "bottom"</span>
-					<span class="button is-warning is-medium modal-button" data-target="modal-bgImage">Background Image</span>
 				</div>
 
 				<!-- normal -->
