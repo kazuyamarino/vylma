@@ -54,19 +54,26 @@ function footer_assets()
 	// Jquery JS
 	Add::script('vendor/jquery.min.js', 'text/javascript', 'UTF-8', null);
 	Add::script('vendor/jquery-migrate.min.js', 'text/javascript', 'UTF-8', null);
+
 	// Norma JS
 	Add::script('vendor/norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
+
 	// WhatInput JS
 	Add::script('vendor/what-input.min.js', 'text/javascript', 'UTF-8', null);
+
 	// Datatables JS
 	Add::script('vendor/jquery.dataTables.min.js', 'text/javascript', 'UTF-8', null);
 	Add::script('vendor/dataTables.bulma.min.js', 'text/javascript', 'UTF-8', null);
+
 	// Bulma modal-fx JS
 	Add::script('vendor/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
+
 	// Flatpickr JS
 	Add::script('vendor/flatpickr.min.js', 'text/javascript', 'UTF-8', null);
+
 	// System JS
 	Add::script('config/system.js', 'text/javascript', 'UTF-8', null);
+
 	// Main JS
 	Add::script('main.js', 'text/javascript', 'UTF-8', null);
 }
@@ -85,6 +92,7 @@ function datatables_crud_init()
 
 function sweetalert_init()
 {
+	// Sweetalert init
 	Add::script('vendor/sweetalert2.all.min.js', 'text/javascript', 'UTF-8', null);
 	Add::script('vendor/polyfill.min.js', 'text/javascript', 'UTF-8', null);
 }
