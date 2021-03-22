@@ -14,10 +14,10 @@ run_setup() {
 			cp .cli/tmp/env.example docs/env.example/env.example
 			cp .cli/tmp/system.js ./public/js/config/system.js
 			cp .cli/tmp/default ./docs/nginx/sites-enabled/default
-			sed -i "s/vylma/$filename/g" ./env
-			sed -i "s/vylma/$filename/g" ./docs/env.example/env.example
-			sed -i "s/vylma/$filename/g" ./public/js/config/system.js
-			sed -i "s/vylma/$filename/g" ./docs/nginx/sites-enabled/default
+			sed -i "s/nsy/$filename/g" ./env
+			sed -i "s/nsy/$filename/g" ./docs/env.example/env.example
+			sed -i "s/nsy/$filename/g" ./public/js/config/system.js
+			sed -i "s/nsy/$filename/g" ./docs/nginx/sites-enabled/default
 
 			printf "Please wait...\n"
 			sleep 3

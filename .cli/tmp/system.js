@@ -7,7 +7,7 @@
 *
 * @type {String}
 */
-var dirname = "vylma"; // defined
+var dirname = "nsy"; // defined
 // var dirname = ""; // undefined
 
 function base_url(url)
@@ -36,18 +36,3 @@ function base_url(url)
 		}
 	}
 }
-
-/**
- * Bulma Notification JS
- */
-$(document).ready(function() {
-	$(".notification > button.delete").click(function() {
-		$(this).parent().addClass("is-hidden");
-		return false;
-	});
-});
-
-/**
- * Norma JS Initialize
- */
-$(document).norma();
