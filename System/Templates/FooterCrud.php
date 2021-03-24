@@ -8,10 +8,10 @@
 	<div class="column is-4">
 		<p><strong><a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></strong> is The iconic font and CSS toolkit</p>
 		<div class="content">
-			<i class="fab fa-twitter fa-2x fa-fw"></i><a class="list-group-item" target="_blank" href="https://twitter.com/abang_marino">&nbsp; Twitter</a>
+			<i class="fab fa-twitter fa-2x fa-fw"></i><a class="list-group-item" target="_blank" href="https://twitter.com/uybeye">&nbsp; Twitter</a>
 		</div>
 		<div class="content">
-			<i class="fab fa-facebook fa-2x fa-fw"></i><a class="list-group-item" target="_blank" href="https://www.facebook.com/kazuya.marino">&nbsp; Facebook</a>
+			<i class="fab fa-facebook fa-2x fa-fw"></i><a class="list-group-item" target="_blank" href="#">&nbsp; Facebook</a>
 		</div>
 		<div class="content">
 			<i class="fab fa-linkedin fa-2x fa-fw"></i><a class="list-group-item" target="_blank" href="https://id.linkedin.com/in/vikry-yuansyah-1265a4a7">&nbsp; Linkedin</a>

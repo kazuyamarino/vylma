@@ -779,7 +779,7 @@
 					<div class="modal-background"></div>
 					<div class="modal-content is-image">
 						<!-- content -->
-						<img src="public/img/moon.jpg" alt="Moon">
+						<img src="public/assets/img/moon.jpg" alt="Moon">
 						<!-- end content -->
 					</div>
 					<button class="modal-close is-large" aria-label="close"></button>
@@ -790,7 +790,7 @@
 					<div class="modal-background"></div>
 					<div class="modal-content is-huge is-image">
 						<!-- content -->
-						<img src="public/img/moon.jpg" alt="Moon">
+						<img src="public/assets/img/moon.jpg" alt="Moon">
 						<!-- end content -->
 					</div>
 					<button class="modal-close is-large" aria-label="close"></button>
@@ -801,7 +801,7 @@
 					<div class="modal-background"></div>
 					<div class="modal-content is-huge is-image">
 						<!-- content -->
-						<img src="public/img/tower.jpg" alt="Tower">
+						<img src="public/assets/img/tower.jpg" alt="Tower">
 						<!-- end content -->
 					</div>
 					<button class="modal-close is-large" aria-label="close"></button>
@@ -890,14 +890,14 @@
 						<div class="card">
 							<div class="card-image">
 								<figure class="image is-4by3">
-									<img src="public/img/card.jpg" alt="Placeholder image">
+									<img src="public/assets/img/card.jpg" alt="Placeholder image">
 								</figure>
 							</div>
 							<div class="card-content">
 								<div class="media">
 									<div class="media-left">
 										<figure class="image is-48x48">
-											<img src="public/img/avatar.jpg" alt="Placeholder image">
+											<img src="public/assets/img/avatar.jpg" alt="Placeholder image">
 										</figure>
 									</div>
 									<div class="media-content">
@@ -922,11 +922,11 @@
 				</div>
 
 				<div id="modal-bgImage" class="modal modal-fx-3dSignDown">
-					<div class="modal-background" style="background-image:url(public/img/moon.jpg)"></div>
+					<div class="modal-background" style="background-image:url(public/assets/img/moon.jpg)"></div>
 					<div class="modal-content">
 						<!-- content -->
 						<pre><code class="html">&lt;div id="modal-id" class="modal <em>modal-fx-fadeInScale</em>"&gt;
-							&lt;div class="modal-background" style="background-image:url(public/img/moon.jpg)"&gt;&lt;/div&gt;
+							&lt;div class="modal-background" style="background-image:url(public/assets/img/moon.jpg)"&gt;&lt;/div&gt;
 							&lt;div class="modal-content"&gt;
 							&lt;!-- Any other Bulma elements you want --&gt;
 							&lt;/div&gt;
