@@ -56,6 +56,9 @@ function footer_assets()
 	Add::script('../vendor/jquery/jquery.min.js', 'text/javascript', 'UTF-8', null);
 	Add::script('../vendor/jquery-migrate/jquery-migrate.min.js', 'text/javascript', 'UTF-8', null);
 
+	// Norma JS
+	Add::script('norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
+
 	// WhatInput JS
 	Add::script('../vendor/what-input/what-input.min.js', 'text/javascript', 'UTF-8', null);
 
@@ -71,9 +74,6 @@ function footer_assets()
 
 	// System JS
 	Add::script('config/system.js', 'text/javascript', 'UTF-8', null);
-
-	// Norma JS
-	Add::script('norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
 
 	// Main JS
 	Add::script('main.js', 'text/javascript', 'UTF-8', null);
