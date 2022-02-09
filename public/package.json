@@ -1,0 +1,25 @@
+{
+  "name": "vylma",
+  "version": "1.0.0",
+  "description": "Vylma",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bulma": "^0.9.3",
+    "bulma-modal-fx": "^1.1.1",
+    "datatables-bulma": "^1.0.1",
+    "datatables.net": "^1.11.4",
+    "flatpickr": "^4.6.9",
+    "jquery": "^3.6.0",
+    "jquery-migrate": "^3.3.2",
+    "promise-polyfill": "^8.2.1",
+    "simptip": "^1.0.4",
+    "sweetalert2": "^10.16.9",
+    "what-input": "^5.2.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vikry Yuansah",
+  "license": "ISC"
+}

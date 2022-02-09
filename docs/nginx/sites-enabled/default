@@ -1,0 +1,11 @@
+autoindex off;
+
+error_page 404 /vylma/public/404.html;
+error_page 403 /vylma/public/403.html;
+error_page 500 502 503 504 /vylma/public/50x.html;
+
+location /vylma/ {
+	# sFirst attempt to serve request as file, then
+	# as directory, then fall back to displaying a 404.
+	try_files $uri /vylma/public/index.php?/$uri;
+}
