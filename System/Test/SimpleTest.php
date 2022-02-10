@@ -1,10 +1,8 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-// Class yang mau di TEST.
 require_once "ClassWordCount.php";
 
-// Class untuk run Testing.
 class SimpleTest extends TestCase
 {
     public function testCountWords()
