@@ -5,9 +5,6 @@ php:
   - 7.4
   - 8.0
 
-script:
-  - phpunit
-
 env:
   - APP_ENV=development
   - APP_DIR=vylma
