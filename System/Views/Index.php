@@ -120,7 +120,7 @@
 
 					<div class="field">
 						<label class="label">URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
-							<input type="text" class="input" placeholder="https://nsy.kazuyamarino.com/vylma" pattern="url">
+							<input type="text" class="input" placeholder="https://nsyframework.com/vylma" pattern="url">
 						</label>
 					</div>
 
