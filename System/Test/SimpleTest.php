@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 
 // Class yang mau di TEST.
-require_once "ClassWordcount.php";
+require_once "ClassWordCount.php";
 
 // Class untuk run Testing.
 class SimpleTest extends TestCase
@@ -10,7 +10,7 @@ class SimpleTest extends TestCase
     public function testCountWords()
     {
         // Kita pakai class yang mau kita test.
-        $Wc = new ClassWordcount();
+        $Wc = new ClassWordCount();
 
         // Kita masukan parameter 4 kata, yang harusnya dapat output 4.
         $TestSentence = "My name is NSY"; // 4 Kata ..

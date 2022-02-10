@@ -1,5 +1,5 @@
 <?php
-class ClassWordcount
+class ClassWordCount
 {
     public function countWords($sentence)
     {
