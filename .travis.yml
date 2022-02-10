@@ -10,6 +10,10 @@ before_script:
   - composer update
   - composer install --prefer-source --no-interaction
 
+
+script:
+  - phpunit
+
 env:
   - APP_ENV=development
   - APP_DIR=vylma
