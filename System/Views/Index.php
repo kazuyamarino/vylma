@@ -15,13 +15,13 @@
 						<div class="tile is-child box">
 							<h3>NSY Guide & Example</h3>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#vylma-contain-package-"><strong>Vylma contain package</strong></a><br />The package inside NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#vylma-contain-package-"><strong>Vylma contain package</strong></a><br />The package inside Vylma.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#how-to-dating-with-nsy"><strong>How to dating with NSY?</strong></a><br />The setup.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#how-to-dating-with-nsy"><strong>How to dating with Vylma?</strong></a><br />Setup installation.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#crud-example"><strong>Shyffon & Vylma</strong></a><br />The CRUD example build by NSY.</p>
+								<p><a target="_blank" href="@( base_url('crud') )"><strong>Shyffon CRUD Example</strong></a><br />The CRUD example build by Shyffon.</p>
 							</div>
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#nsy-features-"><strong>NSY Features</strong></a><br />Features available in NSY.</p>
@@ -30,7 +30,7 @@
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#user-guide-"><strong>NSY User Guide</strong></a><br />The guide before starting to use NSY.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#system-guide-"><strong>NSY Sistem Guide</strong></a><br />The guide system.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#system-guide-"><strong>NSY System Guide</strong></a><br />The guide system.</p>
 							</div>
 							<h5>Image Modal</h5>
 							<div class="buttons">
