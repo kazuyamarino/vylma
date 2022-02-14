@@ -18,7 +18,7 @@
 								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#vylma-contain-package-"><strong>Vylma contain package</strong></a><br />The package inside Vylma.</p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#how-to-dating-with-nsy"><strong>How to dating with Vylma?</strong></a><br />Setup installation.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#lets-start"><strong>How to dating with Vylma?</strong></a><br />Setup installation.</p>
 							</div>
 							<div class="content">
 								<p><a target="_blank" href="@( base_url('crud') )"><strong>Shyffon CRUD Example</strong></a><br />The CRUD example build by Shyffon.</p>
