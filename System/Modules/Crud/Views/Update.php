@@ -2,11 +2,7 @@
 	<hr>
 	<div class="columns is-centered content">
 		<div class="column is-5">
-			<div class="field is-grouped">
-				<div class="control">
-					<a class="button is-success" href="@( base_url() )"><i class="fas fa-arrow-left"></i>&nbsp;Back</a>
-				</div>
-			</div>
+			<h5 class="has-text-centered"><a href="@( base_url('crud') )">Back</a></h5>
 
 			<h5>Users Information</h5>
 			<form action="@( base_url('crud/update/'. $data['id']. '') )" method="POST" data-abide novalidate>
