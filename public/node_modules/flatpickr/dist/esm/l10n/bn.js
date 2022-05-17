@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Bangla = {
+export var Bangla = {
     weekdays: {
         shorthand: ["রবি", "সোম", "মঙ্গল", "বুধ", "বৃহস্পতি", "শুক্র", "শনি"],
         longhand: [

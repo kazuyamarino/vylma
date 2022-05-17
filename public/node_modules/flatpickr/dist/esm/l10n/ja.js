@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Japanese = {
+export var Japanese = {
     weekdays: {
         shorthand: ["日", "月", "火", "水", "木", "金", "土"],
         longhand: [

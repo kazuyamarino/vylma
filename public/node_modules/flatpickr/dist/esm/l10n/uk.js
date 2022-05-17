@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Ukrainian = {
+export var Ukrainian = {
     firstDayOfWeek: 1,
     weekdays: {
         shorthand: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],

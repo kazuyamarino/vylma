@@ -1,10 +1,17 @@
-export const pad = (number, length = 2) => `000${number}`.slice(length * -1);
-export const int = (bool) => (bool === true ? 1 : 0);
+export var pad = function (number, length) {
+    if (length === void 0) { length = 2; }
+    return ("000" + number).slice(length * -1);
+};
+export var int = function (bool) { return (bool === true ? 1 : 0); };
 export function debounce(fn, wait) {
-    let t;
+    var t;
     return function () {
+        var _this = this;
+        var args = arguments;
         clearTimeout(t);
-        t = setTimeout(() => fn.apply(this, arguments), wait);
+        t = setTimeout(function () { return fn.apply(_this, args); }, wait);
     };
 }
-export const arrayify = (obj) => obj instanceof Array ? obj : [obj];
+export var arrayify = function (obj) {
+    return obj instanceof Array ? obj : [obj];
+};

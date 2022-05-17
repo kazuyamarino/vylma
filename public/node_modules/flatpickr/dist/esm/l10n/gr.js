@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Greek = {
+export var Greek = {
     weekdays: {
         shorthand: ["Κυ", "Δε", "Τρ", "Τε", "Πέ", "Πα", "Σά"],
         longhand: [
@@ -23,8 +23,8 @@ export const Greek = {
             "Μάρ",
             "Απρ",
             "Μάι",
-            "Ιού",
-            "Ιού",
+            "Ιούν",
+            "Ιούλ",
             "Αύγ",
             "Σεπ",
             "Οκτ",
@@ -55,6 +55,10 @@ export const Greek = {
     scrollTitle: "Μετακυλήστε για προσαύξηση",
     toggleTitle: "Κάντε κλικ για αλλαγή",
     amPM: ["ΠΜ", "ΜΜ"],
+    yearAriaLabel: "χρόνος",
+    monthAriaLabel: "μήνας",
+    hourAriaLabel: "ώρα",
+    minuteAriaLabel: "λεπτό",
 };
 fp.l10ns.gr = Greek;
 export default fp.l10ns;

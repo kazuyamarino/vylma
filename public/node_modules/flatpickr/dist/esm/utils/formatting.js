@@ -1,77 +1,79 @@
 import { int, pad } from "../utils";
-const doNothing = () => undefined;
-export const monthToStr = (monthNumber, shorthand, locale) => locale.months[shorthand ? "shorthand" : "longhand"][monthNumber];
-export const revFormat = {
+var doNothing = function () { return undefined; };
+export var monthToStr = function (monthNumber, shorthand, locale) { return locale.months[shorthand ? "shorthand" : "longhand"][monthNumber]; };
+export var revFormat = {
     D: doNothing,
     F: function (dateObj, monthName, locale) {
         dateObj.setMonth(locale.months.longhand.indexOf(monthName));
     },
-    G: (dateObj, hour) => {
+    G: function (dateObj, hour) {
+        dateObj.setHours((dateObj.getHours() >= 12 ? 12 : 0) + parseFloat(hour));
+    },
+    H: function (dateObj, hour) {
         dateObj.setHours(parseFloat(hour));
     },
-    H: (dateObj, hour) => {
-        dateObj.setHours(parseFloat(hour));
-    },
-    J: (dateObj, day) => {
+    J: function (dateObj, day) {
         dateObj.setDate(parseFloat(day));
     },
-    K: (dateObj, amPM, locale) => {
+    K: function (dateObj, amPM, locale) {
         dateObj.setHours((dateObj.getHours() % 12) +
             12 * int(new RegExp(locale.amPM[1], "i").test(amPM)));
     },
     M: function (dateObj, shortMonth, locale) {
         dateObj.setMonth(locale.months.shorthand.indexOf(shortMonth));
     },
-    S: (dateObj, seconds) => {
+    S: function (dateObj, seconds) {
         dateObj.setSeconds(parseFloat(seconds));
     },
-    U: (_, unixSeconds) => new Date(parseFloat(unixSeconds) * 1000),
+    U: function (_, unixSeconds) { return new Date(parseFloat(unixSeconds) * 1000); },
     W: function (dateObj, weekNum, locale) {
-        const weekNumber = parseInt(weekNum);
-        const date = new Date(dateObj.getFullYear(), 0, 2 + (weekNumber - 1) * 7, 0, 0, 0, 0);
+        var weekNumber = parseInt(weekNum);
+        var date = new Date(dateObj.getFullYear(), 0, 2 + (weekNumber - 1) * 7, 0, 0, 0, 0);
         date.setDate(date.getDate() - date.getDay() + locale.firstDayOfWeek);
         return date;
     },
-    Y: (dateObj, year) => {
+    Y: function (dateObj, year) {
         dateObj.setFullYear(parseFloat(year));
     },
-    Z: (_, ISODate) => new Date(ISODate),
-    d: (dateObj, day) => {
+    Z: function (_, ISODate) { return new Date(ISODate); },
+    d: function (dateObj, day) {
         dateObj.setDate(parseFloat(day));
     },
-    h: (dateObj, hour) => {
-        dateObj.setHours(parseFloat(hour));
+    h: function (dateObj, hour) {
+        dateObj.setHours((dateObj.getHours() >= 12 ? 12 : 0) + parseFloat(hour));
     },
-    i: (dateObj, minutes) => {
+    i: function (dateObj, minutes) {
         dateObj.setMinutes(parseFloat(minutes));
     },
-    j: (dateObj, day) => {
+    j: function (dateObj, day) {
         dateObj.setDate(parseFloat(day));
     },
     l: doNothing,
-    m: (dateObj, month) => {
+    m: function (dateObj, month) {
         dateObj.setMonth(parseFloat(month) - 1);
     },
-    n: (dateObj, month) => {
+    n: function (dateObj, month) {
         dateObj.setMonth(parseFloat(month) - 1);
     },
-    s: (dateObj, seconds) => {
+    s: function (dateObj, seconds) {
         dateObj.setSeconds(parseFloat(seconds));
     },
-    u: (_, unixMillSeconds) => new Date(parseFloat(unixMillSeconds)),
+    u: function (_, unixMillSeconds) {
+        return new Date(parseFloat(unixMillSeconds));
+    },
     w: doNothing,
-    y: (dateObj, year) => {
+    y: function (dateObj, year) {
         dateObj.setFullYear(2000 + parseFloat(year));
     },
 };
-export const tokenRegex = {
-    D: "(\\w+)",
-    F: "(\\w+)",
+export var tokenRegex = {
+    D: "",
+    F: "",
     G: "(\\d\\d|\\d)",
     H: "(\\d\\d|\\d)",
     J: "(\\d\\d|\\d)\\w+",
     K: "",
-    M: "(\\w+)",
+    M: "",
     S: "(\\d\\d|\\d)",
     U: "(.+)",
     W: "(\\d\\d|\\d)",
@@ -81,7 +83,7 @@ export const tokenRegex = {
     h: "(\\d\\d|\\d)",
     i: "(\\d\\d|\\d)",
     j: "(\\d\\d|\\d)",
-    l: "(\\w+)",
+    l: "",
     m: "(\\d\\d|\\d)",
     n: "(\\d\\d|\\d)",
     s: "(\\d\\d|\\d)",
@@ -89,8 +91,8 @@ export const tokenRegex = {
     w: "(\\d\\d|\\d)",
     y: "(\\d{2})",
 };
-export const formats = {
-    Z: (date) => date.toISOString(),
+export var formats = {
+    Z: function (date) { return date.toISOString(); },
     D: function (date, locale, options) {
         return locale.weekdays.shorthand[formats.w(date, locale, options)];
     },
@@ -100,33 +102,33 @@ export const formats = {
     G: function (date, locale, options) {
         return pad(formats.h(date, locale, options));
     },
-    H: (date) => pad(date.getHours()),
+    H: function (date) { return pad(date.getHours()); },
     J: function (date, locale) {
         return locale.ordinal !== undefined
             ? date.getDate() + locale.ordinal(date.getDate())
             : date.getDate();
     },
-    K: (date, locale) => locale.amPM[int(date.getHours() > 11)],
+    K: function (date, locale) { return locale.amPM[int(date.getHours() > 11)]; },
     M: function (date, locale) {
         return monthToStr(date.getMonth(), true, locale);
     },
-    S: (date) => pad(date.getSeconds()),
-    U: (date) => date.getTime() / 1000,
+    S: function (date) { return pad(date.getSeconds()); },
+    U: function (date) { return date.getTime() / 1000; },
     W: function (date, _, options) {
         return options.getWeek(date);
     },
-    Y: (date) => pad(date.getFullYear(), 4),
-    d: (date) => pad(date.getDate()),
-    h: (date) => (date.getHours() % 12 ? date.getHours() % 12 : 12),
-    i: (date) => pad(date.getMinutes()),
-    j: (date) => date.getDate(),
+    Y: function (date) { return pad(date.getFullYear(), 4); },
+    d: function (date) { return pad(date.getDate()); },
+    h: function (date) { return (date.getHours() % 12 ? date.getHours() % 12 : 12); },
+    i: function (date) { return pad(date.getMinutes()); },
+    j: function (date) { return date.getDate(); },
     l: function (date, locale) {
         return locale.weekdays.longhand[date.getDay()];
     },
-    m: (date) => pad(date.getMonth() + 1),
-    n: (date) => date.getMonth() + 1,
-    s: (date) => date.getSeconds(),
-    u: (date) => date.getTime(),
-    w: (date) => date.getDay(),
-    y: (date) => String(date.getFullYear()).substring(2),
+    m: function (date) { return pad(date.getMonth() + 1); },
+    n: function (date) { return date.getMonth() + 1; },
+    s: function (date) { return date.getSeconds(); },
+    u: function (date) { return date.getTime(); },
+    w: function (date) { return date.getDay(); },
+    y: function (date) { return String(date.getFullYear()).substring(2); },
 };

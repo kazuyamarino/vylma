@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Albanian = {
+export var Albanian = {
     weekdays: {
         shorthand: ["Di", "Hë", "Ma", "Më", "En", "Pr", "Sh"],
         longhand: [
@@ -46,6 +46,13 @@ export const Albanian = {
             "Dhjetor",
         ],
     },
+    firstDayOfWeek: 1,
+    rangeSeparator: " deri ",
+    weekAbbreviation: "Java",
+    yearAriaLabel: "Viti",
+    monthAriaLabel: "Muaji",
+    hourAriaLabel: "Ora",
+    minuteAriaLabel: "Minuta",
     time_24hr: true,
 };
 fp.l10ns.sq = Albanian;

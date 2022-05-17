@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Slovenian = {
+export var Slovenian = {
     weekdays: {
         shorthand: ["Ned", "Pon", "Tor", "Sre", "Čet", "Pet", "Sob"],
         longhand: [

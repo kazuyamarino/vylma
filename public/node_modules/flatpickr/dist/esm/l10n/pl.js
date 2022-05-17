@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Polish = {
+export var Polish = {
     weekdays: {
         shorthand: ["Nd", "Pn", "Wt", "Śr", "Cz", "Pt", "So"],
         longhand: [
@@ -52,7 +52,7 @@ export const Polish = {
     toggleTitle: "Kliknij, aby przełączyć",
     firstDayOfWeek: 1,
     time_24hr: true,
-    ordinal: () => {
+    ordinal: function () {
         return ".";
     },
 };

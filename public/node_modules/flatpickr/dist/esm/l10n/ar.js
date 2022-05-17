@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Arabic = {
+export var Arabic = {
     weekdays: {
         shorthand: ["أحد", "اثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"],
         longhand: [
@@ -33,7 +33,17 @@ export const Arabic = {
             "ديسمبر",
         ],
     },
-    rangeSeparator: " - ",
+    firstDayOfWeek: 6,
+    rangeSeparator: " إلى ",
+    weekAbbreviation: "Wk",
+    scrollTitle: "قم بالتمرير للزيادة",
+    toggleTitle: "اضغط للتبديل",
+    amPM: ["ص", "م"],
+    yearAriaLabel: "سنة",
+    monthAriaLabel: "شهر",
+    hourAriaLabel: "ساعة",
+    minuteAriaLabel: "دقيقة",
+    time_24hr: false,
 };
 fp.l10ns.ar = Arabic;
 export default fp.l10ns;

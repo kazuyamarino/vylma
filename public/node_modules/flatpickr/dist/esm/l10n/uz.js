@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Uzbek = {
+export var Uzbek = {
     weekdays: {
         shorthand: ["Якш", "Душ", "Сеш", "Чор", "Пай", "Жум", "Шан"],
         longhand: [

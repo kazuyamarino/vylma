@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Korean = {
+export var Korean = {
     weekdays: {
         shorthand: ["일", "월", "화", "수", "목", "금", "토"],
         longhand: [
@@ -46,10 +46,11 @@ export const Korean = {
             "12월",
         ],
     },
-    ordinal: () => {
+    ordinal: function () {
         return "일";
     },
     rangeSeparator: " ~ ",
+    amPM: ["오전", "오후"],
 };
 fp.l10ns.ko = Korean;
 export default fp.l10ns;

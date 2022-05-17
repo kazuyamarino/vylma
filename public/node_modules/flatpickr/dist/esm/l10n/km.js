@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Khmer = {
+export var Khmer = {
     weekdays: {
         shorthand: ["អាទិត្យ", "ចន្ទ", "អង្គារ", "ពុធ", "ព្រហស.", "សុក្រ", "សៅរ៍"],
         longhand: [
@@ -46,7 +46,7 @@ export const Khmer = {
             "ធ្នូ",
         ],
     },
-    ordinal: () => {
+    ordinal: function () {
         return "";
     },
     firstDayOfWeek: 1,

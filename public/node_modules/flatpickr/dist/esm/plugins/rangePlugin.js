@@ -1,7 +1,15 @@
-function rangePlugin(config = {}) {
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+function rangePlugin(config) {
+    if (config === void 0) { config = {}; }
     return function (fp) {
-        let dateFormat = "", secondInput, _secondInputFocused, _prevDates;
-        const createSecondInput = () => {
+        var dateFormat = "", secondInput, _secondInputFocused, _prevDates;
+        var createSecondInput = function () {
             if (config.input) {
                 secondInput =
                     config.input instanceof Element
@@ -21,13 +29,13 @@ function rangePlugin(config = {}) {
                 secondInput._flatpickr = undefined;
             }
             if (secondInput.value) {
-                const parsedDate = fp.parseDate(secondInput.value);
+                var parsedDate = fp.parseDate(secondInput.value);
                 if (parsedDate)
                     fp.selectedDates.push(parsedDate);
             }
             secondInput.setAttribute("data-fp-omit", "");
             if (fp.config.clickOpens) {
-                fp._bind(secondInput, ["focus", "click"], () => {
+                fp._bind(secondInput, ["focus", "click"], function () {
                     if (fp.selectedDates[1]) {
                         fp.latestSelectedDateObj = fp.selectedDates[1];
                         fp._setHoursFromDate(fp.selectedDates[1]);
@@ -37,14 +45,14 @@ function rangePlugin(config = {}) {
                     fp.isOpen = false;
                     fp.open(undefined, config.position === "left" ? fp._input : secondInput);
                 });
-                fp._bind(fp._input, ["focus", "click"], (e) => {
+                fp._bind(fp._input, ["focus", "click"], function (e) {
                     e.preventDefault();
                     fp.isOpen = false;
                     fp.open();
                 });
             }
             if (fp.config.allowInput)
-                fp._bind(secondInput, "keydown", (e) => {
+                fp._bind(secondInput, "keydown", function (e) {
                     if (e.key === "Enter") {
                         fp.setDate([fp.selectedDates[0], secondInput.value], true, dateFormat);
                         secondInput.click();
@@ -54,14 +62,14 @@ function rangePlugin(config = {}) {
                 fp._input.parentNode &&
                     fp._input.parentNode.insertBefore(secondInput, fp._input.nextSibling);
         };
-        const plugin = {
-            onParseConfig() {
+        var plugin = {
+            onParseConfig: function () {
                 fp.config.mode = "range";
                 dateFormat = fp.config.altInput
                     ? fp.config.altFormat
                     : fp.config.dateFormat;
             },
-            onReady() {
+            onReady: function () {
                 createSecondInput();
                 fp.config.ignoredFocusElements.push(secondInput);
                 if (fp.config.allowInput) {
@@ -71,14 +79,14 @@ function rangePlugin(config = {}) {
                 else {
                     secondInput.setAttribute("readonly", "readonly");
                 }
-                fp._bind(fp._input, "focus", () => {
+                fp._bind(fp._input, "focus", function () {
                     fp.latestSelectedDateObj = fp.selectedDates[0];
                     fp._setHoursFromDate(fp.selectedDates[0]);
                     _secondInputFocused = false;
                     fp.jumpToDate(fp.selectedDates[0]);
                 });
                 if (fp.config.allowInput)
-                    fp._bind(fp._input, "keydown", (e) => {
+                    fp._bind(fp._input, "keydown", function (e) {
                         if (e.key === "Enter")
                             fp.setDate([fp._input.value, fp.selectedDates[1]], true, dateFormat);
                     });
@@ -86,17 +94,17 @@ function rangePlugin(config = {}) {
                 plugin.onValueUpdate(fp.selectedDates);
                 fp.loadedPlugins.push("range");
             },
-            onPreCalendarPosition() {
+            onPreCalendarPosition: function () {
                 if (_secondInputFocused) {
                     fp._positionElement = secondInput;
-                    setTimeout(() => {
+                    setTimeout(function () {
                         fp._positionElement = fp._input;
                     }, 0);
                 }
             },
-            onChange() {
+            onChange: function () {
                 if (!fp.selectedDates.length) {
-                    setTimeout(() => {
+                    setTimeout(function () {
                         if (fp.selectedDates.length)
                             return;
                         secondInput.value = "";
@@ -104,35 +112,40 @@ function rangePlugin(config = {}) {
                     }, 10);
                 }
                 if (_secondInputFocused) {
-                    setTimeout(() => {
+                    setTimeout(function () {
                         secondInput.focus();
                     }, 0);
                 }
             },
-            onDestroy() {
+            onDestroy: function () {
                 if (!config.input)
                     secondInput.parentNode &&
                         secondInput.parentNode.removeChild(secondInput);
             },
-            onValueUpdate(selDates) {
+            onValueUpdate: function (selDates) {
+                var _a, _b, _c;
                 if (!secondInput)
                     return;
                 _prevDates =
                     !_prevDates || selDates.length >= _prevDates.length
-                        ? [...selDates]
-                        : _prevDates;
+                        ? __spreadArrays(selDates) : _prevDates;
                 if (_prevDates.length > selDates.length) {
-                    const newSelectedDate = selDates[0];
-                    const newDates = _secondInputFocused
+                    var newSelectedDate = selDates[0];
+                    var newDates = _secondInputFocused
                         ? [_prevDates[0], newSelectedDate]
                         : [newSelectedDate, _prevDates[1]];
+                    if (newDates[0].getTime() > newDates[1].getTime()) {
+                        if (_secondInputFocused) {
+                            newDates[0] = newDates[1];
+                        }
+                        else {
+                            newDates[1] = newDates[0];
+                        }
+                    }
                     fp.setDate(newDates, false);
-                    _prevDates = [...newDates];
+                    _prevDates = __spreadArrays(newDates);
                 }
-                [
-                    fp._input.value = "",
-                    secondInput.value = "",
-                ] = fp.selectedDates.map((d) => fp.formatDate(d, dateFormat));
+                _a = fp.selectedDates.map(function (d) { return fp.formatDate(d, dateFormat); }), _b = _a[0], fp._input.value = _b === void 0 ? "" : _b, _c = _a[1], secondInput.value = _c === void 0 ? "" : _c;
             },
         };
         return plugin;

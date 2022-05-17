@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Georgian = {
+export var Georgian = {
     weekdays: {
         shorthand: ["კვ", "ორ", "სა", "ოთ", "ხუ", "პა", "შა"],
         longhand: [

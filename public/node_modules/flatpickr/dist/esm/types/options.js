@@ -1,4 +1,4 @@
-export const HOOKS = [
+export var HOOKS = [
     "onChange",
     "onClose",
     "onDayCreate",
@@ -12,7 +12,7 @@ export const HOOKS = [
     "onYearChange",
     "onPreCalendarPosition",
 ];
-export const defaults = {
+export var defaults = {
     _disable: [],
     allowInput: false,
     allowInvalidPreload: false,
@@ -34,9 +34,11 @@ export const defaults = {
     disableMobile: false,
     enableSeconds: false,
     enableTime: false,
-    errorHandler: (err) => typeof console !== "undefined" && console.warn(err),
-    getWeek: (givenDate) => {
-        const date = new Date(givenDate.getTime());
+    errorHandler: function (err) {
+        return typeof console !== "undefined" && console.warn(err);
+    },
+    getWeek: function (givenDate) {
+        var date = new Date(givenDate.getTime());
         date.setHours(0, 0, 0, 0);
         date.setDate(date.getDate() + 3 - ((date.getDay() + 6) % 7));
         var week1 = new Date(date.getFullYear(), 0, 4);

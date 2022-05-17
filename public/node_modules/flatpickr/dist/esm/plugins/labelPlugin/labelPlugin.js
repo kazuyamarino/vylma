@@ -1,8 +1,8 @@
 function labelPlugin() {
     return function (fp) {
         return {
-            onReady() {
-                const id = fp.input.id;
+            onReady: function () {
+                var id = fp.input.id;
                 if (!id) {
                     return;
                 }

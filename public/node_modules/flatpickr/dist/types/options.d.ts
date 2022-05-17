@@ -64,7 +64,7 @@ export interface BaseOptions {
     onPreCalendarPosition: Hook | Hook[];
     parseDate: (date: string, format: string) => Date;
     plugins: Plugin[];
-    position: "auto" | "above" | "below" | ((self: Instance, customElement: HTMLElement | undefined) => void);
+    position: "auto" | "above" | "below" | "auto left" | "auto center" | "auto right" | "above left" | "above center" | "above right" | "below left" | "below center" | "below right" | ((self: Instance, customElement: HTMLElement | undefined) => void);
     positionElement: Element;
     prevArrow: string;
     shorthandCurrentMonth: boolean;

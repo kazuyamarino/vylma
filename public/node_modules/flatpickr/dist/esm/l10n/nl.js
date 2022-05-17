@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Dutch = {
+export var Dutch = {
     weekdays: {
         shorthand: ["zo", "ma", "di", "wo", "do", "vr", "za"],
         longhand: [
@@ -52,7 +52,7 @@ export const Dutch = {
     scrollTitle: "Scroll voor volgende / vorige",
     toggleTitle: "Klik om te wisselen",
     time_24hr: true,
-    ordinal: (nth) => {
+    ordinal: function (nth) {
         if (nth === 1 || nth === 8 || nth >= 20)
             return "ste";
         return "de";

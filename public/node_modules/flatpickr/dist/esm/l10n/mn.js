@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Mongolian = {
+export var Mongolian = {
     firstDayOfWeek: 1,
     weekdays: {
         shorthand: ["Да", "Мя", "Лх", "Пү", "Ба", "Бя", "Ня"],

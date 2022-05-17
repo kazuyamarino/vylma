@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const SerbianCyrillic = {
+export var SerbianCyrillic = {
     weekdays: {
         shorthand: ["Нед", "Пон", "Уто", "Сре", "Чет", "Пет", "Суб"],
         longhand: [

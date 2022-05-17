@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Esperanto = {
+export var Esperanto = {
     firstDayOfWeek: 1,
     rangeSeparator: " ĝis ",
     weekAbbreviation: "Sem",
@@ -51,7 +51,7 @@ export const Esperanto = {
             "decembro",
         ],
     },
-    ordinal: () => {
+    ordinal: function () {
         return "-a";
     },
     time_24hr: true,

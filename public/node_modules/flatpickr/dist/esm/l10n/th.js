@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Thai = {
+export var Thai = {
     weekdays: {
         shorthand: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
         longhand: [
@@ -51,7 +51,7 @@ export const Thai = {
     scrollTitle: "เลื่อนเพื่อเพิ่มหรือลด",
     toggleTitle: "คลิกเพื่อเปลี่ยน",
     time_24hr: true,
-    ordinal: () => {
+    ordinal: function () {
         return "";
     },
 };

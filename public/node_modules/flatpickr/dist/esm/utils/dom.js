@@ -4,7 +4,7 @@ export function toggleClass(elem, className, bool) {
     elem.classList.remove(className);
 }
 export function createElement(tag, className, content) {
-    const e = window.document.createElement(tag);
+    var e = window.document.createElement(tag);
     className = className || "";
     content = content || "";
     e.className = className;
@@ -24,7 +24,7 @@ export function findParent(node, condition) {
     return undefined;
 }
 export function createNumberInput(inputClassName, opts) {
-    const wrapper = createElement("div", "numInputWrapper"), numInput = createElement("input", "numInput " + inputClassName), arrowUp = createElement("span", "arrowUp"), arrowDown = createElement("span", "arrowDown");
+    var wrapper = createElement("div", "numInputWrapper"), numInput = createElement("input", "numInput " + inputClassName), arrowUp = createElement("span", "arrowUp"), arrowDown = createElement("span", "arrowDown");
     if (navigator.userAgent.indexOf("MSIE 9.0") === -1) {
         numInput.type = "number";
     }
@@ -33,7 +33,7 @@ export function createNumberInput(inputClassName, opts) {
         numInput.pattern = "\\d*";
     }
     if (opts !== undefined)
-        for (const key in opts)
+        for (var key in opts)
             numInput.setAttribute(key, opts[key]);
     wrapper.appendChild(numInput);
     wrapper.appendChild(arrowUp);
@@ -43,7 +43,7 @@ export function createNumberInput(inputClassName, opts) {
 export function getEventTarget(event) {
     try {
         if (typeof event.composedPath === "function") {
-            const path = event.composedPath();
+            var path = event.composedPath();
             return path[0];
         }
         return event.target;

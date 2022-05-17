@@ -1,9 +1,9 @@
-const fp = typeof window !== "undefined" && window.flatpickr !== undefined
+var fp = typeof window !== "undefined" && window.flatpickr !== undefined
     ? window.flatpickr
     : {
         l10ns: {},
     };
-export const Norwegian = {
+export var Norwegian = {
     weekdays: {
         shorthand: ["Søn", "Man", "Tir", "Ons", "Tor", "Fre", "Lør"],
         longhand: [
@@ -52,7 +52,7 @@ export const Norwegian = {
     scrollTitle: "Scroll for å endre",
     toggleTitle: "Klikk for å veksle",
     time_24hr: true,
-    ordinal: () => {
+    ordinal: function () {
         return ".";
     },
 };
