@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../../',
         'aliases' => array(),
-        'reference' => '15573dbe268b1c87e0f91bf0e287f5aadd663c4b',
+        'reference' => 'ba25692ccabb613afdb6ce634d807e7ef024c3cf',
         'name' => 'vikry/nsy',
         'dev' => true,
     ),
@@ -490,7 +490,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../../',
             'aliases' => array(),
-            'reference' => '15573dbe268b1c87e0f91bf0e287f5aadd663c4b',
+            'reference' => 'ba25692ccabb613afdb6ce634d807e7ef024c3cf',
             'dev_requirement' => false,
         ),
         'voku/anti-xss' => array(
