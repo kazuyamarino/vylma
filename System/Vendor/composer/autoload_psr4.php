@@ -23,7 +23,7 @@ return array(
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Optimus\\Onion\\' => array($vendorDir . '/optimus/onion/src'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
-    'League\\Uri\\' => array($vendorDir . '/league/uri-interfaces/src', $vendorDir . '/league/uri/src'),
+    'League\\Uri\\' => array($vendorDir . '/league/uri/src', $vendorDir . '/league/uri-interfaces/src'),
     'Lablnet\\' => array($vendorDir . '/lablnet/encryption/src'),
     'Josantonius\\Session\\' => array($vendorDir . '/josantonius/session/src'),
     'Josantonius\\Json\\' => array($vendorDir . '/josantonius/json/src'),
