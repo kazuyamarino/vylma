@@ -27,9 +27,9 @@ class ModelCrud extends DB
 
 		// get last user_code second number from tb_users
 		$q_select_ucode = "SELECT
-								id as id,
-								SUBSTR(user_code, 2, 1) as ucode
-							FROM tb_users ORDER BY id DESC LIMIT 1";
+			id as id,
+			SUBSTR(user_code, 2, 1) as ucode
+		FROM tb_users ORDER BY id DESC LIMIT 1";
 		$get_ucode_num = DB::connect()->query($q_select_ucode)->style(FETCH_ASSOC)->fetch();
 		terner( $get_ucode_num['ucode'] == 9, ($last_ucode = 0), ($last_ucode = 1 + $get_ucode_num['ucode']) ); // if ucode reach 9 then reset it to 0
 
@@ -44,21 +44,21 @@ class ModelCrud extends DB
 	{
 		// begin for insert data
 		$q_insert_user = "INSERT INTO tb_users(
-								user_code,
-								user_name,
-								user_password,
-								user_status,
-								create_date,
-								update_date,
-								adds_date )
-							VALUES(
-								:user_code,
-								:user_name,
-								:user_password,
-								:user_status,
-								:create_date,
-								:update_date,
-								:adds_date )";
+			user_code,
+			user_name,
+			user_password,
+			user_status,
+			create_date,
+			update_date,
+			adds_date )
+		VALUES(
+			:user_code,
+			:user_name,
+			:user_password,
+			:user_status,
+			:create_date,
+			:update_date,
+			:adds_date )";
 		DB::connect()->query($q_insert_user)->vars($param)->exec();
 	}
 
@@ -80,13 +80,13 @@ class ModelCrud extends DB
 	{
 		// query for data updates without a password
 		$query = "UPDATE tb_users SET
-					user_name     = :user_name,
-					user_password = user_password,
-					user_status   = :user_status,
-					create_date   = create_date,
-					update_date   = :update_date,
-					adds_date     = adds_date
-				WHERE id = :id";
+			user_name     = :user_name,
+			user_password = user_password,
+			user_status   = :user_status,
+			create_date   = create_date,
+			update_date   = :update_date,
+			adds_date     = adds_date
+		WHERE id = :id";
 		DB::connect()->query($query)->vars($param)->exec();
 	}
 
@@ -94,13 +94,13 @@ class ModelCrud extends DB
 	{
 		// query for data updates with a password
 		$query = "UPDATE tb_users SET
-					user_name     = :user_name,
-					user_password = :user_password,
-					user_status   = :user_status,
-					create_date   = create_date,
-					update_date   = :update_date,
-					adds_date     = adds_date
-				WHERE id = :id";
+			user_name     = :user_name,
+			user_password = :user_password,
+			user_status   = :user_status,
+			create_date   = create_date,
+			update_date   = :update_date,
+			adds_date     = adds_date
+		WHERE id = :id";
 		DB::connect()->query($query)->vars($param)->exec();
 	}
 
