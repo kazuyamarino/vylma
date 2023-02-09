@@ -17,7 +17,7 @@ function header_assets()
 	Add::custom('<title>' . get_title() . ' ' . get_version() . ' | ' . get_codename() . '</title>');
 
 	// Meta Tag
-	Add::meta('charset="utf-8"', null);
+	Add::meta('charset="utf-8"');
 	Add::meta('http-equiv="x-ua-compatible"', 'ie=edge');
 	Add::meta('name="description"', get_desc());
 	Add::meta('name="keywords"', get_keywords());
@@ -25,7 +25,7 @@ function header_assets()
 	Add::meta('name="viewport"', 'width=device-width, initial-scale=1, shrink-to-fit=no');
 
 	// Favicon
-	Add::link('favicon.png', 'shortcut icon', null);
+	Add::link('favicon.png', 'shortcut icon');
 
 	// Font Awesome CSS
 	Add::link('../../node_modules/@fortawesome/fontawesome-free/css/all.min.css', 'stylesheet', 'text/css');
@@ -47,53 +47,53 @@ function header_assets()
 	Add::link('main.css', 'stylesheet', 'text/css');
 
 	// Modernizr JS
-	Add::script('modernizr.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('modernizr.min.js', 'text/javascript', 'UTF-8');
 }
 
 function footer_assets()
 {
 	// Jquery JS
-	Add::script('../../node_modules/jquery/dist/jquery.min.js', 'text/javascript', 'UTF-8', null);
-	Add::script('../../node_modules/jquery-migrate/dist/jquery-migrate.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('../../node_modules/jquery/dist/jquery.min.js', 'text/javascript', 'UTF-8');
+	Add::script('../../node_modules/jquery-migrate/dist/jquery-migrate.min.js', 'text/javascript', 'UTF-8');
 
 	// Norma JS
-	Add::script('norma.bulma.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('norma.bulma.min.js', 'text/javascript', 'UTF-8');
 
 	// WhatInput JS
-	Add::script('../../node_modules/what-input/dist/what-input.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('../../node_modules/what-input/dist/what-input.min.js', 'text/javascript', 'UTF-8');
 
 	// Datatables JS
-	Add::script('../../node_modules/datatables.net/js/jquery.dataTables.min.js', 'text/javascript', 'UTF-8', null);
-	Add::script('../../node_modules/datatables-bulma/js/dataTables.bulma.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('../../node_modules/datatables.net/js/jquery.dataTables.min.js', 'text/javascript', 'UTF-8');
+	Add::script('../../node_modules/datatables-bulma/js/dataTables.bulma.min.js', 'text/javascript', 'UTF-8');
 
 	// Bulma modal-fx JS
-	Add::script('../../node_modules/bulma-modal-fx/dist/js/modal-fx.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('../../node_modules/bulma-modal-fx/dist/js/modal-fx.min.js', 'text/javascript', 'UTF-8');
 
 	// Flatpickr JS
-	Add::script('../../node_modules/flatpickr/dist/flatpickr.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('../../node_modules/flatpickr/dist/flatpickr.min.js', 'text/javascript', 'UTF-8');
 
 	// System JS
-	Add::script('config/system.js', 'text/javascript', 'UTF-8', null);
+	Add::script('config/system.js', 'text/javascript', 'UTF-8');
 
 	// Main JS
-	Add::script('main.js', 'text/javascript', 'UTF-8', null);
+	Add::script('main.js', 'text/javascript', 'UTF-8');
 }
 
 function sweetalert_init()
 {
 	// Sweetalert init
-	Add::script('../../node_modules/sweetalert2/dist/sweetalert2.all.min.js', 'text/javascript', 'UTF-8', null);
-	Add::script('../../node_modules/promise-polyfill/dist/polyfill.min.js', 'text/javascript', 'UTF-8', null);
+	Add::script('../../node_modules/sweetalert2/dist/sweetalert2.all.min.js', 'text/javascript', 'UTF-8');
+	Add::script('../../node_modules/promise-polyfill/dist/polyfill.min.js', 'text/javascript', 'UTF-8');
 }
 
 function datatables_init()
 {
 	// Datatables init
-	Add::script('datatables/init.js', 'text/javascript', 'UTF-8', null);
+	Add::script('datatables/init.js', 'text/javascript', 'UTF-8');
 }
 
 function datatables_crud_init()
 {
 	// Datatables init
-	Add::script('datatables/init_crud.js', 'text/javascript', 'UTF-8', null);
+	Add::script('datatables/init_crud.js', 'text/javascript', 'UTF-8');
 }
