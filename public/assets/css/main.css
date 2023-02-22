@@ -33,7 +33,7 @@ body {
  * norma v0.0.5 | MIT License
  */
 .is-error {
-	display: none;
+	display: none !important;
 }
 
 .notification.alert {
