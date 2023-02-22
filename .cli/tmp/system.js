@@ -36,18 +36,3 @@ function base_url(url)
 		}
 	}
 }
-
-/**
- * Bulma Notification JS
- */
- $(document).ready(function() {
-	$(".notification > button.delete").click(function() {
-		$(this).parent().addClass("is-hidden");
-		return false;
-	});
-});
-
-/**
- * Norma JS Initialize
- */
-$(document).norma();
