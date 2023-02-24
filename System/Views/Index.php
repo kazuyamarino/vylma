@@ -910,7 +910,7 @@
 		<div class="columns content">
 			<div class="column is-full">
 				<h5>Here is DataTables Examples!</h5>
-				<table id="example" class="table display" cellspacing="0" width="100%">
+				<table id="example" class="table display responsive" cellspacing="0" width="100%">
 					<thead>
 						<tr>
 							<th>Name</th>

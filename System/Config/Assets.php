@@ -33,6 +33,7 @@ function header_assets()
 	// Bulma CSS
 	Add::link('../../node_modules/bulma/css/bulma.min.css', 'stylesheet', 'text/css');
 	Add::link('../../node_modules/bulma-modal-fx/dist/css/modal-fx.min.css', 'stylesheet', 'text/css');
+	Add::link('responsive-tables.min.css', 'stylesheet', 'text/css');
 
 	// Datatable CSS
 	Add::link('../../node_modules/datatables-bulma/css/dataTables.bulma.min.css', 'stylesheet', 'text/css');
@@ -65,6 +66,7 @@ function footer_assets()
 	// Datatables JS
 	Add::script('../../node_modules/datatables.net/js/jquery.dataTables.min.js', 'text/javascript', 'UTF-8');
 	Add::script('../../node_modules/datatables-bulma/js/dataTables.bulma.min.js', 'text/javascript', 'UTF-8');
+	Add::script('responsive-tables.min.js', 'text/javascript', 'UTF-8');
 	Add::link('../../node_modules/jquery-datatables-checkboxes/css/dataTables.checkboxes.css', 'stylesheet', 'text/css');
 	Add::script('../../node_modules/jquery-datatables-checkboxes/js/dataTables.checkboxes.min.js', 'text/javascript', 'UTF-8');
 
