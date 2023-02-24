@@ -3,7 +3,7 @@
 namespace System\Modules\Crud\Models;
 
 use System\Core\DB;
-use System\Libraries\QueryBuilder\GenericBuilder;
+use System\Vendor\QueryBuilder\GenericBuilder;
 
 class ModelCrud extends DB
 {
@@ -20,7 +20,7 @@ class ModelCrud extends DB
 		// query to display the data table in json form
 		$query = $this->builder->select()->setTable('tb_users'); 
 		$sql = $this->builder->write($query);
-		
+
 		$data = DB::connect()->query($sql)->style(FETCH_ASSOC)->fetch_all();
 		$json_data = json_fetch([
 			"data" => $data
