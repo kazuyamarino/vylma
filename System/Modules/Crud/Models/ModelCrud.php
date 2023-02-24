@@ -1,16 +1,27 @@
 <?php
+
 namespace System\Modules\Crud\Models;
 
 use System\Core\DB;
+use System\Libraries\QueryBuilder\GenericBuilder;
 
 class ModelCrud extends DB
 {
 
+	private $builder;
+
+	public function __construct()
+	{
+		$this->builder = new GenericBuilder();
+	}
+
 	public function get_data()
 	{
 		// query to display the data table in json form
-		$query = "SELECT * FROM tb_users";
-		$data = DB::connect()->query($query)->style(FETCH_ASSOC)->fetch_all();
+		$query = $this->builder->select()->setTable('tb_users'); 
+		$sql = $this->builder->write($query);
+		
+		$data = DB::connect()->query($sql)->style(FETCH_ASSOC)->fetch_all();
 		$json_data = json_fetch([
 			"data" => $data
 		]);
@@ -23,7 +34,7 @@ class ModelCrud extends DB
 		// get last id from tb_users
 		$q_select_id = "SELECT MAX(id) FROM tb_users";
 		$last_id = DB::connect()->query($q_select_id)->fetch_column();
-		terner( not_filled($last_id), $last_id = 0, $last_id ); // if last id is 0 then give it 0 value
+		terner(not_filled($last_id), $last_id = 0, $last_id); // if last id is 0 then give it 0 value
 
 		// get last user_code second number from tb_users
 		$q_select_ucode = "SELECT
@@ -31,7 +42,7 @@ class ModelCrud extends DB
 			SUBSTR(user_code, 2, 1) as ucode
 		FROM tb_users ORDER BY id DESC LIMIT 1";
 		$get_ucode_num = DB::connect()->query($q_select_ucode)->style(FETCH_ASSOC)->fetch();
-		terner( $get_ucode_num['ucode'] == 9, ($last_ucode = 0), ($last_ucode = 1 + $get_ucode_num['ucode']) ); // if ucode reach 9 then reset it to 0
+		terner($get_ucode_num['ucode'] == 9, ($last_ucode = 0), ($last_ucode = 1 + $get_ucode_num['ucode'])); // if ucode reach 9 then reset it to 0
 
 		// generate user code and setting up variables
 		$gen_user_code = 2 . $last_ucode . $last_id;
@@ -109,13 +120,12 @@ class ModelCrud extends DB
 		// fetch data from the data table for updating purposes
 		$query = "SELECT * FROM tb_users WHERE id = :id";
 		$data = DB::connect()
-					->query($query)
-					->vars($param)
-					->style(FETCH_ASSOC)
-					->bind(BINDVAL)
-					->fetch();
+			->query($query)
+			->vars($param)
+			->style(FETCH_ASSOC)
+			->bind(BINDVAL)
+			->fetch();
 
 		return $data;
 	}
-
 }

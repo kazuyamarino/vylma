@@ -243,7 +243,10 @@ return [
 		'System\Libraries\Facades\Cookie' => Josantonius\Cookie\Facades\Cookie::class,
 		'System\Libraries\Json' => Josantonius\Json\Json::class,
 		'System\Libraries\Session' => Josantonius\Session\Session::class,
-		'System\Libraries\Facades\Session' => Josantonius\Session\Facades\Session::class
+		'System\Libraries\Facades\Session' => Josantonius\Session\Facades\Session::class,
+		'System\Libraries\QueryBuilder\GenericBuilder' => NilPortugues\Sql\QueryBuilder\Builder\GenericBuilder::class,
+		'System\Libraries\QueryBuilder\OrderBy' => NilPortugues\Sql\QueryBuilder\Syntax\OrderBy::class,
+		'System\Libraries\QueryBuilder\MySqlBuilder' => NilPortugues\Sql\QueryBuilder\Builder\MySqlBuilder::class
 	]
 
 ];
