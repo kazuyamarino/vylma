@@ -11,6 +11,7 @@
     "datatables.net": "^1.11.4",
     "flatpickr": "^4.6.9",
     "jquery": "^3.6.0",
+    "jquery-datatables-checkboxes": "^1.2.13",
     "jquery-migrate": "^3.3.2",
     "promise-polyfill": "^8.2.1",
     "simptip": "^1.0.4",

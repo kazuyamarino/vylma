@@ -65,6 +65,8 @@ function footer_assets()
 	// Datatables JS
 	Add::script('../../node_modules/datatables.net/js/jquery.dataTables.min.js', 'text/javascript', 'UTF-8');
 	Add::script('../../node_modules/datatables-bulma/js/dataTables.bulma.min.js', 'text/javascript', 'UTF-8');
+	Add::link('../../node_modules/jquery-datatables-checkboxes/css/dataTables.checkboxes.css', 'stylesheet', 'text/css');
+	Add::script('../../node_modules/jquery-datatables-checkboxes/js/dataTables.checkboxes.min.js', 'text/javascript', 'UTF-8');
 
 	// Bulma modal-fx JS
 	Add::script('../../node_modules/bulma-modal-fx/dist/js/modal-fx.min.js', 'text/javascript', 'UTF-8');
