@@ -32,16 +32,11 @@ body {
 /*
  * norma v0.0.5 | MIT License
  */
-.is-error {
-	display: none !important;
+.is-norma {
+	display: none;
 }
 
-.notification.alert {
-	background-color: #ff3860;
-	color: #fff;
-}
-
-.select select.is-danger {
+select.is-danger {
 	border-color: #ff3860;
 }
 

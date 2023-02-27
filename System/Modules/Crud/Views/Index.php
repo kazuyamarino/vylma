@@ -7,14 +7,14 @@
 			<h5 class="has-text-centered"><a href="@( base_url() )">Back</a></h5>
 			<h5>Users Registration</h5>
 			<form action="@( base_url('crud/insert') )" method="POST" data-abide novalidate>
-				<div data-abide-error class="is-error notification alert">
+				<div data-abide-error class="notification is-norma is-danger">
 					<p>There are some errors in your form.</p>
 				</div>
 
 				<div class="field">
 					<label class="label">Username&nbsp;<small>(required)</small>
 						<input class="input" type="text" name="user_name" id="username-help" placeholder="3 - 50 characters" pattern="^[a-z0-9\._-]{3,50}$" required>
-						<span class="help is-error is-danger">
+						<span class="help is-norma">
 							<ul>
 								<li>Username must be lowercase</li>
 								<li>Can only contain dot (&nbsp;.&nbsp;), underscore (&nbsp;_&nbsp;), & minus (&nbsp;-&nbsp;)</li>
@@ -27,7 +27,7 @@
 				<div class="field">
 					<label class="label">Password&nbsp;<small>(required)</small>
 						<input class="input" type="password" name="user_password" id="user-password-first" placeholder="5 - 16 characters" pattern="^[a-zA-Z0-9\.]{5,16}$" required>
-						<span class="help is-error is-danger">
+						<span class="help is-norma">
 							<ul>
 								<li>Password is required.</li>
 								<li>Can only contain dot (&nbsp;.&nbsp;)</li>
@@ -39,7 +39,7 @@
 				<div class="field">
 					<label class="label">Confirm Password&nbsp;<small>(required)</small>
 						<input class="input" type="password" placeholder="5 - 16 characters" pattern="^[a-zA-Z0-9\.]{5,16}$" data-equalto="user-password-first" required>
-						<span class="help is-error is-danger">The password did not match</span>
+						<span class="help is-norma">The password did not match</span>
 					</label>
 					<p class="help" id="password-help">Enter your password here.</p>
 				</div>

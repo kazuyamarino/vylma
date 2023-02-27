@@ -82,14 +82,14 @@
 					<p class="title is-5">Need form with validation example? Check it out bro!</p>
 					<p class="is-6 subtitle">Here's how you use this input field!</p>
 
-					<div data-abide-error class="is-error notification alert">
+					<div data-abide-error class="notification is-norma is-danger">
 						<p>There are some errors in your form.</p>
 					</div>
 
 					<div class="field">
 						<label class="label">Number <small>(required)</small>
 							<input type="text" class="input" placeholder="1234" required pattern="^[-+]?\d*(?:[\.\,]\d+)?$">
-							<span class="help is-error is-danger">Yo, you had better fill this out, it's required.</span>
+							<span class="help is-norma">Yo, you had better fill this out, it's required.</span>
 						</label>
 					</div>
 
@@ -127,14 +127,14 @@
 					<div class="field">
 						<label class="label">Password <small>(required)</small>
 							<input type="password" id="password" class="input" required pattern="[a-zA-Z]+">
-							<span class="help is-error is-danger">Your password must match the requirements</span>
+							<span class="help is-norma">Your password must match the requirements</span>
 						</label>
 					</div>
 
 					<div class="field">
 						<label class="label">Confirm Password <small>(required)</small>
 							<input type="password" class="input" required pattern="[a-zA-Z]+" data-equalto="password">
-							<span class="help is-error is-danger">The password did not match</span>
+							<span class="help is-norma">The password did not match</span>
 						</label>
 					</div>
 
@@ -159,8 +159,8 @@
 					</div>
 
 					<div class="field">
-						<label class="label" for="cutecharCheckbox">What is your favorite chars?</label>
 						<div id="cutecharCheckbox" class="checkbox-group" data-validator-min="2" required>
+							<label class="label" for="cutecharCheckbox">What is your favorite chars?</label>
 							<div class="control">
 								<label class="checkbox">
 									<input type="checkbox" name="cutechar" value="Petruk">&nbsp;Petruk
@@ -190,13 +190,13 @@
 						<div id="cutecharRadio" class="radio-group">
 							<div class="control">
 								<label class="radio" for="pokemonRed">
-						        	<input type="radio" name="pokemon" value="Red" id="pokemonRed" required>&nbsp;Red
+									<input type="radio" name="pokemon" value="Red" id="pokemonRed" required>&nbsp;Red
 								</label>
 								<label class="radio" for="pokemonBlue">
-						        	<input type="radio" name="pokemon" value="Blue" id="pokemonBlue">&nbsp;Blue
+									<input type="radio" name="pokemon" value="Blue" id="pokemonBlue">&nbsp;Blue
 								</label>
 								<label class="radio" for="pokemonYellow">
-						        	<input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">&nbsp;Yellow
+									<input type="radio" name="pokemon" value="Yellow" id="pokemonYellow">&nbsp;Yellow
 								</label>
 							</div>
 						</div>
@@ -879,7 +879,8 @@
 
 					</div>
 					<div class="column is-9">
-						<h5>The grids!</h5><hr>
+						<h5>The grids!</h5>
+						<hr>
 						<div class="columns">
 							<div class="column is-primary">
 								<div class="notification is-primary">
