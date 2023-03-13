@@ -3,7 +3,7 @@
         'name' => 'vikry/nsy',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '8bb2c27a6c4f29e9ebbb4f15fa329044852a02d9',
+        'reference' => '777a2b2b9caa55fadfd39c26b541bb8bd9ac84bf',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../../',
         'aliases' => array(),
@@ -505,7 +505,7 @@
         'vikry/nsy' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '8bb2c27a6c4f29e9ebbb4f15fa329044852a02d9',
+            'reference' => '777a2b2b9caa55fadfd39c26b541bb8bd9ac84bf',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../../',
             'aliases' => array(),
