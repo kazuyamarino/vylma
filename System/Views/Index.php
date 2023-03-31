@@ -14,24 +14,47 @@
 					<div class="tile is-6 is-vertical is-parent">
 						<div class="tile is-child box">
 							<h3>NSY Guide & Example</h3>
+
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#vylma-contain-package-"><strong>Vylma contain package</strong></a><br />The package inside Vylma.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#codename"><strong>NSY Release Codename</strong></a><br><code>About NSY codename.</code></p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/vylma#lets-start"><strong>How to dating with Vylma?</strong></a><br />Setup installation.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#how-to-dating-with-nsy"><strong>How to dating with NSY?</strong></a><br><code>NSY Installation guide.</code></p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="@( base_url('crud') )"><strong>Shyffon CRUD Example</strong></a><br />The CRUD example build by Shyffon.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#crud-example"><strong>Shyffon & Vylma</strong></a><br><code>The CRUD example build by NSY.</code></p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#nsy-features-"><strong>NSY Features</strong></a><br />Features available in NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#features-"><strong>NSY Features</strong></a><br><code>Features available in NSY.</code></p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#user-guide-"><strong>NSY User Guide</strong></a><br />The guide before starting to use NSY.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#nsy-helper-function-"><strong>NSY Helper Function</strong></a><br><code>List of helper functions in NSY</code></p>
 							</div>
 							<div class="content">
-								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs/blob/master/README.md#system-guide-"><strong>NSY System Guide</strong></a><br />The guide system.</p>
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#external-helper-function-"><strong>External Helper Function</strong></a><br><code>List of external helper functions in NSY</code></p>
 							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#nsy-middleware"><strong>NSY Middleware</strong></a><br><code>NSY has support middleware</code></p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#nsy-migration"><strong>NSY Migration</strong></a><br><code>Migration is like version control for your database</code></p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#razr-template-engine"><strong>Razr Template Engine</strong></a><br><code>Razr is a powerful PHP template engine for PHP</code></p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#nsy-security-function"><strong>NSY Security Function</strong></a><br><code>NSY provides security functions including antiXSS and CSRF</code></p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#nsy-controller"><strong>NSY Controller</strong></a><br><code>Controllers act as an interface between Model and View components</code></p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#nsy-model"><strong>NSY Model</strong></a><br><code>The Model component corresponds to all the data-related logic that the user works with</code></p>
+							</div>
+							<div class="content">
+								<p><a target="_blank" href="@( base_url('crud') )"><strong>Shyffon CRUD Example</strong></a><br><code>The CRUD example build by Shyffon.</code></p>
+							</div>
+
 							<h5>Image Modal</h5>
 							<div class="buttons">
 								<span class="button is-warning is-medium modal-button" data-target="modal-image">Image modal</span>
