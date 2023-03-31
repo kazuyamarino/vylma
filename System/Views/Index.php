@@ -51,9 +51,6 @@
 							<div class="content">
 								<p><a target="_blank" href="https://github.com/kazuyamarino/nsy-docs#nsy-model"><strong>NSY Model</strong></a><br><code>The Model component corresponds to all the data-related logic that the user works with</code></p>
 							</div>
-							<div class="content">
-								<p><a target="_blank" href="@( base_url('crud') )"><strong>Shyffon CRUD Example</strong></a><br><code>The CRUD example build by Shyffon.</code></p>
-							</div>
 
 							<h5>Image Modal</h5>
 							<div class="buttons">
