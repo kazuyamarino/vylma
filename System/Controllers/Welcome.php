@@ -1,4 +1,5 @@
 <?php
+
 namespace System\Controllers;
 
 use System\Core\Load;
@@ -10,16 +11,9 @@ class Welcome extends Load
 
 	public function index()
 	{
-		$arr = [
-			'welcome' => Load::model('ModelWelcome')->welcome(), // Call the welcome method from Model_Welcome
-			'mvc_page' => Load::model('Homepage\ModelHello')->mvc_page(), // Call the mvc_page method from Model_Hello inside the Homepage module
-			'date' => Carbon::now() // Instantiate today's date with Carbon
-		];
-
 		// Load MVC view page
-		Load::template('Header', $arr);
-		Load::view(null, 'Index', $arr);
-		Load::template('Footer', $arr);
+		Load::template('Header');
+		Load::view(null, 'Index');
+		Load::template('Footer');
 	}
-
 }
