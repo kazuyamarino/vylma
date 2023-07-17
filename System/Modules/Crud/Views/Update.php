@@ -48,10 +48,10 @@
 					<div id="radio-stat" class="radio-group">
 						<div class="control">
 							<label class="radio">
-								<input type="radio" name="user_status" value="Y" id="act-stat" @( terner( ('Y' == $data['user_status']), 'checked', '') ) required>&nbsp;Yes
+								<input type="radio" name="user_status" value="Y" id="act-stat" @( terner( ('Y'==$data['user_status']), 'checked' , '' ) ) required>&nbsp;Yes
 							</label>
 							<label class="radio">
-								<input type="radio" name="user_status" value="N" id="deact-stat" @( terner( ('N' == $data['user_status']), 'checked', '' ) )>&nbsp;No
+								<input type="radio" name="user_status" value="N" id="deact-stat" @( terner( ('N'==$data['user_status']), 'checked' , '' ) )>&nbsp;No
 							</label>
 						</div>
 						<span class="help">Must select at least one</span>
