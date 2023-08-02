@@ -1,7 +1,8 @@
 <?php
+
 /**
-* Environment Variables
-*/
+ * Environment Variables
+ */
 return [
 
 	/*
@@ -13,11 +14,6 @@ return [
 	| Define Application Directory
 	*/
 	'APP_DIR' => 'vylma',
-
-	/*
-	| Define Session Prefix
-	*/
-	'SESSION_PREFIX' => '',
 
 	/*
 	| Define Public directory name
@@ -39,7 +35,6 @@ return [
 
 		// Primary connection
 		'primary' => [
-			'CONNECTION_NAME' => 'primary',
 			'DB_CONNECTION' => '',
 			'DB_HOST' => '',
 			'DB_PORT' => '',
@@ -49,13 +44,13 @@ return [
 			'DB_CHARSET' => '',
 			'DB_PREFIX' => '',
 			'DB_ATTR' => [
-				\PDO::ATTR_ERRMODE => \PDO::ERRMODE_WARNING
+				\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+				\PDO::ATTR_EMULATE_PREPARES => false
 			]
 		],
 
 		// Secondary connection
 		'secondary' => [
-			'CONNECTION_NAME' => 'secondary',
 			'DB_CONNECTION' => '',
 			'DB_HOST' => '',
 			'DB_PORT' => '',
@@ -65,7 +60,8 @@ return [
 			'DB_CHARSET' => '',
 			'DB_PREFIX' => '',
 			'DB_ATTR' => [
-				\PDO::ATTR_ERRMODE => \PDO::ERRMODE_WARNING
+				\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+				\PDO::ATTR_EMULATE_PREPARES => false
 			]
 		]
 
