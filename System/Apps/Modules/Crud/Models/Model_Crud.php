@@ -60,21 +60,21 @@ class Model_Crud extends DB
 			:create_date,
 			:update_date,
 			:additional_date )";
-		DB::connect()->query($q_insert_user)->vars($param)->exec();
+		DB::connect()->query($q_insert_user)->vars($param)->bind()->exec();
 	}
 
 	public function delete_data($param)
 	{
 		// query to delete the data table
 		$query = "DELETE FROM crud_table WHERE id = :id";
-		DB::connect()->query($query)->vars($param)->exec();
+		DB::connect()->query($query)->vars($param)->bind()->exec();
 	}
 
 	public function multidelete_data($data)
 	{
 		// query to delete more than one data table
 		$query = "DELETE FROM crud_table WHERE id IN ($data[0])";
-		DB::connect()->query($query)->vars($data[1])->exec();
+		DB::connect()->query($query)->vars($data[1])->bind()->exec();
 	}
 
 	public function update_data_password_null($param)
@@ -88,7 +88,7 @@ class Model_Crud extends DB
 			update_date   = :update_date,
 			additional_date     = additional_date
 		WHERE id = :id";
-		DB::connect()->query($query)->vars($param)->exec();
+		DB::connect()->query($query)->vars($param)->bind()->exec();
 	}
 
 	public function update_data_password_yes($param)
@@ -102,7 +102,7 @@ class Model_Crud extends DB
 			update_date   = :update_date,
 			additional_date     = additional_date
 		WHERE id = :id";
-		DB::connect()->query($query)->vars($param)->exec();
+		DB::connect()->query($query)->vars($param)->bind()->exec();
 	}
 
 	public function fetch_update($param)
@@ -112,6 +112,7 @@ class Model_Crud extends DB
 		$data = DB::connect()
 			->query($query)
 			->vars($param)
+			->bind()
 			->style(FETCH_ASSOC)
 			->bind(BINDVAL)
 			->fetch();
