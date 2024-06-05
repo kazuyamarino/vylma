@@ -121,7 +121,6 @@ class NSY_Desk
 		// Register Libraries
 		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Libraries/Aliases.php';
 		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Config/Assets.php';
-		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Config/Alerts.php';
 	}
 
 	/**
@@ -130,8 +129,9 @@ class NSY_Desk
 	 */
 	public static function register_route()
 	{
-		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Routes/Web.php';
-		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Routes/Migration.php';
+		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Routes/General.php';
+		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Core/NSY_Migration_Route.php';
+		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Routes/Modules.php';
 
 		// Required user defined routes from Config
 		$route = config_app('routes');
