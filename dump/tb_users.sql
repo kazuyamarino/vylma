@@ -30,7 +30,7 @@ CREATE TABLE `tb_users` (
   `user_status` varchar(2) CHARACTER SET utf8 DEFAULT NULL,
   `create_date` datetime DEFAULT NULL,
   `update_date` datetime DEFAULT NULL,
-  `adds_date` datetime DEFAULT NULL,
+  `additional_date` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;

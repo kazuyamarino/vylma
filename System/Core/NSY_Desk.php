@@ -121,6 +121,7 @@ class NSY_Desk
 		// Register Libraries
 		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Libraries/Aliases.php';
 		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Config/Assets.php';
+		require_once __DIR__ . '/../../' . config_app('sys_dir') . '/Config/Alerts.php';
 	}
 
 	/**

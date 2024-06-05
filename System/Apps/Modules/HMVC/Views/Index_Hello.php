@@ -1,4 +1,7 @@
-<div style="text-align:center" class="wrap">
-	<h2>Hello, @( $hmvc_text )!</h2>
-	<h4><a href="@( base_url() )">Back To MVC Page</a></h4>
+<div class="columns wrap content">
+	<div class="column is-full">
+		<hr>
+		<h3>Hi, NSY Users!&nbsp;|&nbsp;<a href="@( base_url() )">Go To MVC Page</a></h3>
+		<h1>This is HMVC page</h1>
+	</div>
 </div>
