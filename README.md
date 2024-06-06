@@ -63,7 +63,7 @@ For nginx, please go to the `docs/nginx` folder and read the `Readme.txt` too.
 
 ## Database Example
 
-There is an example database (sql file) in the `dump` folder. You can restore the sql file to a database that you created yourself.
+There is an example mysql or mariadb database (for test the CRUD process) in the `Migrations` folder. You can restore it to a database with this way [NSY Migration](https://github.com/kazuyamarino/nsy-docs/blob/master/NSY_MIGRATION.md).
 
 ---
 
