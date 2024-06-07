@@ -32,12 +32,15 @@ class Model_Crud extends DB
 			SUBSTR(user_code, 2, 1) as ucode
 		FROM crud_table ORDER BY id DESC LIMIT 1";
 		$get_ucode_num = DB::connect()->query($q_select_ucode)->style(FETCH_ASSOC)->fetch();
-		terner((int)$get_ucode_num['ucode'] == 9, ($last_ucode = 0), ($last_ucode = 1 + (int)$get_ucode_num['ucode'])); // if ucode reach 9 then reset it to 0
+		if (not_filled($get_ucode_num)) {
+			$last_ucode = 0;
+		} else {
+			terner( $get_ucode_num['ucode'] == 9, ($last_ucode = 0), ($last_ucode = 1 + (int)$get_ucode_num['ucode']) ); // if ucode reach 9 then reset it to 0
+		}
 
 		// generate user code and setting up variables
 		$gen_user_code = 2 . $last_ucode . $last_id;
 		$user_code     = $gen_user_code;
-
 		return $user_code;
 	}
 
