@@ -35,7 +35,7 @@ class Model_Crud extends DB
 		if (not_filled($get_ucode_num)) {
 			$last_ucode = 0;
 		} else {
-			terner( $get_ucode_num['ucode'] == 9, ($last_ucode = 0), ($last_ucode = 1 + (int)$get_ucode_num['ucode']) ); // if ucode reach 9 then reset it to 0
+			terner($get_ucode_num['ucode'] == 9, ($last_ucode = 0), ($last_ucode = 1 + (int)$get_ucode_num['ucode'])); // if ucode reach 9 then reset it to 0
 		}
 
 		// generate user code and setting up variables

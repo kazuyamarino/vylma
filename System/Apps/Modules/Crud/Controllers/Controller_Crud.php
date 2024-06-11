@@ -3,7 +3,6 @@
 namespace System\Apps\Modules\Crud\Controllers;
 
 use System\Core\Load;
-
 use System\Apps\Modules\Crud\Models\Model_Crud;
 
 class Controller_Crud extends Load
