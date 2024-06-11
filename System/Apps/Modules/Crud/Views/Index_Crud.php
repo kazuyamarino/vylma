@@ -13,11 +13,13 @@
 
 				<div class="field">
 					<label class="label">Username&nbsp;<small>(required)</small>
-						<input class="input" type="text" name="user_name" id="username-help" placeholder="3 - 50 characters" pattern="^[a-z0-9\._-]{3,50}$" required>
+						<input class="input" type="text" name="user_name" id="username-help"
+							placeholder="3 - 50 characters" pattern="^[a-z0-9\._-]{3,50}$" required>
 						<span class="help is-norma">
 							<ul>
 								<li>Username must be lowercase</li>
-								<li>Can only contain dot (&nbsp;.&nbsp;), underscore (&nbsp;_&nbsp;), & minus (&nbsp;-&nbsp;)</li>
+								<li>Can only contain dot (&nbsp;.&nbsp;), underscore (&nbsp;_&nbsp;), & minus
+									(&nbsp;-&nbsp;)</li>
 							</ul>
 						</span>
 					</label>
@@ -26,7 +28,8 @@
 
 				<div class="field">
 					<label class="label">Password&nbsp;<small>(required)</small>
-						<input class="input" type="password" name="user_password" id="user-password-first" placeholder="5 - 16 characters" pattern="^[a-zA-Z0-9\.]{5,16}$" required>
+						<input class="input" type="password" name="user_password" id="user-password-first"
+							placeholder="5 - 16 characters" pattern="^[a-zA-Z0-9\.]{5,16}$" required>
 						<span class="help is-norma">
 							<ul>
 								<li>Password is required.</li>
@@ -38,7 +41,8 @@
 
 				<div class="field">
 					<label class="label">Confirm Password&nbsp;<small>(required)</small>
-						<input class="input" type="password" placeholder="5 - 16 characters" pattern="^[a-zA-Z0-9\.]{5,16}$" data-equalto="user-password-first" required>
+						<input class="input" type="password" placeholder="5 - 16 characters"
+							pattern="^[a-zA-Z0-9\.]{5,16}$" data-equalto="user-password-first" required>
 						<span class="help is-norma">The password did not match</span>
 					</label>
 					<p class="help" id="password-help">Enter your password here.</p>
@@ -63,7 +67,8 @@
 					<div id="term-cond" class="checkbox-group" data-validator-min="1" required>
 						<div class="control">
 							<label class="checkbox">
-								<input type="checkbox" name="term-cond" value="Agree"><span class="modal-button" data-target="modal-normal">&nbsp;Terms & Conditions</span>
+								<input type="checkbox" name="term-cond" value="Agree"><span class="modal-button"
+									data-target="modal-normal">&nbsp;Terms & Conditions</span>
 							</label>
 						</div>
 
@@ -107,7 +112,8 @@
 								<button id="reset-filter" class="button is-link" type="reset">Reset</button>
 							</div>
 							<div class="control">
-								<button id="multidelete-btn" class="button is-danger" type="button">Delete Selected</button>
+								<button id="multidelete-btn" class="button is-danger" type="button">Delete
+									Selected</button>
 							</div>
 						</div>
 					</div>
@@ -115,8 +121,11 @@
 				<table id="example_crud" class="table display responsive" cellspacing="0" width="100%">
 					<thead>
 						<tr>
-							<th></th>
-							<th>ID</th>
+							<th class="id">
+								<div id="check" class="text-center">
+									<input type="checkbox" id="select-all">
+								</div>
+							</th>
 							<th>User Code</th>
 							<th>User Name</th>
 							<th>User Status</th>
