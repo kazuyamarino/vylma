@@ -33,6 +33,8 @@ class BeforeLayer implements LayerInterface
 			 */
 			$object = 'Middleware : Access controller canceled';
 
+			echo $object;
+
 			exit();
 		}
 	}
