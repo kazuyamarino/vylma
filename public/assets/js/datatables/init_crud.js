@@ -11,7 +11,7 @@ $(document).ready(function () {
       url: base_url("crud/data.json"), // base_url can be managed in system.js located in the assets/js/config directory
     },
     columns: [
-      { data: "id", defaultContent: "", orderable: false },
+      { data: "id", orderable: false },
       { data: "user_code" },
       { data: "user_name" },
       { data: "user_status" },
@@ -22,7 +22,7 @@ $(document).ready(function () {
     ],
     columnDefs: [
       {
-        targets: 0,
+        targets: "id",
         orderable: false,
         className: "select-checkbox",
         render: function (data, type, full, meta) {
@@ -30,17 +30,17 @@ $(document).ready(function () {
         },
       },
       {
-        targets: [3],
-        className: "text-center",
+        targets: ["user_status"],
+        className: "has-text-centered",
         width: "8%",
       },
       {
-        targets: [1, 2, 4, 5, 6],
-        className: "text-center",
+        targets: ["user_code", "user_name", "create_date", "update_date", "additional_date"],
+        className: "has-text-centered",
       },
       {
-        targets: [7],
-        className: "text-center",
+        targets: ["action"],
+        className: "has-text-centered",
         render: function (data, type, full, meta) {
           if (data) {
             return `

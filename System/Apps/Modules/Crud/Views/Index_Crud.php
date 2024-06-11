@@ -126,13 +126,13 @@
 									<input type="checkbox" id="select-all">
 								</div>
 							</th>
-							<th>User Code</th>
-							<th>User Name</th>
-							<th>User Status</th>
-							<th>Create Date</th>
-							<th>Update Date</th>
-							<th>Additional Date</th>
-							<th>Action</th>
+							<th class="user_code">User Code</th>
+							<th class="user_name">User Name</th>
+							<th class="user_status">User Status</th>
+							<th class="create_date">Create Date</th>
+							<th class="update_date">Update Date</th>
+							<th class="additional_date">Additional Date</th>
+							<th class="action">Action</th>
 						</tr>
 					</thead>
 				</table>
