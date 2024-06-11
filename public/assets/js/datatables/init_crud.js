@@ -11,7 +11,7 @@ $(document).ready(function () {
       url: base_url("crud/data.json"), // base_url can be managed in system.js located in the assets/js/config directory
     },
     columns: [
-      { data: null, defaultContent: "", orderable: false },
+      { data: "id", defaultContent: "", orderable: false },
       { data: "user_code" },
       { data: "user_name" },
       { data: "user_status" },
@@ -26,7 +26,7 @@ $(document).ready(function () {
         orderable: false,
         className: "select-checkbox",
         render: function (data, type, full, meta) {
-          return '<input type="checkbox">';
+          return '<input name="admin_id[]" type="checkbox" value="' + data + '">';
         },
       },
       {
@@ -43,16 +43,12 @@ $(document).ready(function () {
         className: "text-center",
         render: function (data, type, full, meta) {
           if (data) {
-            return (
-              '<div class="action-icon">' +
-              '<a id="fetch-btn" href="' +
-              base_url("crud/fetch/" + data) +
-              '"><i class="far fa-edit"></i></a>' +
-              '<a id="delete-btn" data-open="delete-modal" data-url="' +
-              base_url("crud/delete/" + data) +
-              '"><i class="far fa-trash-alt"></i></a>' +
-              "</div>"
-            );
+            return `
+                <div class="action-icon">
+                    <a id="fetch-btn" href="${base_url("crud/fetch/" + data)}"><i class="far fa-edit"></i></a>
+                    <a id="delete-btn" data-open="delete-modal" data-url="${base_url("crud/delete/" + data)}"><i class="far fa-trash-alt"></i></a>
+                </div>
+            `;
           } else {
             return "";
           }
