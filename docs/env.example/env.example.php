@@ -1,8 +1,7 @@
 <?php
-
 /**
- * Environment Variables
- */
+* Environment Variables
+*/
 return [
 
 	/*
@@ -14,6 +13,11 @@ return [
 	| Define Application Directory
 	*/
 	'APP_DIR' => 'vylma',
+
+	/*
+	| Define Session Prefix
+	*/
+	'SESSION_PREFIX' => '',
 
 	/*
 	| Define Public directory name
@@ -64,7 +68,7 @@ return [
 				\PDO::ATTR_EMULATE_PREPARES => false
 			]
 		]
-
+	
 	]
 
 ];
