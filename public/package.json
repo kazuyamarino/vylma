@@ -9,7 +9,6 @@
     "bulma-modal-fx": "^1.1.1",
     "datatables.net": "^2.0.8",
     "datatables.net-bm": "^2.0.8",
-    "datatables.net-dt": "^2.0.8",
     "flatpickr": "^4.6.13",
     "jquery": "^3.7.1",
     "jquery-datatables-checkboxes": "^1.2.14",
