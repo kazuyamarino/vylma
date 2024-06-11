@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var table = $("#example").DataTable({
+	var table = $("#example_crud").DataTable({
 		"sPaginationType": "full_numbers",
 		"iDisplayLength": 5,
 		"aLengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],

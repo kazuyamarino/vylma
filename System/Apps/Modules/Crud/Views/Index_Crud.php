@@ -112,7 +112,7 @@
 						</div>
 					</div>
 				</div>
-				<table id="example" class="display responsive" cellspacing="0" width="100%">
+				<table id="example_crud" class="table display responsive" cellspacing="0" width="100%">
 					<thead>
 						<tr>
 							<th></th>

@@ -36,7 +36,7 @@ function header_assets()
 	Add::link('responsive-tables.min.css', 'stylesheet', 'text/css');
 
 	// Datatable CSS
-	Add::link('../../node_modules/datatables-bulma/css/dataTables.bulma.min.css', 'stylesheet', 'text/css');
+	Add::link('../../node_modules/datatables.net-bm/css/dataTables.bulma.min.css', 'stylesheet', 'text/css');
 
 	// Tooltip CSS
 	Add::link('../../node_modules/simptip/simptip.min.css', 'stylesheet', 'text/css');
@@ -64,8 +64,8 @@ function footer_assets()
 	Add::script('../../node_modules/what-input/dist/what-input.min.js', 'text/javascript', 'UTF-8');
 
 	// Datatables JS
-	Add::script('../../node_modules/datatables.net/js/jquery.dataTables.min.js', 'text/javascript', 'UTF-8');
-	Add::script('../../node_modules/datatables-bulma/js/dataTables.bulma.min.js', 'text/javascript', 'UTF-8');
+	Add::script('../../node_modules/datatables.net/js/dataTables.min.js', 'text/javascript', 'UTF-8');
+	Add::script('../../node_modules/datatables.net-bm/js/dataTables.bulma.min.js', 'text/javascript', 'UTF-8');
 	Add::script('responsive-tables.min.js', 'text/javascript', 'UTF-8');
 	Add::link('../../node_modules/jquery-datatables-checkboxes/css/dataTables.checkboxes.css', 'stylesheet', 'text/css');
 	Add::script('../../node_modules/jquery-datatables-checkboxes/js/dataTables.checkboxes.min.js', 'text/javascript', 'UTF-8');
