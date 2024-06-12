@@ -12,7 +12,7 @@ return [
 	/*
 	| Define Application Directory
 	*/
-	'APP_DIR' => 'vylma',
+	'APP_DIR' => 'nsy',
 
 	/*
 	| Define Session Prefix
@@ -68,7 +68,7 @@ return [
 				\PDO::ATTR_EMULATE_PREPARES => false
 			]
 		]
-	
+
 	]
 
 ];

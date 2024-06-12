@@ -39,7 +39,7 @@ function base_url(url, port)
 		} else {
 			var base_url = protocol + slashes + host + slash;
 		}
-		
+
 		if (url) {
 			return base_url + url;
 		} else {
@@ -47,3 +47,18 @@ function base_url(url, port)
 		}
 	}
 }
+
+/**
+ * Bulma Notification JS
+ */
+$(document).ready(function() {
+	$(".notification > button.delete").click(function() {
+		$(this).parent().addClass("is-hidden");
+		return false;
+	});
+});
+
+/**
+ * Norma JS Initialize
+ */
+$(document).norma();

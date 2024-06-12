@@ -122,9 +122,7 @@
 					<thead>
 						<tr>
 							<th class="id">
-								<div id="check" class="text-center">
-									<input type="checkbox" id="select-all">
-								</div>
+								<input type="checkbox" id="select-all">
 							</th>
 							<th class="user_code">User Code</th>
 							<th class="user_name">User Name</th>
