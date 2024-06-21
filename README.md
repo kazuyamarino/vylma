@@ -139,7 +139,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 * Import database example. (see below)
 * And save the date..
 
-### From Composer
+### Download from Composer
 
 #### Install NSY by creating a new directory called `blog`
 
