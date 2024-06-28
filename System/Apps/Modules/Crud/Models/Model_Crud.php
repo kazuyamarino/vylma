@@ -87,7 +87,7 @@ class Model_Crud extends DB
 			user_name     = :user_name,
 			user_password = user_password,
 			user_status   = :user_status,
-			create_date   = a create_date,
+			create_date   = create_date,
 			update_date   = :update_date,
 			delete_date   = delete_date
 		WHERE id            = :id";
