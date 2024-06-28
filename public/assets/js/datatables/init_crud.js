@@ -17,7 +17,7 @@ $(document).ready(function () {
 			{ data: "user_status" },
 			{ data: "create_date" },
 			{ data: "update_date" },
-			{ data: "additional_date" },
+			{ data: "delete_date" },
 			{ data: "id" },
 		],
 		columnDefs: [
@@ -35,7 +35,7 @@ $(document).ready(function () {
 				width: "8%",
 			},
 			{
-				targets: ["user_code", "user_name", "create_date", "update_date", "additional_date"],
+				targets: ["user_code", "user_name", "create_date", "update_date", "delete_date"],
 				className: "has-text-centered",
 			},
 			{
